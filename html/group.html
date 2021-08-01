@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>leaflet-elevation.js</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='viewport' content='initial-scale=1.0, user-scalable=no' />
   <style>
     html,
     body,
@@ -16,8 +15,8 @@
       margin: 0px;
     }
   </style>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet-ui@0.4.7/dist/leaflet-ui.js"></script>
+  <script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+  <script src='https://unpkg.com/leaflet-ui@0.4.7/dist/leaflet-ui.js'></script>
   <style>
     .leaflet-right .leaflet-control-layers-list {
       max-width: 250px;
@@ -32,7 +31,7 @@
     }
     #elevation-div {
       height: 25%;
-      font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font: 12px/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
     .chart-placeholder {
       top: 20%;
@@ -40,7 +39,7 @@
       text-align: center;
       left: 0;
       right: 0;
-      font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+      font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
       font-style: italic;
       opacity: 0.5;
       font-size: 0.9rem;
@@ -48,11 +47,11 @@
   </style>
 </head>
 <body>
-  <div id="map"></div>
-  <div id="elevation-div" class="leaflet-control elevation"><p class="chart-placeholder">move mouse over a track...</p></div>
+  <div id='map'></div>
+  <div id='elevation-div' class='leaflet-control elevation'><p class='chart-placeholder'>move mouse over a track...</p></div>
   <script>
-    var repo = 'https://raw.githubusercontent.com/FraserChapman/gritstone100/main/',
-        opts = {
+    var repo = 'https://raw.githubusercontent.com/FraserChapman/gritstone100/main/';
+    var opts = {
       map: {
         center: [41.4583, 12.7059],
         zoom: 5,
@@ -61,14 +60,14 @@
         searchControl: false,
         loadingControl: false,
         plugins: [
-          "d3@4.13.0/build/d3.min.js",
-          "leaflet-gpx@1.5.0/gpx.js",
-          "leaflet-geometryutil@0.9.1/src/leaflet.geometryutil.js",
-          "@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.css",
-          "@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.js",
-          "@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.css",
-          "@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.js",
-          "@raruto/leaflet-elevation@1.5.0/libs/leaflet-gpxgroup.min.js"
+          'd3@4.13.0/build/d3.min.js',
+          'leaflet-gpx@1.5.0/gpx.js',
+          'leaflet-geometryutil@0.9.1/src/leaflet.geometryutil.js',
+          '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.css',
+          '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.js',
+          '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.css',
+          '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.js',
+          '@raruto/leaflet-elevation@1.5.0/libs/leaflet-gpxgroup.min.js'
         ],
       },
     //   points: {
@@ -85,25 +84,27 @@
         legend: false,
       },
       markers: {
-        wptIconUrls: { '' : repo + 'icons/icon-small.png' },
-        startIconUrl: null,
+        wptIconUrls: { '' : null },
+        startIconUrl: null, 
         endIconUrl: null,
-        shadowUrl: null, 
+        shadowUrl: null,
       }
-    },
-    points = [
-      { latlng: [0, 0], name: "null" },
-    ],
-    map = L.map('map', opts.map);
+    };
 
-    map.on('plugins_loaded', function(e) {
-      var routes = L.gpxGroup([
+    var tracks = [
         repo + 'gpx/bleaklow-bomber.gpx',
         repo + 'gpx/gritstone100.gpx'
-        ], {
-        points: [
-            { latlng: [0, 0], name: "null" },
-        ],
+    ];
+
+    // var points = [
+    //     { latlng: [0, 0], name: 'null' },
+    // ];
+
+    var map = L.map('map', opts.map);
+
+    map.on('plugins_loaded', function(e) {
+      var routes = L.gpxGroup(tracks, {
+        // points: points,
         // points_options: opts.points,
         elevation: true,
         elevation_options: opts.elevation,
@@ -113,15 +114,15 @@
       });
 
       map.on('eledata_added eledata_clear', function(e) {
-        var p = document.querySelector(".chart-placeholder");
+        var p = document.querySelector('.chart-placeholder');
         if(p) {
           p.style.display = e.type=='eledata_added' ? 'none' : '';
         }
       });
-
       routes.addTo(map);
       map.attributionControl.addAttribution('Map Data: &copy; GRITSTONE100 2021');
     });
+
   </script>
 </body>
 </html>
