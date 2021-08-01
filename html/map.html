@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GS100:OS:EPSG:3857</title>
+    <link rel="stylesheet" href="https://labs.os.uk/public/os-api-branding/v0.2.0/os-api-branding.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />    <style>
+        body { margin:0; padding:0; }
+        #map { 
+            top:0;
+            bottom:0; 
+            width:100%; 
+			height: 55vh;
+			max-height: 100vh;
+		}
+
+		.elevation-div {
+			min-height: 25%;
+		}
+        .elevation-waypoint-icon::before {
+			background-image: url('https://raw.githubusercontent.com/FraserChapman/gritstone100/main/icon-small.png');
+            background-position: 0 0, center;
+		}
+        .elevation-control.elevation .background {
+            background-color: rgba(51, 51, 51, 0.85);
+        }
+        .gs100.elevation-control.elevation .area {
+            fill: rgba(255, 255, 255, 0.85);
+            stroke: hsla(60, 0%, 0%, 0.85);
+            stroke-width: 2.8;
+        }
+
+        .gs100.height-focus.circle-lower {
+            fill: #FF0;
+        }
+
+        .gs100.elevation-polyline {
+            stroke: #F00;
+            stroke-opacity: 1;
+            stroke-width: 2;
+        }
+
+        .gs100.elevation-polyline-segments {
+            stroke: #FF0;
+            stroke-width: 2;
+            stroke-dasharray: 4;
+        }
+    </style>
+</head>
+<body>    
+<div id="map"></div>
+<script src="https://labs.os.uk/public/os-api-branding/v0.2.0/os-api-branding.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-ui@0.5.0/dist/leaflet-ui.js"></script>
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.js"></script>
+<script src="https://unpkg.com/mapbox-gl-leaflet/leaflet-mapbox-gl.js"></script>
+<script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+<script>
+    var apiKey = 'u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc';
+    var serviceUrl = 'https://api.os.uk/maps/vector/v1/vts';
+    var git = 'https://raw.githubusercontent.com/FraserChapman/gritstone100/main/';
+    var map = L.map('map', {
+        mapTypeIds: [],
+        gestureHandling: true,
+        zoomControl: true,
+        pegmanControl: true,
+        locateControl: true,
+        fullscreenControl: true,
+        layersControl: true,
+        minimapControl: false,
+        editInOSMControl: true,
+        loadingControl: true,
+        searchControl: true,
+        disableDefaultUI: false,
+
+        minZoom: 9,
+        maxZoom: 15,
+        center: [ 53.3405,-1.6917 ],
+        zoom: 8,
+        maxBounds: [
+            [ 49.528423, -10.76418 ],
+            [ 61.331151, 1.9134116 ]
+        ],
+        attributionControl: false
+    });
+    L.control.elevation({
+        theme: "gs100",
+        imperial: true,
+        detached: true,
+        summary: false,
+        legend: false,
+        distanceMarkers: true
+    }).addTo(map).load(git + 'gritstone100.gpx');
+    L.mapboxGL({
+        style: serviceUrl + '/resources/styles?key=' + apiKey,
+        transformRequest: url => {
+            return {
+                url: url += '&srs=3857'
+            }
+        }
+    }).addTo(map);
+</script>
+</body>
+</html>
