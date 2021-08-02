@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-elevation.js</title>
+  <title>group</title>
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
   <meta name='viewport' content='initial-scale=1.0, user-scalable=no' />
   <style>
@@ -17,6 +17,8 @@
   </style>
   <script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
   <script src='https://unpkg.com/leaflet-ui@0.4.7/dist/leaflet-ui.js'></script>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/mapbox-gl-leaflet/leaflet-mapbox-gl.js"></script>
   <style>
     .leaflet-right .leaflet-control-layers-list {
       max-width: 250px;
@@ -48,81 +50,102 @@
 </head>
 <body>
   <div id='map'></div>
-  <div id='elevation-div' class='leaflet-control elevation'><p class='chart-placeholder'>move mouse over a track...</p></div>
+  <div id='elevation-div' class='leaflet-control elevation'>
+    <p class='chart-placeholder'>mouse over a track...</p>
+  </div>
   <script>
-    var repo = 'https://raw.githubusercontent.com/FraserChapman/gritstone100/main/';
-    var opts = {
-      map: {
-        center: [41.4583, 12.7059],
-        zoom: 5,
-        mapTypeId: 'topo',
-        fullscreenControl: false,
-        searchControl: false,
-        loadingControl: false,
-        plugins: [
-          'd3@4.13.0/build/d3.min.js',
-          'leaflet-gpx@1.5.0/gpx.js',
-          'leaflet-geometryutil@0.9.1/src/leaflet.geometryutil.js',
-          '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.css',
-          '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.js',
-          '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.css',
-          '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.js',
-          '@raruto/leaflet-elevation@1.5.0/libs/leaflet-gpxgroup.min.js'
-        ],
-      },
-    //   points: {
-    //     icon: {
-    //       iconUrl: repo + 'icons/elevation-poi.png',
-    //       iconSize: [12, 12],
-    //     },
-    //   },
-      elevation: {
-        detachedView: true,
-        elevationDiv: '#elevation-div',
-        followPositionMarker: true,
-        zFollow: 15,
-        legend: false,
-      },
-      markers: {
-        wptIconUrls: { '' : null },
-        startIconUrl: null, 
-        endIconUrl: null,
-        shadowUrl: null,
-      }
-    };
+    var apiKey = 'u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc',
+      serviceUrl = 'https://api.os.uk/maps/vector/v1/vts',
+      repo = 'https://raw.githubusercontent.com/FraserChapman/gritstone100/main/',
+      opts = {
+          map: {
+              center: [41.4583, 12.7059],
+              zoom: 5,
+              mapTypeIds: [],
+              fullscreenControl: false,
+              searchControl: false,
+              loadingControl: false,
+              minimapControl: false,
+              pegmanControl: false,
+              plugins: [
+                  'd3@4.13.0/build/d3.min.js',
+                  'leaflet-gpx@1.5.0/gpx.js',
+                  'leaflet-geometryutil@0.9.1/src/leaflet.geometryutil.js',
+                  '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.css',
+                  '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.js',
+                  '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.css',
+                  '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.js',
+                  '@raruto/leaflet-elevation@1.5.0/libs/leaflet-gpxgroup.min.js'
+              ],
+          },
+          points: {
+            icon: {
+              iconUrl: repo + 'icons/elevation-poi.png',
+              iconSize: [12, 12],
+            },
+          },
+          elevation: {
+              detachedView: true,
+              elevationDiv: '#elevation-div',
+              followPositionMarker: true,
+              zFollow: 15,
+              legend: false,
+          },
+          markers: {
+              wptIconUrls: {
+                  '': null
+              },
+              startIconUrl: null,
+              endIconUrl: null,
+              shadowUrl: null,
+          }
+      };
 
-    var tracks = [
-        repo + 'gpx/bleaklow-bomber.gpx',
-        repo + 'gpx/gritstone100.gpx'
-    ];
+  var tracks = [
+      repo + 'gpx/gritstone100.gpx',
+      repo + 'gpx/bleaklow-bomber.gpx',
+  ];
 
-    // var points = [
-    //     { latlng: [0, 0], name: 'null' },
-    // ];
+  // var points = [
+  //     { latlng: [0, 0], name: 'null' },
+  // ];
 
-    var map = L.map('map', opts.map);
+  var map = L.map('map', opts.map);
 
-    map.on('plugins_loaded', function(e) {
+  map.on('plugins_loaded', function(e) {
+    
       var routes = L.gpxGroup(tracks, {
-        // points: points,
-        // points_options: opts.points,
-        elevation: true,
-        elevation_options: opts.elevation,
-        marker_options: opts.markers,
-        legend: true,
-        distanceMarkers: true,
+          // points: points,
+          // points_options: opts.points,
+          elevation: true,
+          elevation_options: opts.elevation,
+          marker_options: opts.markers,
+          legend: true,
+          distanceMarkers: true,
       });
 
       map.on('eledata_added eledata_clear', function(e) {
-        var p = document.querySelector('.chart-placeholder');
-        if(p) {
-          p.style.display = e.type=='eledata_added' ? 'none' : '';
-        }
+          var p = document.querySelector('.chart-placeholder');
+          if (p) {
+              p.style.display = e.type == 'eledata_added' ? 'none' : '';
+          }
       });
-      routes.addTo(map);
-      map.attributionControl.addAttribution('Map Data: &copy; GRITSTONE100 2021');
-    });
 
+      L.mapboxGL({
+            style: serviceUrl + '/resources/styles?key=' + apiKey,
+            transformRequest: url => {
+                return {
+                    url: url += '&srs=3857'
+                }
+            }
+        })
+        .addTo(map);
+
+
+      routes.addTo(map);
+      
+      map.attributionControl.addAttribution('Map Data: &copy; GRITSTONE100 2021');
+  });  
   </script>
 </body>
 </html>

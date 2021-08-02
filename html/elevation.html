@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OS Vector Tile API | Basic Map (EPSG:3857) | Leaflet</title>
     <link rel="stylesheet" href="https://labs.os.uk/public/os-api-branding/v0.2.0/os-api-branding.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:30%; width:100%; }
         #elevation { position:absolute; top:70%; bottom:0; width:100%; }
         .elevation-control.elevation { background: rgb(50, 50, 50)}
         .elevation-summary { color: rgb(204, 204, 204); }
-        .elevation-waypoint-icon:before { background-image: url('https://raw.githubusercontent.com/FraserChapman/gritstone100/main/icons/icon-small.png'); }
+        .elevation-waypoint-icon:before { 
+            background-image: url('https://raw.githubusercontent.com/FraserChapman/gritstone100/main/icons/icon-small.png'); 
+        }
         .elevation-control.gs100 .grid .tick line { stroke: rgb(50, 50, 50) }
         .elevation-control.gs100 .axis text {
             font-weight: 400;
@@ -33,12 +32,10 @@
 <body>    
 <div id="map"></div>
 <div id="elevation"></div>
-<script src="https://labs.os.uk/public/os-api-branding/v0.2.0/os-api-branding.js"></script>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+<script src='https://unpkg.com/leaflet-ui@0.4.7/dist/leaflet-ui.js'></script>
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.js"></script>
-<script src="https://unpkg.com/mapbox-gl-leaflet/leaflet-mapbox-gl.js"></script>
-<script src="https://unpkg.com/leaflet-ui@0.5.0/dist/leaflet-ui.js"></script>
-<script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+<script src="https://labs.os.uk/public/os-api-branding/v0.2.0/os-api-branding.js"></script>
 <script>
     var apiKey = 'u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc',
         serviceUrl = 'https://api.os.uk/maps/vector/v1/vts',
@@ -46,6 +43,20 @@
         map = L.map('map', {
             minimapControl: false,
             pegmanControl: false,
+            plugins: [
+                'd3@4.13.0/build/d3.min.js',
+                'leaflet-gpx@1.5.0/gpx.js',
+                //'mapbox-gl@1.2.0/dist/mapbox-gl.css',
+                'mapbox-gl-leaflet@0.0.15/leaflet-mapbox-gl.js',
+                //'mapbox-gl@1.2.0/dist/mapbox-gl.js',
+                'leaflet-geometryutil@0.9.1/src/leaflet.geometryutil.js',
+                '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.css',
+                '@raruto/leaflet-elevation@1.5.0/dist/leaflet-elevation.min.js',
+                '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.css',
+                '@raruto/leaflet-elevation@1.5.0/libs/leaflet-distance-marker.min.js',
+                '@raruto/leaflet-elevation@1.5.0/libs/leaflet-gpxgroup.min.js'
+
+            ],
             mapTypeIds: [],
             minZoom: 9,
             maxZoom: 15,
@@ -57,31 +68,48 @@
             ],
             attributionControl: false
         });
-    
-        L.mapboxGL({
-            style: serviceUrl + '/resources/styles?key=' + apiKey,
-            transformRequest: url => {
-                return {
-                    url: url += '&srs=3857'
-                }
-            }
-        })
-        .addTo(map);
-
-        L.control
-            .elevation({
-                elevationDiv: "#elevation",
-                theme: "gs100",
-                detached: true,
-                imperial: true,
-                legend: false,
-                distanceMarkers: { 
-                    lazy: true, 
-                    offset: 1609.34 
+        
+        map.on('idle', console.log);
+        map.on('plugins_loaded', function(e) {
+            L.mapboxGL({
+                style: serviceUrl + '/resources/styles?key=' + apiKey,
+                transformRequest: url => {
+                    return {
+                        url: url += '&srs=3857'
+                    }
                 }
             })
-            .addTo(map)
-            .load(repo + 'gritstone100.gpx');
+            .addTo(map);
+
+            L.control
+                .elevation({
+                    elevationDiv: "#elevation",
+                    theme: "gs100",
+                    detached: true,
+                    imperial: true,
+                    legend: false,
+                    distanceMarkers: { 
+                        lazy: true, 
+                        offset: 1609.34 
+                    },
+					gpxOptions: {
+						marker_options: {
+                            startIconUrl: repo + 'icons/pin-icon-start.png',
+                            endIconUrl: repo + 'icons/pin-icon-end.png',
+                            shadowUrl: repo + 'icons/pin-shadow.png',
+							wptIcons: {
+								'': L.icon({ 
+                                    iconUrl: repo + 'icons/icon-small.png',
+                                    iconSize: [33, 45],
+	                                iconAnchor: [15, 45],
+                                })
+							},
+						}
+					},
+                })
+                .addTo(map)
+                .load(repo + 'gritstone100.gpx');
+        });
 </script>
 </body>
 </html>
