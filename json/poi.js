@@ -239,10 +239,10 @@
 
     {"latlng": [0,0], "name": "", "_": "Swains Head Alternative"},
     {"latlng": [53.4844282 , -1.7872486], "name": "Hoar Clough Head - Head westerly along the faint tracks towards Swains Head. Hard terrain, navigation can be extremely challenging"},
-    {"latlng": [53.4810984 , -1.8006503], "name": "Swains Head - Follow the line of stakes easterly. There is a pole to aid navigation. Some of the  most difficult terrain to cross in bad conditions"},
-    {"latlng": [53.4800720 , -1.8083216], "name": "Stakes - Keep following the faint line of stakes westerly"},
+    {"latlng": [53.4810984 , -1.8006503], "name": "Swains Head - Follow the line of stakes westerly. There is a pole to aid navigation. Very difficult terrain in bad conditions"},
+    {"latlng": [53.4800720 , -1.8083216], "name": "Stakes - Keep following the faint line of stakes westerly."},
     {"latlng": [53.4789052 , -1.8128396], "name": "Ford - As you cross the deep clough head almost due south, again following the line of stakes"},
-    {"latlng": [53.4740432 , -1.8138512], "name": "Stakes - Keep following the stakes south. Again navigation here can be extremely challenging"},
+    {"latlng": [53.4740432 , -1.8138512], "name": "Stakes - Keep following the stakes south. Navigation here can be extremely challenging"},
     {"latlng": [53.4677445 , -1.8159273], "name": "Ford - Cross the deep clough and turn right to follow the line of stakes south-westerly to Bleaklow Stones"},
 
     {"latlng": [0,0], "name": "", "_": "Bleaklow Bomber Alternative"},
