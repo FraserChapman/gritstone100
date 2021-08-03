@@ -477,7 +477,8 @@
     {"latlng": [53.2318647 , -1.6100348], "name": "Car Park - Cross the car park and head down hill, away from the house, towards the river"},
     {"latlng": [53.2294404 , -1.6121517], "name": "Golden Gates - Pass the side entrance to the house and go towards the bridge"},
     {"latlng": [53.2280335 , -1.6161832], "name": "End - Turn an take in the splendour of Chatsworth House from the centre of Paine's exquisite Three arch bridge across the Derwent"},
-    {"__swainshead":1},
+
+    {"latlng": [0,0], "name": "", desc: "Swains Head Alternative"},
     {"latlng": [53.4844282 , -1.7872486], "name": "Hoar Clough Head - Head westerly along the faint tracks towards Swains Head. Hard terrain, navigation can be extremely challenging "},
     {"latlng": [53.4810984 , -1.8006503], "name": "Swains Head - Follow the line of stakes easterly. There is a pole to aid navigation. Some of the  most difficult terrain to cross in bad conditions"},
     {"latlng": [53.4800720 , -1.8083216], "name": "Stakes - Keep following the faint line of stakes westerly"},
@@ -490,7 +491,8 @@
     {"latlng": [53.4789052 , -1.8128396], "name": "Ford - As you cross the deep clough head almost due south, again following the line of stakes"},
     {"latlng": [53.4740432 , -1.8138512], "name": "Stakes - Keep following the stakes south. Again navigation here can be extremely challenging "},
     {"latlng": [53.4677445 , -1.8159273], "name": "Ford - Cross the deep clough and turn right to follow the line of stakes south-westerly to Bleaklow Stones"},
-    {"__bleaklowbomber":2},
+
+    {"latlng": [0,0], "name":"", desc: "Bleaklow Bomber Alternative"},
     {"latlng": [53.4599409 , -1.8625739], "name": "Wain Stones - Go south at the 'kissing' Wain Stones following the line of posts"},
     {"latlng": [53.4565029 , -1.8625830], "name": "Tarn - Turn left to pass a small tarn on your left and head West on the faint clough track "},
     {"latlng": [53.4559219 , -1.8704892], "name": "Dowstone Clough - Turn left at the clough and follow it South-easterly on the near bank "},
