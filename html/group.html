@@ -95,14 +95,11 @@
               repo + 'gpx/grindsbrook-clough.gpx',
               repo + 'gpx/swains-head.gpx'
           ],
-          poi: {
-            points: [],
-            options: {
-              icon: {
-                iconUrl: repo + 'icons/elevation-poi.png',
-                iconSize: [12, 12],
-              }
-           },
+          points: {
+            icon: {
+              iconUrl: repo + 'icons/elevation-poi.png',
+              iconSize: [12, 12],
+            }
           },
           elevation: {
               detachedView: true,
@@ -122,9 +119,7 @@
       };
 
   var map = L.map('map', opts.map);
-  //map.attributionControl.addAttribution('Map Data: &copy; GRITSTONE100 2021');
   map.on('plugins_loaded', function(e) {
-    d3.json(repo + 'json/poi.js', console.log);
       map.on('eledata_added eledata_clear', function(e) {
           var p = document.querySelector('.chart-placeholder');
           p && (p.style.display = e.type == 'eledata_added' ? 'none' : '');
@@ -133,17 +128,21 @@
             style: serviceUrl + '/resources/styles?key=' + apiKey,
             transformRequest: url => { return { url: url += '&srs=3857' } } 
           }).addTo(map);
-      L.gpxGroup(
+
+      d3.json(repo + 'json/poi.js', function(points) {
+        L.gpxGroup(
         opts.tracks, 
         {
-          points: opts.poi.points,
-          points_options: opts.poi.options,
+          points: points,
+          points_options: opts.points,
           elevation: true,
           elevation_options: opts.elevation,
           marker_options: opts.markers,
           legend: true,
           distanceMarkers: false
         }).addTo(map);
+      });
+
   });  
   </script>
 </body>
