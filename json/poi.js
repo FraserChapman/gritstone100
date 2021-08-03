@@ -476,5 +476,5 @@
     {"latlng": [53.2302804 , -1.6053186], "name": "Adventure Playground - You have an option here, either take the left or right path and follow the route around to the front of the house"},
     {"latlng": [53.2318647 , -1.6100348], "name": "Car Park - Cross the car park and head down hill, away from the house, towards the river"},
     {"latlng": [53.2294404 , -1.6121517], "name": "Golden Gates - Pass the side entrance to the house and go towards the bridge"},
-    {"latlng": [53.2280335 , -1.6161832], "name": "End - Turn an take in the splendour of Chatsworth House from the centre of Paine's exquisite Three arch bridge across the Derwent  "},
+    {"latlng": [53.2280335 , -1.6161832], "name": "End - Turn an take in the splendour of Chatsworth House from the centre of Paine's exquisite Three arch bridge across the Derwent  "}
 ]

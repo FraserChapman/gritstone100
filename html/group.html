@@ -130,17 +130,19 @@
           }).addTo(map);
 
       d3.json(repo + 'json/poi.js', function(points) {
+        console.log(points)
         L.gpxGroup(
-        opts.tracks, 
-        {
-          points: points,
-          points_options: opts.points,
-          elevation: true,
-          elevation_options: opts.elevation,
-          marker_options: opts.markers,
-          legend: true,
-          distanceMarkers: false
-        }).addTo(map);
+          opts.tracks, 
+          {
+            // points: points,
+            // points_options: opts.points,
+            elevation: true,
+            elevation_options: opts.elevation,
+            marker_options: opts.markers,
+            legend: true,
+            distanceMarkers: false
+          }
+        ).addTo(map);
       });
 
   });  
