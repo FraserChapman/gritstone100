@@ -260,5 +260,5 @@
     {"latlng": [53.4530863 , -1.8317264], "name": "The ridge - Head south-easterly  on the faint tracks across Alport moor. Various lines one can take here"},
     {"latlng": [53.4509887 , -1.8304572], "name": "Moorland - Bear right towards the edge of the moor above the Alport. The path may become lost here"},
     {"latlng": [53.4480197 , -1.8265551], "name": "Cloughs - The path here is clearer, you pass a deep clough on your left"},
-    {"latlng": [53.4359440 , -1.8077052], "name": "Trig Point - Alport Moor 500m"},
+    {"latlng": [53.4359440 , -1.8077052], "name": "Trig Point - Alport Moor 500m"}
  ]
