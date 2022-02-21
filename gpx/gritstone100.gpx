@@ -8,45 +8,51 @@ xmlns:os="https://ordnancesurvey.co.uk/public/schema/route/0.1">
     <metadata>
         <name>gritstone100</name>
         <desc>A 100 mile route around some of the best gritstone tors, outcrops, and edges in the High Peak - https://gritstone100.co.uk/</desc>
-        <bounds minlat="53.2280335" minlon="-1.9013750" maxlat="53.4845730" maxlon="-1.5800370"/>
+        <bounds minlat="53.2279793" minlon="-1.9013750" maxlat="53.4845730" maxlon="-1.5800370"/>
         <extensions>
             <os:version>2.0</os:version>
             <os:surface_types>
                 <os:surface_type>2</os:surface_type>
-                <os:surface_type>3</os:surface_type>
                 <os:surface_type>4</os:surface_type>
+                <os:surface_type>3</os:surface_type>
                 <os:surface_type>5</os:surface_type>
             </os:surface_types>
-            <os:point lat="53.4228071" lon="-1.6061823" type="start"/>
-            <os:point lat="53.2280335" lon="-1.6161832" type="end"/>
+            <os:point lat="53.4229098" lon="-1.6058896" type="start"/>
+            <os:point lat="53.2279793" lon="-1.6162388" type="end"/>
             <os:activity xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ON_FOOT_WALKING</os:activity>
-            <os:difficulty xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">DIFFICULT</os:difficulty>
+            <os:difficulty xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">UNKNOWN</os:difficulty>
             <os:paths>
                 <os:path start="0" end="4" type="plotted"/>
-                <os:path start="5" end="8" type="routed"/>
-                <os:path start="9" end="10" type="plotted"/>
-                <os:path start="11" end="12" type="routed"/>
-                <os:path start="13" end="21" type="plotted"/>
-                <os:path start="22" end="899" type="routed"/>
+                <os:path start="5" end="10" type="routed"/>
+                <os:path start="11" end="14" type="plotted"/>
+                <os:path start="15" end="949" type="routed"/>
+                <os:path start="950" end="963" type="plotted"/>
+                <os:path start="964" end="974" type="routed"/>
             </os:paths>
-            <os:distance>160984.8608769</os:distance>
-            <os:elevation_ascent>5483.6500000</os:elevation_ascent>
+            <os:distance>161024.2384534</os:distance>
+            <os:elevation_ascent>6042.6246828</os:elevation_ascent>
         </extensions>
     </metadata>
-    <wpt lat="53.4228071" lon="-1.6061823">
+    <wpt lat="53.4229098" lon="-1.6058896">
         <name>Start</name>
         <desc>From Smithy Bridge head around the bowling green, cricket pitch, and towards the Village Hall</desc>
     </wpt>
-    <wpt lat="53.4228882" lon="-1.6047283"/>
-    <wpt lat="53.4240123" lon="-1.6048871">
+    <wpt lat="53.4229390" lon="-1.6047451">
+        <name>Woodfall Lane</name>
+        <desc>Turn left onto Woodfall Lane</desc>
+    </wpt>
+    <wpt lat="53.4240159" lon="-1.6050259">
         <name>Post Office</name>
         <desc>Follow the track passed the tennis courts and into the woods. 
 
 The PO has a great shop, café, etc - lovely cakes :) </desc>
     </wpt>
-    <wpt lat="53.4254176" lon="-1.6061215">
+    <wpt lat="53.4254383" lon="-1.6062383">
         <name>Bridge </name>
         <desc>Go right across and up the steps</desc>
+    </wpt>
+    <wpt lat="53.4254845" lon="-1.6060385">
+        <name>Steps</name>
     </wpt>
     <wpt lat="53.4266226" lon="-1.6046770">
         <name>Smallfield Lane</name>
@@ -56,13 +62,23 @@ The PO has a great shop, café, etc - lovely cakes :) </desc>
         <name>Church Gate</name>
         <desc>Go out and back in the first gate to enter the church yard and pass in front of the building</desc>
     </wpt>
-    <wpt lat="53.4288601" lon="-1.5997367"/>
-    <wpt lat="53.4291808" lon="-1.5997604"/>
+    <wpt lat="53.4288601" lon="-1.5997367">
+        <name>St Nicholas' Church</name>
+        <desc>Turn right at the end of the Bell Tower on the clear path.</desc>
+    </wpt>
+    <wpt lat="53.4291808" lon="-1.5997604">
+        <name>Graveyard</name>
+        <desc>Turn left on the path that leads East through the graveyard. </desc>
+    </wpt>
+    <wpt lat="53.4291685" lon="-1.6008492">
+        <name>Gate</name>
+        <desc>Go through the gate and carry on the path</desc>
+    </wpt>
     <wpt lat="53.4294330" lon="-1.6021921">
         <name>Bailey Hill</name>
         <desc>Exit the grave yard and go right, down hill, at Bailey Hill, so that the steep edge is directly on your left.</desc>
     </wpt>
-    <wpt lat="53.4322571" lon="-1.6009092">
+    <wpt lat="53.4322161" lon="-1.6009179">
         <name>Turn</name>
         <desc>Take the 90 degree left down the hill</desc>
     </wpt>
@@ -70,6 +86,12 @@ The PO has a great shop, café, etc - lovely cakes :) </desc>
         <name>Rocher End Brook</name>
         <desc>Cross the brook and take  the path up into the field directly in front</desc>
     </wpt>
+    <wpt lat="53.4331446" lon="-1.6028199">
+        <name>Broken Wall</name>
+        <desc>Cross the wall and carry on up hill. Various lines here</desc>
+    </wpt>
+    <wpt lat="53.4336410" lon="-1.6029874"/>
+    <wpt lat="53.4341268" lon="-1.6037169"/>
     <wpt lat="53.4345289" lon="-1.6040033">
         <name>Bowsen</name>
         <desc>Bear right at the stone bar onto the clear track behind</desc>
@@ -86,7 +108,7 @@ The PO has a great shop, café, etc - lovely cakes :) </desc>
     <wpt lat="53.4376699" lon="-1.6071746">
         <name>Gate</name>
     </wpt>
-    <wpt lat="53.4390141" lon="-1.6103518">
+    <wpt lat="53.4390284" lon="-1.6103411">
         <name>Gate</name>
     </wpt>
     <wpt lat="53.4391607" lon="-1.6113426">
@@ -100,6 +122,10 @@ The PO has a great shop, café, etc - lovely cakes :) </desc>
     <wpt lat="53.4400096" lon="-1.6184470">
         <name>Smallfield Lane 2</name>
         <desc>Cross the road and go over the stile opposite</desc>
+    </wpt>
+    <wpt lat="53.4468407" lon="-1.6307092">
+        <name>Bar Dike</name>
+        <desc>Turn left towards Mortimer Road</desc>
     </wpt>
     <wpt lat="53.4467090" lon="-1.6317473">
         <name>Mortimer Road</name>
@@ -116,6 +142,9 @@ The PO has a great shop, café, etc - lovely cakes :) </desc>
     <wpt lat="53.4499097" lon="-1.6585282">
         <name>Rushy Dike</name>
         <desc>Can be a ford at certain times of year</desc>
+    </wpt>
+    <wpt lat="53.4480939" lon="-1.6752524">
+        <name>Flint Hill</name>
     </wpt>
     <wpt lat="53.4370131" lon="-1.6888824">
         <name>Cartledge Brook</name>
@@ -145,14 +174,15 @@ The PO has a great shop, café, etc - lovely cakes :) </desc>
         <name>Wilfrey Neild</name>
         <desc>Natural gritstone window om Wilfrey Edge</desc>
     </wpt>
-    <wpt lat="53.4570340" lon="-1.7195109">
+    <wpt lat="53.4570196" lon="-1.7194628">
         <name>Wilfrey Edge</name>
         <desc>Turn right and take one of the fainter paths out towards the visible Margery Stones</desc>
     </wpt>
-    <wpt lat="53.4571966" lon="-1.7158441">
+    <wpt lat="53.4572787" lon="-1.7172799"/>
+    <wpt lat="53.4572843" lon="-1.7159025">
         <name>Margery Stones</name>
     </wpt>
-    <wpt lat="53.4576509" lon="-1.7167269">
+    <wpt lat="53.4576515" lon="-1.7167263">
         <name>Trig Point</name>
         <desc>Margery Hill.
 
@@ -173,6 +203,9 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Fords</name>
         <desc>Multiple small fords here. Path disappears. The line is always to the highest ground</desc>
     </wpt>
+    <wpt lat="53.4806107" lon="-1.7538242">
+        <name>Harden Moss</name>
+    </wpt>
     <wpt lat="53.4814300" lon="-1.7667920">
         <name>Hoar Stones</name>
         <desc>Pass the distinctive three Hoar Stones about 100m on your left</desc>
@@ -181,15 +214,15 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Featherbed Moss</name>
         <desc>Turn left and head south towards the source of the River Derwent in the valley below</desc>
     </wpt>
-    <wpt lat="53.4807907" lon="-1.7881213">
+    <wpt lat="53.4806879" lon="-1.7880041">
         <name>Hoar Clough Head</name>
         <desc>Bear left on the last clough towards Shepheards Meeting Stones </desc>
     </wpt>
-    <wpt lat="53.4797007" lon="-1.7853949">
+    <wpt lat="53.4796435" lon="-1.7854686">
         <name>Shepheards Meeting Stones</name>
         <desc>Cross Hoar Clough (scramble) and take the path directly south, down hill, on the far bank. Excellent natural shelter</desc>
     </wpt>
-    <wpt lat="53.4761475" lon="-1.7844962">
+    <wpt lat="53.4759302" lon="-1.7844354">
         <name>River Derwent 1</name>
         <desc>Turn left at the river and follow it down stream on its Northern bank</desc>
     </wpt>
@@ -202,10 +235,11 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Sheep Fold</name>
         <desc>At the sheep fold climb the steep bank, the path can be totally lost here</desc>
     </wpt>
-    <wpt lat="53.4731815" lon="-1.7800197">
+    <wpt lat="53.4732186" lon="-1.7800231">
         <name>Fair Banks</name>
         <desc>Track the path south that follows the edge of the small plateau you are on </desc>
     </wpt>
+    <wpt lat="53.4684648" lon="-1.7856266"/>
     <wpt lat="53.4616374" lon="-1.7948979">
         <name>Round Hill</name>
         <desc>Turn right and go up Round Hill</desc>
@@ -265,20 +299,31 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Hern Clough</name>
         <desc>Turn left at Hern Clough along its Northern bank down stream. The path can be lost here.</desc>
     </wpt>
-    <wpt lat="53.4502391" lon="-1.8455096">
+    <wpt lat="53.4494899" lon="-1.8517091"/>
+    <wpt lat="53.4497633" lon="-1.8493931"/>
+    <wpt lat="53.4495685" lon="-1.8488030"/>
+    <wpt lat="53.4496901" lon="-1.8455296"/>
+    <wpt lat="53.4499374" lon="-1.8450842">
         <name>Ford</name>
         <desc>Bear left, take the higher ground if marshy</desc>
     </wpt>
-    <wpt lat="53.4503372" lon="-1.8441044">
+    <wpt lat="53.4499175" lon="-1.8439965">
         <name>The Swamp</name>
         <desc>Stay to the left and higher than you might be tempted</desc>
     </wpt>
-    <wpt lat="53.4486572" lon="-1.8403255">
+    <wpt lat="53.4497134" lon="-1.8425668">
         <name>Grains in the Water</name>
         <desc>A crossing and a bit of a scramble here</desc>
     </wpt>
+    <wpt lat="53.4489702" lon="-1.8413650"/>
     <wpt lat="53.4486175" lon="-1.8399694">
         <desc>Follow the contour half way up the Eastern bank of the Alpot</desc>
+    </wpt>
+    <wpt lat="53.4462567" lon="-1.8308117">
+        <name>Fords</name>
+    </wpt>
+    <wpt lat="53.4426248" lon="-1.8243768">
+        <name>Fords</name>
     </wpt>
     <wpt lat="53.4405811" lon="-1.8216990">
         <name>Miry Clough</name>
@@ -292,6 +337,12 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Trig Point</name>
         <desc>Alport Moor</desc>
     </wpt>
+    <wpt lat="53.4308059" lon="-1.8008329">
+        <name>Ford</name>
+    </wpt>
+    <wpt lat="53.4297767" lon="-1.7998609">
+        <name>Ford</name>
+    </wpt>
     <wpt lat="53.4209078" lon="-1.7888389">
         <name>Alport Castles</name>
         <desc>Take the 90 degree left out along the line of butts. Great view from the edge here.</desc>
@@ -300,80 +351,131 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Hut</name>
         <desc>Take the left path at the shooting hut and carry on </desc>
     </wpt>
+    <wpt lat="53.4296297" lon="-1.7763941">
+        <name>Fagney Plantation</name>
+        <desc>Enter the plantation and carry on down hill</desc>
+    </wpt>
     <wpt lat="53.4320402" lon="-1.7706946">
         <name>Ditch Clough Plantation</name>
         <desc>Take the clear road right around the edge of River Westend towards Derwent</desc>
     </wpt>
-    <wpt lat="53.4159299" lon="-1.7507981"/>
+    <wpt lat="53.4292790" lon="-1.7483746">
+        <name>Howden Dam</name>
+    </wpt>
+    <wpt lat="53.4160908" lon="-1.7530918">
+        <name>Bridge</name>
+    </wpt>
+    <wpt lat="53.4129887" lon="-1.7463549">
+        <name>Gores Farm</name>
+    </wpt>
+    <wpt lat="53.4046786" lon="-1.7444031">
+        <name>Derwent Dam</name>
+    </wpt>
     <wpt lat="53.4009599" lon="-1.7428318">
         <name>Fairholmes</name>
         <desc>Café, Toilets, Bins, Bus Stop, etc. </desc>
     </wpt>
-    <wpt lat="53.3993226" lon="-1.7426911">
+    <wpt lat="53.3993226" lon="-1.7426910">
         <name>Gate</name>
         <desc>Go through the gate into the woods</desc>
     </wpt>
-    <wpt lat="53.4001381" lon="-1.7460622"/>
-    <wpt lat="53.4010190" lon="-1.7482189"/>
-    <wpt lat="53.4016263" lon="-1.7506556">
-        <name>Lokerbrook Coppice</name>
+    <wpt lat="53.3998611" lon="-1.7454662">
+        <name>Bridge</name>
+    </wpt>
+    <wpt lat="53.4006820" lon="-1.7468725">
+        <name>Forest Track</name>
+        <desc>Turn left on the forest track and follow it up hill</desc>
+    </wpt>
+    <wpt lat="53.4004929" lon="-1.7477760"/>
+    <wpt lat="53.4006863" lon="-1.7489217"/>
+    <wpt lat="53.4010297" lon="-1.7478852">
+        <name>Lockerbrook Coppice (1)</name>
+        <desc>Turn hard left on the track heading up</desc>
+    </wpt>
+    <wpt lat="53.4012834" lon="-1.7497078"/>
+    <wpt lat="53.4016531" lon="-1.7504950">
+        <name>Lokerbrook Coppice (2)</name>
         <desc>The direct path up to the Outdoor Centre here can be very overgrown, head back and up</desc>
     </wpt>
-    <wpt lat="53.4018138" lon="-1.7494346"/>
+    <wpt lat="53.4015604" lon="-1.7493685"/>
+    <wpt lat="53.4023182" lon="-1.7502281"/>
     <wpt lat="53.4033330" lon="-1.7523099"/>
-    <wpt lat="53.4015974" lon="-1.7536620">
+    <wpt lat="53.4015180" lon="-1.7536514">
         <name>Lokerbrook Outdoor Centre</name>
     </wpt>
     <wpt lat="53.3978228" lon="-1.7554933">
         <name>Hagg Farm</name>
         <desc>Follow the winding track downhill passed Hagg Farm on your right</desc>
     </wpt>
+    <wpt lat="53.3944595" lon="-1.7576115"/>
     <wpt lat="53.3929880" lon="-1.7574127">
         <name>Haggwater Bridge</name>
         <desc>Cross the bridge and carry on the clear trackway </desc>
     </wpt>
+    <wpt lat="53.3926289" lon="-1.7578459"/>
+    <wpt lat="53.3903273" lon="-1.7579339"/>
     <wpt lat="53.3854384" lon="-1.7613675">
         <name>Crookstone Barn</name>
         <desc>Turn right to take the path up Crookstone Hill</desc>
     </wpt>
-    <wpt lat="53.3876171" lon="-1.7634897">
+    <wpt lat="53.3876171" lon="-1.7634896">
         <name>Crookstone Hill</name>
         <desc>Turn left onto the small path up Crookstone Hill</desc>
     </wpt>
-    <wpt lat="53.3914618" lon="-1.7835736">
+    <wpt lat="53.3900418" lon="-1.7780303"/>
+    <wpt lat="53.3898158" lon="-1.7840223"/>
+    <wpt lat="53.3901440" lon="-1.7847270"/>
+    <wpt lat="53.3915295" lon="-1.7832795">
         <name>Crookstone Knoll</name>
         <desc>Round the knoll and turn left to head West up the hill</desc>
     </wpt>
-    <wpt lat="53.3919024" lon="-1.7916457"/>
+    <wpt lat="53.3908135" lon="-1.7898953"/>
+    <wpt lat="53.3897532" lon="-1.8044608">
+        <name>Fords</name>
+    </wpt>
     <wpt lat="53.3893431" lon="-1.8068010">
         <name>Blackden Edge</name>
         <desc>Follow the clear path West along the edge</desc>
     </wpt>
+    <wpt lat="53.3888701" lon="-1.8123044">
+        <name>Fords</name>
+    </wpt>
     <wpt lat="53.3920233" lon="-1.8272927">
-        <name>Ford</name>
+        <name>Blackden Brook</name>
         <desc>Ford Blackden Brook and bear right heading North towards Seal Stones</desc>
+    </wpt>
+    <wpt lat="53.3962767" lon="-1.8273535">
+        <name>Seal Stones</name>
     </wpt>
     <wpt lat="53.3951029" lon="-1.8409136">
         <name>Seal Edge</name>
         <desc>Gritstone edge</desc>
     </wpt>
-    <wpt lat="53.4048210" lon="-1.8560415">
+    <wpt lat="53.3957140" lon="-1.8485823">
+        <name>Fords</name>
+    </wpt>
+    <wpt lat="53.3994794" lon="-1.8559407"/>
+    <wpt lat="53.3985794" lon="-1.8611634">
+        <name>Fair Brook</name>
+        <desc>Cross the brook and turn hard right to keep to the edge</desc>
+    </wpt>
+    <wpt lat="53.4017138" lon="-1.8597453">
+        <name>Fords</name>
+    </wpt>
+    <wpt lat="53.4048119" lon="-1.8560033">
         <name>Fairbrook Naze</name>
         <desc>Turn left to follow the edge as you reach the tip of Fairbrook Naze</desc>
     </wpt>
-    <wpt lat="53.3985839" lon="-1.8611629">
-        <name>Ford</name>
-    </wpt>
-    <wpt lat="53.4044706" lon="-1.8696280">
+    <wpt lat="53.4044743" lon="-1.8695991">
         <name>The Edge</name>
         <desc>Gritstone edge</desc>
     </wpt>
     <wpt lat="53.4035875" lon="-1.8735701"/>
-    <wpt lat="53.3972428" lon="-1.8771778">
-        <name>Kinder Downfall</name>
-        <desc>Ford the River Kinder and head South along the clear track on the plateau edge</desc>
+    <wpt lat="53.4042149" lon="-1.8820167">
+        <name>Upper Red Brook</name>
+        <desc>SK 0793 8971</desc>
     </wpt>
-    <wpt lat="53.4065279" lon="-1.9013199">
+    <wpt lat="53.4065280" lon="-1.9013199">
         <name>Ashop Head</name>
         <desc>Turn left and head south to keep on the plateau. Don't be tempted to follow the path down to Mill Hill. </desc>
     </wpt>
@@ -381,6 +483,9 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Sandy Heys</name>
         <desc>Follow the path South--easterly along the gritstone outcrop</desc>
     </wpt>
+    <wpt lat="53.3972718" lon="-1.8768802"/>
+    <wpt lat="53.3888994" lon="-1.8806211"/>
+    <wpt lat="53.3839891" lon="-1.8845391"/>
     <wpt lat="53.3802845" lon="-1.8826068">
         <name>Trig Point</name>
         <desc>Kinder Low 633</desc>
@@ -418,7 +523,7 @@ Believed to have been part of a Bronze Age burial mound.</desc>
     <wpt lat="53.3783428" lon="-1.8376514">
         <name>Cain</name>
     </wpt>
-    <wpt lat="53.3780816" lon="-1.8362142">
+    <wpt lat="53.3782503" lon="-1.8362909">
         <name>Gridslow Knoll</name>
         <desc>Turn back on yourself to follow the path along the edge of the knoll</desc>
     </wpt>
@@ -449,12 +554,15 @@ Believed to have been part of a Bronze Age burial mound.</desc>
         <name>Ringing Roger</name>
         <desc>Turn right and go down. The best route really is just out over the edge. Promise</desc>
     </wpt>
-    <wpt lat="53.3817113" lon="-1.8135985">
+    <wpt lat="53.3826568" lon="-1.8113597"/>
+    <wpt lat="53.3816539" lon="-1.8134099">
         <name>Scramble</name>
         <desc>Follow the clear path snaking down the hill towards Edale</desc>
     </wpt>
-    <wpt lat="53.3762496" lon="-1.8136747">
+    <wpt lat="53.3810033" lon="-1.8142257"/>
+    <wpt lat="53.3761292" lon="-1.8137112">
         <name>The Nab</name>
+        <desc>Turn right and switch back downhill</desc>
     </wpt>
     <wpt lat="53.3721083" lon="-1.8175725">
         <name>Steps</name>
@@ -466,7 +574,7 @@ Believed to have been part of a Bronze Age burial mound.</desc>
     </wpt>
     <wpt lat="53.3713691" lon="-1.8176483">
         <name>The Old Nags Head</name>
-        <desc>Go passed the pub down the main street towards the church. Great pub. Starting point of the Pennine Way. </desc>
+        <desc>Carry on the main street towards the church. Great pub. Starting point of the Pennine Way. </desc>
     </wpt>
     <wpt lat="53.3704443" lon="-1.8168135">
         <name>Edale General Store</name>
@@ -479,7 +587,7 @@ http://www.edalegeneralstore.com/</desc>
     </wpt>
     <wpt lat="53.3668279" lon="-1.8166579">
         <name>Edale</name>
-        <desc>Go through the gate marked public footpath in front of the building. Alternatively carry on the road 200m towards the Rambler Inn and station</desc>
+        <desc>Turn right through the gate marked public footpath. Alternatively carry on the road 200m towards the Rambler Inn and station</desc>
     </wpt>
     <wpt lat="53.3636474" lon="-1.8252078">
         <name>Bridge</name>
@@ -522,55 +630,92 @@ http://www.edalegeneralstore.com/</desc>
         <desc>Pass Lord's Seat on your left and carry on east along the edge</desc>
     </wpt>
     <wpt lat="53.3470741" lon="-1.8136307"/>
-    <wpt lat="53.3450080" lon="-1.8125690"/>
+    <wpt lat="53.3452092" lon="-1.8127837">
+        <name>Road</name>
+        <desc>Cross the road and take the right hand path out towards Windy Knoll</desc>
+    </wpt>
+    <wpt lat="53.3438609" lon="-1.8124621">
+        <name>Windy Knoll</name>
+        <desc>Pass Windy Knoll on your left</desc>
+    </wpt>
     <wpt lat="53.3407580" lon="-1.8111000">
         <name>Oxlow House</name>
-        <desc>Turn left on the smaller track off the main road</desc>
+        <desc>Cross the pass and take the right hand track off the main road</desc>
     </wpt>
-    <wpt lat="53.3340893" lon="-1.8049669">
+    <wpt lat="53.3295429" lon="-1.8124940">
+        <name>Slitherstone Mine</name>
+        <desc>Turn left and take the left hand fork to cut back towards Rowter Farm</desc>
+    </wpt>
+    <wpt lat="53.3340526" lon="-1.8048898">
         <name>Rowter Farm</name>
-        <desc>Turn left on off the track onto the path </desc>
+        <desc>Turn right and head Easterly on the clear track</desc>
     </wpt>
     <wpt lat="53.3358326" lon="-1.7873322">
         <name>Cave Dale</name>
         <desc>Bear left as you reach the upper edge of Cave Dale</desc>
     </wpt>
-    <wpt lat="53.3397526" lon="-1.7782060">
+    <wpt lat="53.3372459" lon="-1.7823728"/>
+    <wpt lat="53.3373890" lon="-1.7803142"/>
+    <wpt lat="53.3371519" lon="-1.7791769"/>
+    <wpt lat="53.3382698" lon="-1.7792091"/>
+    <wpt lat="53.3394421" lon="-1.7786351"/>
+    <wpt lat="53.3396576" lon="-1.7780137">
         <name>Peveril Castle Rear</name>
         <desc>Turn left and follow the edge of the woods down hill</desc>
     </wpt>
-    <wpt lat="53.3405550" lon="-1.7807175">
+    <wpt lat="53.3399490" lon="-1.7788559"/>
+    <wpt lat="53.3399956" lon="-1.7798290"/>
+    <wpt lat="53.3406024" lon="-1.7808729">
         <name>Gate</name>
         <desc>Turn right, go through the gate, and onto the clear track</desc>
     </wpt>
-    <wpt lat="53.3409944" lon="-1.7799996">
+    <wpt lat="53.3411550" lon="-1.7799685">
         <name>Road</name>
         <desc>Leave the track and follow the road down hill</desc>
     </wpt>
-    <wpt lat="53.3419573" lon="-1.7795463">
+    <wpt lat="53.3418306" lon="-1.7794534">
         <name>Peak Cavern</name>
     </wpt>
-    <wpt lat="53.3417073" lon="-1.7756160">
-        <name>Peveril Castle Front</name>
-        <desc>Turn left at the green, great view of the castle on the hill</desc>
+    <wpt lat="53.3419429" lon="-1.7787859">
+        <name>Bridge</name>
     </wpt>
-    <wpt lat="53.3422868" lon="-1.7754706">
+    <wpt lat="53.3420811" lon="-1.7777997">
+        <name>The Stones</name>
+        <desc>Head down the stones towards the green.</desc>
+    </wpt>
+    <wpt lat="53.3419413" lon="-1.7762717">
+        <name>Castle Street</name>
+        <desc>Turn left at the green down Castle Street.  There is a great view of the castle on the hill here</desc>
+    </wpt>
+    <wpt lat="53.3423512" lon="-1.7762906">
+        <name>Pub</name>
+        <desc>The George</desc>
+    </wpt>
+    <wpt lat="53.3427003" lon="-1.7762960">
         <name>Pub</name>
         <desc>The Castle</desc>
     </wpt>
-    <wpt lat="53.3432527" lon="-1.7752778">
-        <name>Castleton Road</name>
-        <desc>Turn left on Castleton Road down the Castleton main street</desc>
+    <wpt lat="53.3429083" lon="-1.7762839">
+        <name>St Edmund's Church</name>
     </wpt>
-    <wpt lat="53.3431597" lon="-1.7796340">
+    <wpt lat="53.3431583" lon="-1.7762877">
+        <name>Cross Street</name>
+        <desc>Turn left down Cross Street. Lots of cafes, shops, etc here</desc>
+    </wpt>
+    <wpt lat="53.3431511" lon="-1.7778703">
+        <name>Bridge</name>
+        <desc>Cross the bridge and carry on along Castleton Road</desc>
+    </wpt>
+    <wpt lat="53.3429043" lon="-1.7799273">
         <name>Goosehill</name>
         <desc>Turn right on the easy to miss pathway as you leave Castleton</desc>
     </wpt>
-    <wpt lat="53.3449326" lon="-1.7838887">
+    <wpt lat="53.3449501" lon="-1.7839132">
         <name>Odin Sitch</name>
         <desc>Follow Odin Sitch along its Southern bank</desc>
     </wpt>
-    <wpt lat="53.3463084" lon="-1.7906669">
+    <wpt lat="53.3461962" lon="-1.7877896"/>
+    <wpt lat="53.3463511" lon="-1.7907183">
         <name>Bridge</name>
         <desc>Cross Odin Sitch and continue following it along its Northern bank</desc>
     </wpt>
@@ -588,8 +733,9 @@ http://www.edalegeneralstore.com/</desc>
     </wpt>
     <wpt lat="53.3502972" lon="-1.7998745">
         <name>Little Mam  Tor</name>
-        <desc>Turn left and join the road 200m due West. Alternatively complete the full road loop to the same point.</desc>
+        <desc>Carry on the broken road, or alternatively turn left and join the road again 200m due West. </desc>
     </wpt>
+    <wpt lat="53.3518134" lon="-1.8026314"/>
     <wpt lat="53.3502507" lon="-1.8027385">
         <name>Broken Road</name>
         <desc>Turn left and follow the broken and twisted road up the hill</desc>
@@ -607,8 +753,24 @@ The "Shivering mountain". Follow the clear track down the Great Ridge</desc>
         <name>Lookout</name>
         <desc>Hollins Cross</desc>
     </wpt>
-    <wpt lat="53.3601741" lon="-1.7864288"/>
-    <wpt lat="53.3648203" lon="-1.7716086">
+    <wpt lat="53.3601741" lon="-1.7864288">
+        <name>Backtoor Nook</name>
+    </wpt>
+    <wpt lat="53.3603130" lon="-1.7853178">
+        <name>Fork</name>
+        <desc>Keep on the clear left hand path up towards Back Tor</desc>
+    </wpt>
+    <wpt lat="53.3606556" lon="-1.7840410">
+        <name>Brockett Booth Plantation</name>
+        <desc>Keep left near the entrance to the plantation. </desc>
+    </wpt>
+    <wpt lat="53.3613754" lon="-1.7830515"/>
+    <wpt lat="53.3616571" lon="-1.7831105">
+        <name>Back Tor</name>
+    </wpt>
+    <wpt lat="53.3624835" lon="-1.7789556"/>
+    <wpt lat="53.3647401" lon="-1.7724526"/>
+    <wpt lat="53.3648208" lon="-1.7716183">
         <name>Lookout</name>
         <desc>Lose Hill, bear right at the summit down hill on the clear path</desc>
     </wpt>
@@ -660,12 +822,38 @@ The "Shivering mountain". Follow the clear track down the Great Ridge</desc>
         <name>Forest Track</name>
         <desc>Turn right at the forest junction</desc>
     </wpt>
-    <wpt lat="53.3636154" lon="-1.6961040">
+    <wpt lat="53.3646345" lon="-1.6965026"/>
+    <wpt lat="53.3636806" lon="-1.6959715">
         <name>Wall</name>
-        <desc>At the wall exit the forest and turn left up the hill </desc>
+        <desc>Exit the forest and carry on the faint track South. Alternately turn left on the track by the side of the forest to join the edge </desc>
     </wpt>
-    <wpt lat="53.3645980" lon="-1.6939030"/>
-    <wpt lat="53.3690287" lon="-1.6911700">
+    <wpt lat="53.3617553" lon="-1.6954674"/>
+    <wpt lat="53.3595816" lon="-1.6933378"/>
+    <wpt lat="53.3577094" lon="-1.6911696">
+        <name>Mooredge</name>
+        <desc>Carry on along the faint track parallel to the road </desc>
+    </wpt>
+    <wpt lat="53.3561982" lon="-1.6879403"/>
+    <wpt lat="53.3553240" lon="-1.6869124"/>
+    <wpt lat="53.3544925" lon="-1.6853254"/>
+    <wpt lat="53.3529588" lon="-1.6811465"/>
+    <wpt lat="53.3524817" lon="-1.6805779"/>
+    <wpt lat="53.3521935" lon="-1.6797035">
+        <name>Bamford Clough</name>
+        <desc>Turn left and head up onto Bamford Edge. Various lines here. Any path that cuts backup to join the edge.</desc>
+    </wpt>
+    <wpt lat="53.3524881" lon="-1.6790008"/>
+    <wpt lat="53.3538438" lon="-1.6806646"/>
+    <wpt lat="53.3548811" lon="-1.6814318"/>
+    <wpt lat="53.3562989" lon="-1.6818813">
+        <name>Bamford Edge</name>
+        <desc>Bear left towards the left hand gritstone outcrop</desc>
+    </wpt>
+    <wpt lat="53.3608183" lon="-1.6897873">
+        <name>Great Tor</name>
+        <desc>Amazing view out over Bamford across to Win Hill. Take care on the edge here. </desc>
+    </wpt>
+    <wpt lat="53.3693580" lon="-1.6896768">
         <name>Hut Circle</name>
         <desc>Bear right up the hill</desc>
     </wpt>
@@ -677,35 +865,55 @@ The "Shivering mountain". Follow the clear track down the Great Ridge</desc>
         <name>Pillars</name>
         <desc>Pass the low gritstone pillars and wall and follow the contour round</desc>
     </wpt>
-    <wpt lat="53.3722688" lon="-1.6887779"/>
-    <wpt lat="53.3735810" lon="-1.6882629"/>
-    <wpt lat="53.3743363" lon="-1.6868037"/>
-    <wpt lat="53.3741187" lon="-1.6849262">
+    <wpt lat="53.3744354" lon="-1.6864835"/>
+    <wpt lat="53.3741708" lon="-1.6848983"/>
+    <wpt lat="53.3747980" lon="-1.6835143">
         <name>Quarry</name>
         <desc>Follow the track down towards Jarvis Clough</desc>
     </wpt>
-    <wpt lat="53.3748420" lon="-1.6827161"/>
-    <wpt lat="53.3747423" lon="-1.6803852">
+    <wpt lat="53.3749421" lon="-1.6819318"/>
+    <wpt lat="53.3745836" lon="-1.6801937">
         <name>Jarvis Clough</name>
         <desc>Cross the river and turn left on the clear track</desc>
     </wpt>
-    <wpt lat="53.3748519" lon="-1.6793698"/>
-    <wpt lat="53.3761797" lon="-1.6806561"/>
-    <wpt lat="53.3776058" lon="-1.6808334"/>
-    <wpt lat="53.3817396" lon="-1.6802362"/>
-    <wpt lat="53.3827428" lon="-1.6803372">
+    <wpt lat="53.3747153" lon="-1.6794035">
+        <name>SK 2142 8647</name>
+        <desc>Turn Left</desc>
+    </wpt>
+    <wpt lat="53.3742312" lon="-1.6778782">
+        <name>SK 2152 8642</name>
+        <desc>Turn left along the track</desc>
+    </wpt>
+    <wpt lat="53.3780869" lon="-1.6783981">
+        <name>Stone Circle</name>
+    </wpt>
+    <wpt lat="53.3810000" lon="-1.6777998">
+        <name>Hordron Edge</name>
+    </wpt>
+    <wpt lat="53.3821990" lon="-1.6753523">
+        <name>Boulder</name>
+        <desc>Cut back down towards the road, various possible lines here</desc>
+    </wpt>
+    <wpt lat="53.3823464" lon="-1.6803713">
+        <name>SK 2135 8732</name>
+        <desc>Turn right onto the clear track</desc>
+    </wpt>
+    <wpt lat="53.3826661" lon="-1.6802926">
         <name>Gate</name>
-        <desc>Exit the gate and cross the road</desc>
     </wpt>
-    <wpt lat="53.3828772" lon="-1.6807395">
+    <wpt lat="53.3827423" lon="-1.6805495">
+        <name>Road A57</name>
+        <desc>Carefully cross the A57</desc>
+    </wpt>
+    <wpt lat="53.3827523" lon="-1.6808021">
         <name>Cutthroat Bridge</name>
-        <desc>Take the path down the side of the bridge leading up Highshaw Clough</desc>
+        <desc>Turn right on to the track leading up stream</desc>
     </wpt>
-    <wpt lat="53.3834307" lon="-1.6803157">
+    <wpt lat="53.3842322" lon="-1.6806419">
         <name>Highshaw Clough</name>
-        <desc>Turn left following the path looping up around the hill</desc>
+        <desc>Turn left and keep heading up hill</desc>
     </wpt>
-    <wpt lat="53.3829797" lon="-1.7039417">
+    <wpt lat="53.3829928" lon="-1.7038569">
         <name>Lead Hill</name>
         <desc>Turn right on the first path and head Northeast uphill towards Hurkling Stones</desc>
     </wpt>
@@ -829,6 +1037,12 @@ Millstones laying around</desc>
         <name>Upper Burbage Bridge</name>
         <desc>Take the left most path heading South-easterly out down Burbage Rocks</desc>
     </wpt>
+    <wpt lat="53.3374689" lon="-1.5994900">
+        <name>Burbage Rocks</name>
+    </wpt>
+    <wpt lat="53.3315918" lon="-1.5977311">
+        <name>Fords</name>
+    </wpt>
     <wpt lat="53.3292829" lon="-1.5943495">
         <name>Burbage Rocks</name>
         <desc>Follow the high path along the rocks</desc>
@@ -871,14 +1085,16 @@ Millstones laying around</desc>
         <name>Over Owler Tor</name>
         <desc>Gritstone tor</desc>
     </wpt>
-    <wpt lat="53.3221758" lon="-1.6255846"/>
+    <wpt lat="53.3221758" lon="-1.6255846">
+        <name>Mother Cap</name>
+        <desc>Either follow the path out to Millstone Edge and around, or turn left to cut across Mother Cap to join the A6187</desc>
+    </wpt>
     <wpt lat="53.3221453" lon="-1.6284191">
         <name>Millstone Edge</name>
         <desc>Turn left and follow the edge, you can walk either side of the fence - but take great care near the edge.</desc>
     </wpt>
     <wpt lat="53.3203000" lon="-1.6291300">
         <name>Millstone Edge</name>
-        <desc></desc>
     </wpt>
     <wpt lat="53.3185900" lon="-1.6283300">
         <name>Forest</name>
@@ -943,10 +1159,11 @@ Refreshments, toilets, bins, car park, café </desc>
         <name>Totley Moss</name>
         <desc>Follow the edge along</desc>
     </wpt>
-    <wpt lat="53.3112052" lon="-1.6013842">
+    <wpt lat="53.3113406" lon="-1.6013582">
         <name>Stone bench</name>
         <desc>There is a little stone bench set into one of the boulders on the edge</desc>
     </wpt>
+    <wpt lat="53.3094240" lon="-1.6004194"/>
     <wpt lat="53.3073885" lon="-1.5990711">
         <name>Junction</name>
         <desc>Take care and cross the junction to the wooden gates opposite</desc>
@@ -984,10 +1201,25 @@ Outside tap</desc>
         <name>Curbar Edge</name>
         <desc>Keep following the edge  South-easterly </desc>
     </wpt>
-    <wpt lat="53.2684410" lon="-1.6100060">
+    <wpt lat="53.2763734" lon="-1.6186174"/>
+    <wpt lat="53.2735584" lon="-1.6154706"/>
+    <wpt lat="53.2725704" lon="-1.6147142"/>
+    <wpt lat="53.2712358" lon="-1.6128742"/>
+    <wpt lat="53.2707771" lon="-1.6117799"/>
+    <wpt lat="53.2693559" lon="-1.6110771"/>
+    <wpt lat="53.2692179" lon="-1.6097468">
+        <name>Gate</name>
+    </wpt>
+    <wpt lat="53.2687335" lon="-1.6101866"/>
+    <wpt lat="53.2684832" lon="-1.6100096">
         <name>Clodhall Lane</name>
         <desc>Take the right hand path after crossing the road</desc>
     </wpt>
+    <wpt lat="53.2679006" lon="-1.6106274"/>
+    <wpt lat="53.2674739" lon="-1.6116359"/>
+    <wpt lat="53.2664664" lon="-1.6117432"/>
+    <wpt lat="53.2657171" lon="-1.6111777"/>
+    <wpt lat="53.2644804" lon="-1.6115716"/>
     <wpt lat="53.2634394" lon="-1.6115726">
         <name>Baslow Edge</name>
         <desc>Follow the edge South</desc>
@@ -1024,7 +1256,7 @@ Outside tap</desc>
         <name>Scramble</name>
         <desc>Carry on down Birchen Edge</desc>
     </wpt>
-    <wpt lat="53.2447791" lon="-1.5803692">
+    <wpt lat="53.2448209" lon="-1.5803194">
         <name>Robin Hood Farm</name>
         <desc>Turn right in front of the farm towards the pub as you exit the woods</desc>
     </wpt>
@@ -1041,62 +1273,90 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
         <name>Bridge</name>
         <desc>Cross the bridge and carry on</desc>
     </wpt>
-    <wpt lat="53.2451822" lon="-1.5870838">
+    <wpt lat="53.2450639" lon="-1.5868923">
         <name>Gate</name>
         <desc>Go through and up the bank. This gate can be totally obscured in high summer</desc>
     </wpt>
-    <wpt lat="53.2446553" lon="-1.5896522"/>
-    <wpt lat="53.2436103" lon="-1.5929027"/>
-    <wpt lat="53.2405411" lon="-1.6001083">
+    <wpt lat="53.2451666" lon="-1.5876540"/>
+    <wpt lat="53.2446174" lon="-1.5898485"/>
+    <wpt lat="53.2424398" lon="-1.5960366"/>
+    <wpt lat="53.2419230" lon="-1.5969452"/>
+    <wpt lat="53.2413420" lon="-1.5973475"/>
+    <wpt lat="53.2414368" lon="-1.5989172"/>
+    <wpt lat="53.2404382" lon="-1.6002464">
         <name>Dobb Edge</name>
     </wpt>
-    <wpt lat="53.2386466" lon="-1.6007976"/>
-    <wpt lat="53.2357303" lon="-1.6029623">
+    <wpt lat="53.2393530" lon="-1.6010296"/>
+    <wpt lat="53.2377285" lon="-1.6012174">
+        <name>Crossroad</name>
+    </wpt>
+    <wpt lat="53.2354258" lon="-1.6032636">
         <name>Track</name>
         <desc>Carry on the clear forest track </desc>
     </wpt>
-    <wpt lat="53.2324310" lon="-1.6036319">
+    <wpt lat="53.2335840" lon="-1.6032139"/>
+    <wpt lat="53.2324955" lon="-1.6035894">
         <name>Hunting Tower</name>
         <desc>Make your way around the 1582 tower and down the 400ft of steps to the front.</desc>
     </wpt>
-    <wpt lat="53.2318016" lon="-1.6048979">
+    <wpt lat="53.2321198" lon="-1.6030047"/>
+    <wpt lat="53.2320286" lon="-1.6043410">
+        <name>Tower</name>
+    </wpt>
+    <wpt lat="53.2317859" lon="-1.6048930">
         <name>Steps</name>
         <desc>Go down the steps, take extra care and use the chain in the wet</desc>
     </wpt>
-    <wpt lat="53.2310222" lon="-1.6044013">
+    <wpt lat="53.2310377" lon="-1.6043780">
         <name>Stream</name>
         <desc>Cross the steam and keep heading down hill</desc>
     </wpt>
-    <wpt lat="53.2308616" lon="-1.6050129">
+    <wpt lat="53.2308900" lon="-1.6050271">
         <name>Path</name>
         <desc>Take the main path way down towards the house</desc>
     </wpt>
-    <wpt lat="53.2302804" lon="-1.6053186">
+    <wpt lat="53.2300808" lon="-1.6053972">
         <name>Adventure Playground</name>
         <desc>You have an option here, either take the left or right path and follow the route around to the front of the house</desc>
     </wpt>
-    <wpt lat="53.2309202" lon="-1.6056264"/>
-    <wpt lat="53.2318936" lon="-1.6070415"/>
-    <wpt lat="53.2318647" lon="-1.6100348">
+    <wpt lat="53.2307680" lon="-1.6054991"/>
+    <wpt lat="53.2318405" lon="-1.6069422"/>
+    <wpt lat="53.2319980" lon="-1.6078606"/>
+    <wpt lat="53.2327655" lon="-1.6081932"/>
+    <wpt lat="53.2331187" lon="-1.6097328"/>
+    <wpt lat="53.2322934" lon="-1.6102638"/>
+    <wpt lat="53.2313430" lon="-1.6098025">
         <name>Car Park</name>
         <desc>Cross the car park and head down hill, away from the house, towards the river</desc>
     </wpt>
-    <wpt lat="53.2294404" lon="-1.6121517">
+    <wpt lat="53.2298740" lon="-1.6102843">
+        <name>Stables</name>
+    </wpt>
+    <wpt lat="53.2287243" lon="-1.6120116">
         <name>Golden Gates</name>
         <desc>Pass the side entrance to the house and go towards the bridge
 </desc>
     </wpt>
-    <wpt lat="53.2280335" lon="-1.6161832">
+    <wpt lat="53.2292895" lon="-1.6121511"/>
+    <wpt lat="53.2293473" lon="-1.6137282"/>
+    <wpt lat="53.2288528" lon="-1.6149513"/>
+    <wpt lat="53.2279793" lon="-1.6162388">
         <name>End</name>
         <desc>Turn an take in the splendour of Chatsworth House from the centre of Paine's exquisite Three arch bridge across the Derwent   </desc>
     </wpt>
     <rte/>
     <trk>
         <trkseg>
-            <trkpt lat="53.4228071" lon="-1.6061823"/>
-            <trkpt lat="53.4228882" lon="-1.6047283"/>
-            <trkpt lat="53.4240123" lon="-1.6048871"/>
-            <trkpt lat="53.4254176" lon="-1.6061215"/>
+            <trkpt lat="53.4229098" lon="-1.6058896"/>
+            <trkpt lat="53.4229390" lon="-1.6047451"/>
+            <trkpt lat="53.4240159" lon="-1.6050259"/>
+            <trkpt lat="53.4254383" lon="-1.6062383"/>
+            <trkpt lat="53.4254845" lon="-1.6060385"/>
+            <trkpt lat="53.4254850" lon="-1.6060380"/>
+            <trkpt lat="53.4256350" lon="-1.6058510"/>
+            <trkpt lat="53.4259500" lon="-1.6055600"/>
+            <trkpt lat="53.4265910" lon="-1.6047250"/>
+            <trkpt lat="53.4266230" lon="-1.6046770"/>
             <trkpt lat="53.4266226" lon="-1.6046770"/>
             <trkpt lat="53.4266230" lon="-1.6046770"/>
             <trkpt lat="53.4266950" lon="-1.6045680"/>
@@ -1118,19 +1378,32 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4289133" lon="-1.5988916"/>
             <trkpt lat="53.4288601" lon="-1.5997367"/>
             <trkpt lat="53.4291808" lon="-1.5997604"/>
-            <trkpt lat="53.4291810" lon="-1.5997600"/>
-            <trkpt lat="53.4291530" lon="-1.6008680"/>
-            <trkpt lat="53.4294680" lon="-1.6021200"/>
-            <trkpt lat="53.4294330" lon="-1.6021920"/>
+            <trkpt lat="53.4291685" lon="-1.6008492"/>
             <trkpt lat="53.4294330" lon="-1.6021921"/>
-            <trkpt lat="53.4322571" lon="-1.6009092"/>
+            <trkpt lat="53.4294330" lon="-1.6021920"/>
+            <trkpt lat="53.4294680" lon="-1.6021200"/>
+            <trkpt lat="53.4302460" lon="-1.6020470"/>
+            <trkpt lat="53.4310910" lon="-1.6016990"/>
+            <trkpt lat="53.4321900" lon="-1.6009230"/>
+            <trkpt lat="53.4322160" lon="-1.6009180"/>
+            <trkpt lat="53.4322161" lon="-1.6009179"/>
+            <trkpt lat="53.4322160" lon="-1.6009180"/>
+            <trkpt lat="53.4322620" lon="-1.6009080"/>
+            <trkpt lat="53.4325990" lon="-1.6018280"/>
+            <trkpt lat="53.4326680" lon="-1.6018610"/>
+            <trkpt lat="53.4327460" lon="-1.6021030"/>
+            <trkpt lat="53.4327310" lon="-1.6021610"/>
+            <trkpt lat="53.4326500" lon="-1.6022740"/>
             <trkpt lat="53.4326499" lon="-1.6022742"/>
+            <trkpt lat="53.4331446" lon="-1.6028199"/>
+            <trkpt lat="53.4336410" lon="-1.6029874"/>
+            <trkpt lat="53.4341268" lon="-1.6037169"/>
             <trkpt lat="53.4345289" lon="-1.6040033"/>
             <trkpt lat="53.4350688" lon="-1.6037544"/>
             <trkpt lat="53.4350338" lon="-1.6030753"/>
             <trkpt lat="53.4368170" lon="-1.6063637"/>
             <trkpt lat="53.4376699" lon="-1.6071746"/>
-            <trkpt lat="53.4390141" lon="-1.6103518"/>
+            <trkpt lat="53.4390284" lon="-1.6103411"/>
             <trkpt lat="53.4391607" lon="-1.6113426"/>
             <trkpt lat="53.4391610" lon="-1.6113430"/>
             <trkpt lat="53.4390860" lon="-1.6122790"/>
@@ -1167,9 +1440,15 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4429650" lon="-1.6244800"/>
             <trkpt lat="53.4435490" lon="-1.6263750"/>
             <trkpt lat="53.4454720" lon="-1.6291100"/>
-            <trkpt lat="53.4468320" lon="-1.6307240"/>
-            <trkpt lat="53.4466820" lon="-1.6315320"/>
-            <trkpt lat="53.4467090" lon="-1.6317470"/>
+            <trkpt lat="53.4468390" lon="-1.6307320"/>
+            <trkpt lat="53.4468410" lon="-1.6307090"/>
+            <trkpt lat="53.4468407" lon="-1.6307092"/>
+            <trkpt lat="53.4468410" lon="-1.6307090"/>
+            <trkpt lat="53.4467890" lon="-1.6311370"/>
+            <trkpt lat="53.4467440" lon="-1.6312480"/>
+            <trkpt lat="53.4466660" lon="-1.6315560"/>
+            <trkpt lat="53.4466570" lon="-1.6317460"/>
+            <trkpt lat="53.4466840" lon="-1.6317900"/>
             <trkpt lat="53.4467090" lon="-1.6317473"/>
             <trkpt lat="53.4467090" lon="-1.6317470"/>
             <trkpt lat="53.4467220" lon="-1.6318510"/>
@@ -1223,10 +1502,10 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4484940" lon="-1.6634760"/>
             <trkpt lat="53.4482840" lon="-1.6639290"/>
             <trkpt lat="53.4480500" lon="-1.6645580"/>
-            <trkpt lat="53.4479920" lon="-1.6649040"/>
-            <trkpt lat="53.4479700" lon="-1.6651640"/>
-            <trkpt lat="53.4479630" lon="-1.6674850"/>
-            <trkpt lat="53.4480000" lon="-1.6684190"/>
+            <trkpt lat="53.4479760" lon="-1.6650280"/>
+            <trkpt lat="53.4479620" lon="-1.6656420"/>
+            <trkpt lat="53.4479740" lon="-1.6665300"/>
+            <trkpt lat="53.4479590" lon="-1.6670260"/>
             <trkpt lat="53.4480140" lon="-1.6693340"/>
             <trkpt lat="53.4479760" lon="-1.6697980"/>
             <trkpt lat="53.4480030" lon="-1.6706310"/>
@@ -1238,10 +1517,17 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4481160" lon="-1.6736510"/>
             <trkpt lat="53.4480880" lon="-1.6741290"/>
             <trkpt lat="53.4480890" lon="-1.6741620"/>
-            <trkpt lat="53.4480510" lon="-1.6743770"/>
-            <trkpt lat="53.4479650" lon="-1.6746830"/>
-            <trkpt lat="53.4478720" lon="-1.6749050"/>
-            <trkpt lat="53.4475860" lon="-1.6754430"/>
+            <trkpt lat="53.4481020" lon="-1.6741940"/>
+            <trkpt lat="53.4481220" lon="-1.6748930"/>
+            <trkpt lat="53.4481170" lon="-1.6750960"/>
+            <trkpt lat="53.4480940" lon="-1.6752520"/>
+            <trkpt lat="53.4480940" lon="-1.6752520"/>
+            <trkpt lat="53.4480939" lon="-1.6752524"/>
+            <trkpt lat="53.4480940" lon="-1.6752520"/>
+            <trkpt lat="53.4480340" lon="-1.6754170"/>
+            <trkpt lat="53.4479450" lon="-1.6755510"/>
+            <trkpt lat="53.4477630" lon="-1.6757450"/>
+            <trkpt lat="53.4475200" lon="-1.6759170"/>
             <trkpt lat="53.4471960" lon="-1.6760300"/>
             <trkpt lat="53.4467360" lon="-1.6765480"/>
             <trkpt lat="53.4466780" lon="-1.6766580"/>
@@ -1456,31 +1742,24 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4558130" lon="-1.7185240"/>
             <trkpt lat="53.4562430" lon="-1.7190140"/>
             <trkpt lat="53.4570220" lon="-1.7195000"/>
-            <trkpt lat="53.4570340" lon="-1.7195110"/>
-            <trkpt lat="53.4570340" lon="-1.7195109"/>
-            <trkpt lat="53.4570340" lon="-1.7195110"/>
-            <trkpt lat="53.4570220" lon="-1.7195000"/>
-            <trkpt lat="53.4570130" lon="-1.7193720"/>
-            <trkpt lat="53.4570270" lon="-1.7187240"/>
-            <trkpt lat="53.4570820" lon="-1.7183930"/>
-            <trkpt lat="53.4571850" lon="-1.7179330"/>
+            <trkpt lat="53.4570200" lon="-1.7194630"/>
+            <trkpt lat="53.4570196" lon="-1.7194628"/>
+            <trkpt lat="53.4570200" lon="-1.7194630"/>
+            <trkpt lat="53.4570120" lon="-1.7191320"/>
+            <trkpt lat="53.4570310" lon="-1.7186740"/>
             <trkpt lat="53.4572500" lon="-1.7176390"/>
-            <trkpt lat="53.4572880" lon="-1.7171600"/>
-            <trkpt lat="53.4573090" lon="-1.7171130"/>
-            <trkpt lat="53.4572270" lon="-1.7164620"/>
-            <trkpt lat="53.4572790" lon="-1.7158890"/>
-            <trkpt lat="53.4572220" lon="-1.7157750"/>
-            <trkpt lat="53.4571960" lon="-1.7157750"/>
-            <trkpt lat="53.4571966" lon="-1.7158441"/>
-            <trkpt lat="53.4576509" lon="-1.7167269"/>
-            <trkpt lat="53.4576510" lon="-1.7167270"/>
+            <trkpt lat="53.4572790" lon="-1.7172800"/>
+            <trkpt lat="53.4572787" lon="-1.7172799"/>
+            <trkpt lat="53.4572843" lon="-1.7159025"/>
+            <trkpt lat="53.4576515" lon="-1.7167263"/>
+            <trkpt lat="53.4576520" lon="-1.7167260"/>
             <trkpt lat="53.4581010" lon="-1.7177230"/>
             <trkpt lat="53.4585710" lon="-1.7185930"/>
             <trkpt lat="53.4592190" lon="-1.7195160"/>
             <trkpt lat="53.4605570" lon="-1.7213070"/>
             <trkpt lat="53.4609060" lon="-1.7214990"/>
             <trkpt lat="53.4609160" lon="-1.7215160"/>
-            <trkpt lat="53.4609250" lon="-1.7214860"/>
+            <trkpt lat="53.4609250" lon="-1.7214850"/>
             <trkpt lat="53.4609248" lon="-1.7214855"/>
             <trkpt lat="53.4609250" lon="-1.7214860"/>
             <trkpt lat="53.4609160" lon="-1.7215160"/>
@@ -1530,6 +1809,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4780320" lon="-1.7394500"/>
             <trkpt lat="53.4780600" lon="-1.7395520"/>
             <trkpt lat="53.4778140" lon="-1.7400410"/>
+            <trkpt lat="53.4778140" lon="-1.7400410"/>
             <trkpt lat="53.4778950" lon="-1.7403670"/>
             <trkpt lat="53.4780390" lon="-1.7407260"/>
             <trkpt lat="53.4781870" lon="-1.7407780"/>
@@ -1542,6 +1822,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4797120" lon="-1.7492000"/>
             <trkpt lat="53.4801430" lon="-1.7514200"/>
             <trkpt lat="53.4804740" lon="-1.7530160"/>
+            <trkpt lat="53.4806110" lon="-1.7538240"/>
+            <trkpt lat="53.4806107" lon="-1.7538242"/>
+            <trkpt lat="53.4806110" lon="-1.7538240"/>
             <trkpt lat="53.4809840" lon="-1.7561550"/>
             <trkpt lat="53.4812360" lon="-1.7583610"/>
             <trkpt lat="53.4814220" lon="-1.7596780"/>
@@ -1582,15 +1865,19 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4813840" lon="-1.7882610"/>
             <trkpt lat="53.4813200" lon="-1.7882180"/>
             <trkpt lat="53.4810240" lon="-1.7881520"/>
-            <trkpt lat="53.4807910" lon="-1.7881210"/>
-            <trkpt lat="53.4807907" lon="-1.7881213"/>
-            <trkpt lat="53.4807910" lon="-1.7881210"/>
-            <trkpt lat="53.4802570" lon="-1.7867510"/>
-            <trkpt lat="53.4798650" lon="-1.7855470"/>
-            <trkpt lat="53.4797010" lon="-1.7853950"/>
-            <trkpt lat="53.4797007" lon="-1.7853949"/>
-            <trkpt lat="53.4797010" lon="-1.7853950"/>
-            <trkpt lat="53.4796850" lon="-1.7853800"/>
+            <trkpt lat="53.4807890" lon="-1.7881210"/>
+            <trkpt lat="53.4806880" lon="-1.7880040"/>
+            <trkpt lat="53.4806879" lon="-1.7880041"/>
+            <trkpt lat="53.4806880" lon="-1.7880040"/>
+            <trkpt lat="53.4802900" lon="-1.7875370"/>
+            <trkpt lat="53.4801680" lon="-1.7873060"/>
+            <trkpt lat="53.4799960" lon="-1.7869030"/>
+            <trkpt lat="53.4799660" lon="-1.7866550"/>
+            <trkpt lat="53.4799660" lon="-1.7864870"/>
+            <trkpt lat="53.4796430" lon="-1.7854690"/>
+            <trkpt lat="53.4796435" lon="-1.7854686"/>
+            <trkpt lat="53.4796430" lon="-1.7854690"/>
+            <trkpt lat="53.4796290" lon="-1.7854240"/>
             <trkpt lat="53.4794090" lon="-1.7851630"/>
             <trkpt lat="53.4791260" lon="-1.7849840"/>
             <trkpt lat="53.4789340" lon="-1.7849590"/>
@@ -1602,8 +1889,19 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4773460" lon="-1.7850440"/>
             <trkpt lat="53.4762880" lon="-1.7846950"/>
             <trkpt lat="53.4761670" lon="-1.7845390"/>
-            <trkpt lat="53.4761480" lon="-1.7844960"/>
-            <trkpt lat="53.4761475" lon="-1.7844962"/>
+            <trkpt lat="53.4761040" lon="-1.7844030"/>
+            <trkpt lat="53.4759300" lon="-1.7844350"/>
+            <trkpt lat="53.4759302" lon="-1.7844354"/>
+            <trkpt lat="53.4759300" lon="-1.7844350"/>
+            <trkpt lat="53.4758410" lon="-1.7844580"/>
+            <trkpt lat="53.4757280" lon="-1.7839740"/>
+            <trkpt lat="53.4755830" lon="-1.7826000"/>
+            <trkpt lat="53.4754040" lon="-1.7815450"/>
+            <trkpt lat="53.4750140" lon="-1.7802450"/>
+            <trkpt lat="53.4748160" lon="-1.7798170"/>
+            <trkpt lat="53.4746740" lon="-1.7794340"/>
+            <trkpt lat="53.4746220" lon="-1.7789790"/>
+            <trkpt lat="53.4746190" lon="-1.7788560"/>
             <trkpt lat="53.4746186" lon="-1.7788556"/>
             <trkpt lat="53.4741521" lon="-1.7787023"/>
             <trkpt lat="53.4740029" lon="-1.7793090"/>
@@ -1613,8 +1911,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4736770" lon="-1.7798710"/>
             <trkpt lat="53.4736180" lon="-1.7799500"/>
             <trkpt lat="53.4734660" lon="-1.7800460"/>
-            <trkpt lat="53.4731820" lon="-1.7800200"/>
-            <trkpt lat="53.4731815" lon="-1.7800197"/>
+            <trkpt lat="53.4732190" lon="-1.7800230"/>
+            <trkpt lat="53.4732186" lon="-1.7800231"/>
+            <trkpt lat="53.4732190" lon="-1.7800230"/>
             <trkpt lat="53.4731820" lon="-1.7800200"/>
             <trkpt lat="53.4728320" lon="-1.7797450"/>
             <trkpt lat="53.4727660" lon="-1.7796080"/>
@@ -1644,6 +1943,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4684780" lon="-1.7846070"/>
             <trkpt lat="53.4684240" lon="-1.7847890"/>
             <trkpt lat="53.4684590" lon="-1.7852600"/>
+            <trkpt lat="53.4684650" lon="-1.7856270"/>
+            <trkpt lat="53.4684648" lon="-1.7856266"/>
+            <trkpt lat="53.4684650" lon="-1.7856270"/>
             <trkpt lat="53.4684650" lon="-1.7856480"/>
             <trkpt lat="53.4682970" lon="-1.7857630"/>
             <trkpt lat="53.4681640" lon="-1.7858030"/>
@@ -1892,12 +2194,14 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4495760" lon="-1.8550980"/>
             <trkpt lat="53.4495620" lon="-1.8550580"/>
             <trkpt lat="53.4495621" lon="-1.8550581"/>
-            <trkpt lat="53.4502391" lon="-1.8455096"/>
-            <trkpt lat="53.4503372" lon="-1.8441044"/>
-            <trkpt lat="53.4486572" lon="-1.8403255"/>
-            <trkpt lat="53.4486570" lon="-1.8403250"/>
-            <trkpt lat="53.4485910" lon="-1.8401310"/>
-            <trkpt lat="53.4486170" lon="-1.8399690"/>
+            <trkpt lat="53.4494899" lon="-1.8517091"/>
+            <trkpt lat="53.4497633" lon="-1.8493931"/>
+            <trkpt lat="53.4495685" lon="-1.8488030"/>
+            <trkpt lat="53.4496901" lon="-1.8455296"/>
+            <trkpt lat="53.4499374" lon="-1.8450842"/>
+            <trkpt lat="53.4499175" lon="-1.8439965"/>
+            <trkpt lat="53.4497134" lon="-1.8425668"/>
+            <trkpt lat="53.4489702" lon="-1.8413650"/>
             <trkpt lat="53.4486175" lon="-1.8399694"/>
             <trkpt lat="53.4486170" lon="-1.8399690"/>
             <trkpt lat="53.4486280" lon="-1.8399020"/>
@@ -1933,6 +2237,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4464410" lon="-1.8314790"/>
             <trkpt lat="53.4464210" lon="-1.8313660"/>
             <trkpt lat="53.4462580" lon="-1.8308290"/>
+            <trkpt lat="53.4462570" lon="-1.8308120"/>
+            <trkpt lat="53.4462567" lon="-1.8308117"/>
+            <trkpt lat="53.4462570" lon="-1.8308120"/>
             <trkpt lat="53.4462430" lon="-1.8306780"/>
             <trkpt lat="53.4461970" lon="-1.8306170"/>
             <trkpt lat="53.4461240" lon="-1.8305930"/>
@@ -1959,6 +2266,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4426850" lon="-1.8247060"/>
             <trkpt lat="53.4426770" lon="-1.8245600"/>
             <trkpt lat="53.4426420" lon="-1.8244800"/>
+            <trkpt lat="53.4426250" lon="-1.8243770"/>
+            <trkpt lat="53.4426248" lon="-1.8243768"/>
+            <trkpt lat="53.4426250" lon="-1.8243770"/>
             <trkpt lat="53.4425990" lon="-1.8242270"/>
             <trkpt lat="53.4425340" lon="-1.8240850"/>
             <trkpt lat="53.4424920" lon="-1.8240330"/>
@@ -1975,6 +2285,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4408870" lon="-1.8220370"/>
             <trkpt lat="53.4408120" lon="-1.8219230"/>
             <trkpt lat="53.4406100" lon="-1.8217620"/>
+            <trkpt lat="53.4405810" lon="-1.8216990"/>
             <trkpt lat="53.4405810" lon="-1.8216990"/>
             <trkpt lat="53.4405811" lon="-1.8216990"/>
             <trkpt lat="53.4405810" lon="-1.8216990"/>
@@ -2047,21 +2358,31 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4314010" lon="-1.8007720"/>
             <trkpt lat="53.4311630" lon="-1.8007870"/>
             <trkpt lat="53.4308280" lon="-1.8008690"/>
+            <trkpt lat="53.4308060" lon="-1.8008330"/>
+            <trkpt lat="53.4308059" lon="-1.8008329"/>
+            <trkpt lat="53.4308060" lon="-1.8008330"/>
             <trkpt lat="53.4307430" lon="-1.8007300"/>
             <trkpt lat="53.4307050" lon="-1.8007210"/>
-            <trkpt lat="53.4303270" lon="-1.8008510"/>
-            <trkpt lat="53.4302380" lon="-1.8008040"/>
-            <trkpt lat="53.4301300" lon="-1.8006470"/>
-            <trkpt lat="53.4298710" lon="-1.8000710"/>
-            <trkpt lat="53.4297220" lon="-1.7998210"/>
-            <trkpt lat="53.4295840" lon="-1.7997800"/>
+            <trkpt lat="53.4303270" lon="-1.8008580"/>
+            <trkpt lat="53.4302370" lon="-1.8008060"/>
+            <trkpt lat="53.4301290" lon="-1.8006490"/>
+            <trkpt lat="53.4299710" lon="-1.8003190"/>
+            <trkpt lat="53.4298720" lon="-1.8000700"/>
+            <trkpt lat="53.4297920" lon="-1.7999230"/>
+            <trkpt lat="53.4297770" lon="-1.7998610"/>
+            <trkpt lat="53.4297767" lon="-1.7998609"/>
+            <trkpt lat="53.4297770" lon="-1.7998610"/>
+            <trkpt lat="53.4297590" lon="-1.7997900"/>
+            <trkpt lat="53.4294120" lon="-1.7998590"/>
+            <trkpt lat="53.4292560" lon="-1.7998290"/>
+            <trkpt lat="53.4290830" lon="-1.7997500"/>
             <trkpt lat="53.4287350" lon="-1.7997200"/>
             <trkpt lat="53.4286230" lon="-1.7996670"/>
             <trkpt lat="53.4285320" lon="-1.7995930"/>
             <trkpt lat="53.4282430" lon="-1.7991680"/>
             <trkpt lat="53.4279560" lon="-1.7988510"/>
             <trkpt lat="53.4277980" lon="-1.7986270"/>
-            <trkpt lat="53.4274060" lon="-1.7980190"/>
+            <trkpt lat="53.4272570" lon="-1.7977800"/>
             <trkpt lat="53.4269040" lon="-1.7971820"/>
             <trkpt lat="53.4265960" lon="-1.7968170"/>
             <trkpt lat="53.4264450" lon="-1.7966120"/>
@@ -2121,9 +2442,13 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4286420" lon="-1.7782710"/>
             <trkpt lat="53.4289140" lon="-1.7777710"/>
             <trkpt lat="53.4291770" lon="-1.7770160"/>
+            <trkpt lat="53.4296300" lon="-1.7763940"/>
+            <trkpt lat="53.4296297" lon="-1.7763941"/>
+            <trkpt lat="53.4296300" lon="-1.7763940"/>
             <trkpt lat="53.4312980" lon="-1.7740650"/>
             <trkpt lat="53.4314930" lon="-1.7734900"/>
             <trkpt lat="53.4317190" lon="-1.7722810"/>
+            <trkpt lat="53.4320400" lon="-1.7706950"/>
             <trkpt lat="53.4320402" lon="-1.7706946"/>
             <trkpt lat="53.4320400" lon="-1.7706950"/>
             <trkpt lat="53.4318460" lon="-1.7706140"/>
@@ -2157,16 +2482,19 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4335920" lon="-1.7535210"/>
             <trkpt lat="53.4335460" lon="-1.7532350"/>
             <trkpt lat="53.4334460" lon="-1.7528440"/>
-            <trkpt lat="53.4329940" lon="-1.7515830"/>
             <trkpt lat="53.4325790" lon="-1.7504710"/>
             <trkpt lat="53.4317290" lon="-1.7483090"/>
             <trkpt lat="53.4315210" lon="-1.7476630"/>
+            <trkpt lat="53.4314400" lon="-1.7474980"/>
             <trkpt lat="53.4313860" lon="-1.7474230"/>
             <trkpt lat="53.4311880" lon="-1.7473040"/>
             <trkpt lat="53.4310530" lon="-1.7472590"/>
             <trkpt lat="53.4308370" lon="-1.7472910"/>
             <trkpt lat="53.4306850" lon="-1.7473670"/>
             <trkpt lat="53.4297960" lon="-1.7481090"/>
+            <trkpt lat="53.4292790" lon="-1.7483750"/>
+            <trkpt lat="53.4292790" lon="-1.7483746"/>
+            <trkpt lat="53.4292790" lon="-1.7483750"/>
             <trkpt lat="53.4290240" lon="-1.7485050"/>
             <trkpt lat="53.4287280" lon="-1.7485820"/>
             <trkpt lat="53.4285390" lon="-1.7485990"/>
@@ -2194,14 +2522,14 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4163880" lon="-1.7529170"/>
             <trkpt lat="53.4163050" lon="-1.7530510"/>
             <trkpt lat="53.4161870" lon="-1.7530980"/>
-            <trkpt lat="53.4160600" lon="-1.7530900"/>
+            <trkpt lat="53.4160910" lon="-1.7530920"/>
+            <trkpt lat="53.4160908" lon="-1.7530918"/>
+            <trkpt lat="53.4160910" lon="-1.7530920"/>
             <trkpt lat="53.4159690" lon="-1.7530320"/>
             <trkpt lat="53.4158800" lon="-1.7528900"/>
             <trkpt lat="53.4158450" lon="-1.7527080"/>
             <trkpt lat="53.4158510" lon="-1.7522390"/>
-            <trkpt lat="53.4159300" lon="-1.7507980"/>
-            <trkpt lat="53.4159299" lon="-1.7507981"/>
-            <trkpt lat="53.4159300" lon="-1.7507980"/>
+            <trkpt lat="53.4159650" lon="-1.7501180"/>
             <trkpt lat="53.4159930" lon="-1.7495030"/>
             <trkpt lat="53.4159930" lon="-1.7492190"/>
             <trkpt lat="53.4159340" lon="-1.7485900"/>
@@ -2215,6 +2543,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4140610" lon="-1.7464600"/>
             <trkpt lat="53.4136530" lon="-1.7463390"/>
             <trkpt lat="53.4132470" lon="-1.7462850"/>
+            <trkpt lat="53.4129890" lon="-1.7463550"/>
+            <trkpt lat="53.4129887" lon="-1.7463549"/>
+            <trkpt lat="53.4129890" lon="-1.7463550"/>
             <trkpt lat="53.4125020" lon="-1.7464860"/>
             <trkpt lat="53.4122420" lon="-1.7465320"/>
             <trkpt lat="53.4117890" lon="-1.7465310"/>
@@ -2229,6 +2560,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4051860" lon="-1.7447450"/>
             <trkpt lat="53.4050400" lon="-1.7446130"/>
             <trkpt lat="53.4046860" lon="-1.7444060"/>
+            <trkpt lat="53.4046790" lon="-1.7444030"/>
+            <trkpt lat="53.4046786" lon="-1.7444031"/>
+            <trkpt lat="53.4046790" lon="-1.7444030"/>
             <trkpt lat="53.4029030" lon="-1.7437250"/>
             <trkpt lat="53.4023860" lon="-1.7435840"/>
             <trkpt lat="53.4020480" lon="-1.7435320"/>
@@ -2254,14 +2588,21 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3996270" lon="-1.7428910"/>
             <trkpt lat="53.3993340" lon="-1.7426990"/>
             <trkpt lat="53.3993230" lon="-1.7426910"/>
-            <trkpt lat="53.3993226" lon="-1.7426911"/>
-            <trkpt lat="53.4001381" lon="-1.7460622"/>
-            <trkpt lat="53.4010190" lon="-1.7482189"/>
-            <trkpt lat="53.4016263" lon="-1.7506556"/>
-            <trkpt lat="53.4018138" lon="-1.7494346"/>
+            <trkpt lat="53.3993226" lon="-1.7426910"/>
+            <trkpt lat="53.3996908" lon="-1.7444884"/>
+            <trkpt lat="53.3998611" lon="-1.7454662"/>
+            <trkpt lat="53.4006820" lon="-1.7468725"/>
+            <trkpt lat="53.4004929" lon="-1.7477760"/>
+            <trkpt lat="53.4006863" lon="-1.7489217"/>
+            <trkpt lat="53.4010297" lon="-1.7478852"/>
+            <trkpt lat="53.4010423" lon="-1.7483600"/>
+            <trkpt lat="53.4012834" lon="-1.7497078"/>
+            <trkpt lat="53.4016531" lon="-1.7504950"/>
+            <trkpt lat="53.4015604" lon="-1.7493685"/>
+            <trkpt lat="53.4023182" lon="-1.7502281"/>
             <trkpt lat="53.4033330" lon="-1.7523099"/>
-            <trkpt lat="53.4015974" lon="-1.7536620"/>
-            <trkpt lat="53.4015790" lon="-1.7536000"/>
+            <trkpt lat="53.4015180" lon="-1.7536514"/>
+            <trkpt lat="53.4015180" lon="-1.7536510"/>
             <trkpt lat="53.4013870" lon="-1.7537620"/>
             <trkpt lat="53.4011190" lon="-1.7542190"/>
             <trkpt lat="53.4010370" lon="-1.7542860"/>
@@ -2323,6 +2664,10 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3948360" lon="-1.7578430"/>
             <trkpt lat="53.3945000" lon="-1.7575960"/>
             <trkpt lat="53.3944460" lon="-1.7575960"/>
+            <trkpt lat="53.3944600" lon="-1.7576120"/>
+            <trkpt lat="53.3944595" lon="-1.7576115"/>
+            <trkpt lat="53.3944600" lon="-1.7576120"/>
+            <trkpt lat="53.3944460" lon="-1.7575960"/>
             <trkpt lat="53.3943700" lon="-1.7576280"/>
             <trkpt lat="53.3941740" lon="-1.7576060"/>
             <trkpt lat="53.3939190" lon="-1.7573170"/>
@@ -2341,6 +2686,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3929800" lon="-1.7574000"/>
             <trkpt lat="53.3929050" lon="-1.7574480"/>
             <trkpt lat="53.3926270" lon="-1.7578280"/>
+            <trkpt lat="53.3926290" lon="-1.7578460"/>
+            <trkpt lat="53.3926289" lon="-1.7578459"/>
+            <trkpt lat="53.3926290" lon="-1.7578460"/>
             <trkpt lat="53.3926470" lon="-1.7580550"/>
             <trkpt lat="53.3927610" lon="-1.7586650"/>
             <trkpt lat="53.3927400" lon="-1.7587060"/>
@@ -2353,6 +2701,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3911920" lon="-1.7578810"/>
             <trkpt lat="53.3904980" lon="-1.7577880"/>
             <trkpt lat="53.3904060" lon="-1.7578350"/>
+            <trkpt lat="53.3903270" lon="-1.7579340"/>
+            <trkpt lat="53.3903273" lon="-1.7579339"/>
+            <trkpt lat="53.3903270" lon="-1.7579340"/>
             <trkpt lat="53.3903270" lon="-1.7579350"/>
             <trkpt lat="53.3902910" lon="-1.7580020"/>
             <trkpt lat="53.3904530" lon="-1.7584940"/>
@@ -2384,7 +2735,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3861250" lon="-1.7621250"/>
             <trkpt lat="53.3866790" lon="-1.7626690"/>
             <trkpt lat="53.3876170" lon="-1.7634900"/>
-            <trkpt lat="53.3876171" lon="-1.7634897"/>
+            <trkpt lat="53.3876171" lon="-1.7634896"/>
             <trkpt lat="53.3876170" lon="-1.7634900"/>
             <trkpt lat="53.3876280" lon="-1.7634990"/>
             <trkpt lat="53.3875070" lon="-1.7662060"/>
@@ -2408,6 +2759,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3890200" lon="-1.7767960"/>
             <trkpt lat="53.3890740" lon="-1.7769010"/>
             <trkpt lat="53.3898830" lon="-1.7778390"/>
+            <trkpt lat="53.3900420" lon="-1.7780300"/>
+            <trkpt lat="53.3900418" lon="-1.7780303"/>
+            <trkpt lat="53.3900420" lon="-1.7780300"/>
             <trkpt lat="53.3907540" lon="-1.7788900"/>
             <trkpt lat="53.3907780" lon="-1.7789780"/>
             <trkpt lat="53.3908220" lon="-1.7793140"/>
@@ -2428,29 +2782,33 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3899130" lon="-1.7837650"/>
             <trkpt lat="53.3899420" lon="-1.7839380"/>
             <trkpt lat="53.3899290" lon="-1.7839810"/>
+            <trkpt lat="53.3898160" lon="-1.7840220"/>
+            <trkpt lat="53.3898158" lon="-1.7840223"/>
+            <trkpt lat="53.3898160" lon="-1.7840220"/>
             <trkpt lat="53.3897640" lon="-1.7840410"/>
             <trkpt lat="53.3897210" lon="-1.7840890"/>
             <trkpt lat="53.3897850" lon="-1.7841560"/>
             <trkpt lat="53.3899120" lon="-1.7843600"/>
             <trkpt lat="53.3900510" lon="-1.7845170"/>
             <trkpt lat="53.3901090" lon="-1.7847000"/>
+            <trkpt lat="53.3901440" lon="-1.7847270"/>
+            <trkpt lat="53.3901440" lon="-1.7847270"/>
+            <trkpt lat="53.3901440" lon="-1.7847270"/>
             <trkpt lat="53.3901740" lon="-1.7847470"/>
-            <trkpt lat="53.3906230" lon="-1.7841220"/>
-            <trkpt lat="53.3909600" lon="-1.7837590"/>
-            <trkpt lat="53.3913160" lon="-1.7834790"/>
-            <trkpt lat="53.3914390" lon="-1.7834170"/>
-            <trkpt lat="53.3914660" lon="-1.7834320"/>
-            <trkpt lat="53.3914690" lon="-1.7835370"/>
-            <trkpt lat="53.3914620" lon="-1.7835740"/>
-            <trkpt lat="53.3914618" lon="-1.7835736"/>
-            <trkpt lat="53.3914620" lon="-1.7835740"/>
-            <trkpt lat="53.3914230" lon="-1.7837780"/>
+            <trkpt lat="53.3906140" lon="-1.7841320"/>
+            <trkpt lat="53.3909630" lon="-1.7837360"/>
+            <trkpt lat="53.3914190" lon="-1.7834650"/>
+            <trkpt lat="53.3915300" lon="-1.7832800"/>
+            <trkpt lat="53.3915300" lon="-1.7832800"/>
+            <trkpt lat="53.3915295" lon="-1.7832795"/>
+            <trkpt lat="53.3915300" lon="-1.7832800"/>
+            <trkpt lat="53.3915540" lon="-1.7833560"/>
+            <trkpt lat="53.3914940" lon="-1.7838180"/>
+            <trkpt lat="53.3914070" lon="-1.7841630"/>
+            <trkpt lat="53.3913450" lon="-1.7845000"/>
             <trkpt lat="53.3912620" lon="-1.7851600"/>
             <trkpt lat="53.3911950" lon="-1.7854470"/>
-            <trkpt lat="53.3911160" lon="-1.7860280"/>
-            <trkpt lat="53.3910510" lon="-1.7863470"/>
-            <trkpt lat="53.3910140" lon="-1.7864780"/>
-            <trkpt lat="53.3909720" lon="-1.7865620"/>
+            <trkpt lat="53.3910800" lon="-1.7862360"/>
             <trkpt lat="53.3909090" lon="-1.7867940"/>
             <trkpt lat="53.3907790" lon="-1.7875020"/>
             <trkpt lat="53.3907860" lon="-1.7878060"/>
@@ -2458,33 +2816,25 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3907200" lon="-1.7888810"/>
             <trkpt lat="53.3907000" lon="-1.7890160"/>
             <trkpt lat="53.3908090" lon="-1.7898900"/>
-            <trkpt lat="53.3909040" lon="-1.7900380"/>
-            <trkpt lat="53.3909560" lon="-1.7902280"/>
-            <trkpt lat="53.3912210" lon="-1.7905860"/>
-            <trkpt lat="53.3912770" lon="-1.7907170"/>
-            <trkpt lat="53.3914190" lon="-1.7909340"/>
-            <trkpt lat="53.3916250" lon="-1.7913840"/>
-            <trkpt lat="53.3916970" lon="-1.7914690"/>
-            <trkpt lat="53.3919020" lon="-1.7916460"/>
-            <trkpt lat="53.3919024" lon="-1.7916457"/>
-            <trkpt lat="53.3919020" lon="-1.7916460"/>
-            <trkpt lat="53.3921230" lon="-1.7918350"/>
-            <trkpt lat="53.3921420" lon="-1.7919120"/>
-            <trkpt lat="53.3921440" lon="-1.7920110"/>
-            <trkpt lat="53.3921040" lon="-1.7922610"/>
-            <trkpt lat="53.3920670" lon="-1.7923360"/>
-            <trkpt lat="53.3920220" lon="-1.7922740"/>
-            <trkpt lat="53.3918010" lon="-1.7922150"/>
-            <trkpt lat="53.3917200" lon="-1.7921560"/>
-            <trkpt lat="53.3916830" lon="-1.7921910"/>
-            <trkpt lat="53.3916320" lon="-1.7922770"/>
-            <trkpt lat="53.3915770" lon="-1.7924370"/>
-            <trkpt lat="53.3914970" lon="-1.7925080"/>
-            <trkpt lat="53.3914400" lon="-1.7926540"/>
-            <trkpt lat="53.3912850" lon="-1.7928820"/>
-            <trkpt lat="53.3911930" lon="-1.7931190"/>
-            <trkpt lat="53.3911180" lon="-1.7932590"/>
-            <trkpt lat="53.3908620" lon="-1.7936600"/>
+            <trkpt lat="53.3908130" lon="-1.7898950"/>
+            <trkpt lat="53.3908135" lon="-1.7898953"/>
+            <trkpt lat="53.3908130" lon="-1.7898950"/>
+            <trkpt lat="53.3906680" lon="-1.7902790"/>
+            <trkpt lat="53.3906630" lon="-1.7903590"/>
+            <trkpt lat="53.3906120" lon="-1.7904590"/>
+            <trkpt lat="53.3906120" lon="-1.7906380"/>
+            <trkpt lat="53.3905590" lon="-1.7910160"/>
+            <trkpt lat="53.3904980" lon="-1.7911720"/>
+            <trkpt lat="53.3904840" lon="-1.7912810"/>
+            <trkpt lat="53.3904870" lon="-1.7914700"/>
+            <trkpt lat="53.3904510" lon="-1.7917530"/>
+            <trkpt lat="53.3903970" lon="-1.7919870"/>
+            <trkpt lat="53.3903530" lon="-1.7919860"/>
+            <trkpt lat="53.3904650" lon="-1.7921620"/>
+            <trkpt lat="53.3905570" lon="-1.7925050"/>
+            <trkpt lat="53.3907240" lon="-1.7928160"/>
+            <trkpt lat="53.3908230" lon="-1.7931710"/>
+            <trkpt lat="53.3908470" lon="-1.7933710"/>
             <trkpt lat="53.3908820" lon="-1.7941530"/>
             <trkpt lat="53.3908470" lon="-1.7944010"/>
             <trkpt lat="53.3908480" lon="-1.7945620"/>
@@ -2494,13 +2844,13 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3908670" lon="-1.7962610"/>
             <trkpt lat="53.3908790" lon="-1.7975090"/>
             <trkpt lat="53.3908640" lon="-1.7978470"/>
-            <trkpt lat="53.3907920" lon="-1.7981420"/>
-            <trkpt lat="53.3907740" lon="-1.7982840"/>
-            <trkpt lat="53.3907330" lon="-1.7993060"/>
-            <trkpt lat="53.3906750" lon="-1.7995230"/>
-            <trkpt lat="53.3905900" lon="-1.7997220"/>
-            <trkpt lat="53.3905820" lon="-1.8000510"/>
-            <trkpt lat="53.3905460" lon="-1.8002910"/>
+            <trkpt lat="53.3907890" lon="-1.7983500"/>
+            <trkpt lat="53.3907840" lon="-1.7985440"/>
+            <trkpt lat="53.3908010" lon="-1.7987700"/>
+            <trkpt lat="53.3907640" lon="-1.7990900"/>
+            <trkpt lat="53.3907690" lon="-1.7992140"/>
+            <trkpt lat="53.3906270" lon="-1.7997730"/>
+            <trkpt lat="53.3905470" lon="-1.8002920"/>
             <trkpt lat="53.3903410" lon="-1.8008260"/>
             <trkpt lat="53.3901530" lon="-1.8012550"/>
             <trkpt lat="53.3899930" lon="-1.8015590"/>
@@ -2514,7 +2864,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3899140" lon="-1.8034820"/>
             <trkpt lat="53.3898350" lon="-1.8037770"/>
             <trkpt lat="53.3897890" lon="-1.8042950"/>
-            <trkpt lat="53.3897380" lon="-1.8045300"/>
+            <trkpt lat="53.3897530" lon="-1.8044610"/>
+            <trkpt lat="53.3897532" lon="-1.8044608"/>
+            <trkpt lat="53.3897530" lon="-1.8044610"/>
             <trkpt lat="53.3896850" lon="-1.8050690"/>
             <trkpt lat="53.3896000" lon="-1.8052750"/>
             <trkpt lat="53.3895630" lon="-1.8054320"/>
@@ -2535,7 +2887,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3889160" lon="-1.8108470"/>
             <trkpt lat="53.3889360" lon="-1.8113050"/>
             <trkpt lat="53.3888600" lon="-1.8120730"/>
-            <trkpt lat="53.3888720" lon="-1.8123350"/>
+            <trkpt lat="53.3888700" lon="-1.8123040"/>
+            <trkpt lat="53.3888701" lon="-1.8123044"/>
+            <trkpt lat="53.3888700" lon="-1.8123040"/>
             <trkpt lat="53.3889560" lon="-1.8125890"/>
             <trkpt lat="53.3892460" lon="-1.8130130"/>
             <trkpt lat="53.3893800" lon="-1.8133200"/>
@@ -2598,6 +2952,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3937890" lon="-1.8268370"/>
             <trkpt lat="53.3940310" lon="-1.8268810"/>
             <trkpt lat="53.3942920" lon="-1.8267840"/>
+            <trkpt lat="53.3944670" lon="-1.8266730"/>
             <trkpt lat="53.3949060" lon="-1.8264230"/>
             <trkpt lat="53.3951140" lon="-1.8263250"/>
             <trkpt lat="53.3955270" lon="-1.8262190"/>
@@ -2605,11 +2960,15 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3958140" lon="-1.8263380"/>
             <trkpt lat="53.3960880" lon="-1.8266750"/>
             <trkpt lat="53.3962140" lon="-1.8269750"/>
+            <trkpt lat="53.3962610" lon="-1.8272440"/>
+            <trkpt lat="53.3962770" lon="-1.8273540"/>
+            <trkpt lat="53.3962767" lon="-1.8273535"/>
+            <trkpt lat="53.3962770" lon="-1.8273540"/>
             <trkpt lat="53.3964050" lon="-1.8282440"/>
             <trkpt lat="53.3964120" lon="-1.8284390"/>
             <trkpt lat="53.3965050" lon="-1.8292660"/>
             <trkpt lat="53.3964800" lon="-1.8297850"/>
-            <trkpt lat="53.3964000" lon="-1.8304990"/>
+            <trkpt lat="53.3964270" lon="-1.8303270"/>
             <trkpt lat="53.3963240" lon="-1.8308080"/>
             <trkpt lat="53.3961020" lon="-1.8315160"/>
             <trkpt lat="53.3960220" lon="-1.8318400"/>
@@ -2648,7 +3007,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3955810" lon="-1.8467290"/>
             <trkpt lat="53.3956070" lon="-1.8473520"/>
             <trkpt lat="53.3956600" lon="-1.8478270"/>
-            <trkpt lat="53.3957170" lon="-1.8486240"/>
+            <trkpt lat="53.3957140" lon="-1.8485820"/>
+            <trkpt lat="53.3957140" lon="-1.8485823"/>
+            <trkpt lat="53.3957140" lon="-1.8485820"/>
             <trkpt lat="53.3958450" lon="-1.8494310"/>
             <trkpt lat="53.3959140" lon="-1.8496600"/>
             <trkpt lat="53.3961760" lon="-1.8502530"/>
@@ -2665,190 +3026,156 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3987630" lon="-1.8539070"/>
             <trkpt lat="53.3989720" lon="-1.8543320"/>
             <trkpt lat="53.3992830" lon="-1.8547510"/>
-            <trkpt lat="53.3993860" lon="-1.8553260"/>
-            <trkpt lat="53.3995030" lon="-1.8561070"/>
-            <trkpt lat="53.3995890" lon="-1.8570620"/>
-            <trkpt lat="53.3995950" lon="-1.8576860"/>
+            <trkpt lat="53.3994710" lon="-1.8558610"/>
+            <trkpt lat="53.3994790" lon="-1.8559410"/>
+            <trkpt lat="53.3994794" lon="-1.8559407"/>
+            <trkpt lat="53.3994790" lon="-1.8559410"/>
+            <trkpt lat="53.3995280" lon="-1.8564110"/>
+            <trkpt lat="53.3995830" lon="-1.8566570"/>
+            <trkpt lat="53.3995900" lon="-1.8568750"/>
+            <trkpt lat="53.3996370" lon="-1.8573400"/>
+            <trkpt lat="53.3996370" lon="-1.8574830"/>
+            <trkpt lat="53.3995880" lon="-1.8577490"/>
             <trkpt lat="53.3994930" lon="-1.8585210"/>
             <trkpt lat="53.3993990" lon="-1.8590700"/>
-            <trkpt lat="53.3993150" lon="-1.8594430"/>
-            <trkpt lat="53.3992110" lon="-1.8597550"/>
-            <trkpt lat="53.3989560" lon="-1.8603800"/>
-            <trkpt lat="53.3987310" lon="-1.8607630"/>
-            <trkpt lat="53.3985990" lon="-1.8608970"/>
-            <trkpt lat="53.3985530" lon="-1.8610080"/>
+            <trkpt lat="53.3993230" lon="-1.8594160"/>
+            <trkpt lat="53.3991000" lon="-1.8599370"/>
+            <trkpt lat="53.3989530" lon="-1.8601530"/>
+            <trkpt lat="53.3986880" lon="-1.8608110"/>
+            <trkpt lat="53.3985970" lon="-1.8608930"/>
+            <trkpt lat="53.3985480" lon="-1.8610060"/>
             <trkpt lat="53.3985520" lon="-1.8610960"/>
-            <trkpt lat="53.3985520" lon="-1.8610960"/>
-            <trkpt lat="53.3985840" lon="-1.8611630"/>
-            <trkpt lat="53.3987320" lon="-1.8611080"/>
-            <trkpt lat="53.3988730" lon="-1.8609810"/>
-            <trkpt lat="53.3992890" lon="-1.8605690"/>
-            <trkpt lat="53.3994640" lon="-1.8604620"/>
-            <trkpt lat="53.3996620" lon="-1.8603790"/>
-            <trkpt lat="53.3998010" lon="-1.8603480"/>
-            <trkpt lat="53.4001870" lon="-1.8603400"/>
-            <trkpt lat="53.4003400" lon="-1.8603740"/>
-            <trkpt lat="53.4004890" lon="-1.8604500"/>
-            <trkpt lat="53.4006240" lon="-1.8606140"/>
-            <trkpt lat="53.4006810" lon="-1.8606230"/>
-            <trkpt lat="53.4007880" lon="-1.8605940"/>
-            <trkpt lat="53.4008270" lon="-1.8605610"/>
-            <trkpt lat="53.4008980" lon="-1.8604280"/>
-            <trkpt lat="53.4008190" lon="-1.8602230"/>
-            <trkpt lat="53.4008300" lon="-1.8601410"/>
-            <trkpt lat="53.4010930" lon="-1.8599640"/>
-            <trkpt lat="53.4012590" lon="-1.8599020"/>
-            <trkpt lat="53.4016430" lon="-1.8597870"/>
+            <trkpt lat="53.3985790" lon="-1.8611630"/>
+            <trkpt lat="53.3985794" lon="-1.8611634"/>
+            <trkpt lat="53.3985790" lon="-1.8611630"/>
+            <trkpt lat="53.3987320" lon="-1.8611100"/>
+            <trkpt lat="53.3990280" lon="-1.8608090"/>
+            <trkpt lat="53.3991260" lon="-1.8607190"/>
+            <trkpt lat="53.3991560" lon="-1.8607140"/>
+            <trkpt lat="53.3992450" lon="-1.8607920"/>
+            <trkpt lat="53.3995940" lon="-1.8609750"/>
+            <trkpt lat="53.3997170" lon="-1.8610010"/>
+            <trkpt lat="53.3998500" lon="-1.8610760"/>
+            <trkpt lat="53.4000880" lon="-1.8611180"/>
+            <trkpt lat="53.4002490" lon="-1.8611100"/>
+            <trkpt lat="53.4003670" lon="-1.8610350"/>
+            <trkpt lat="53.4004910" lon="-1.8609000"/>
+            <trkpt lat="53.4006540" lon="-1.8606670"/>
+            <trkpt lat="53.4007570" lon="-1.8605950"/>
+            <trkpt lat="53.4007970" lon="-1.8605980"/>
+            <trkpt lat="53.4008940" lon="-1.8604540"/>
+            <trkpt lat="53.4009030" lon="-1.8604120"/>
+            <trkpt lat="53.4008170" lon="-1.8602260"/>
+            <trkpt lat="53.4008140" lon="-1.8601670"/>
+            <trkpt lat="53.4008270" lon="-1.8601370"/>
+            <trkpt lat="53.4011460" lon="-1.8599400"/>
+            <trkpt lat="53.4016430" lon="-1.8597880"/>
+            <trkpt lat="53.4017140" lon="-1.8597450"/>
+            <trkpt lat="53.4017138" lon="-1.8597453"/>
+            <trkpt lat="53.4017140" lon="-1.8597450"/>
             <trkpt lat="53.4018980" lon="-1.8596340"/>
-            <trkpt lat="53.4020010" lon="-1.8595170"/>
-            <trkpt lat="53.4021380" lon="-1.8594210"/>
-            <trkpt lat="53.4022190" lon="-1.8592970"/>
-            <trkpt lat="53.4022630" lon="-1.8592590"/>
-            <trkpt lat="53.4026050" lon="-1.8591640"/>
-            <trkpt lat="53.4026800" lon="-1.8590960"/>
-            <trkpt lat="53.4027870" lon="-1.8589310"/>
-            <trkpt lat="53.4029280" lon="-1.8584810"/>
-            <trkpt lat="53.4032590" lon="-1.8578850"/>
-            <trkpt lat="53.4037660" lon="-1.8572830"/>
-            <trkpt lat="53.4040260" lon="-1.8570540"/>
-            <trkpt lat="53.4043000" lon="-1.8565580"/>
-            <trkpt lat="53.4047360" lon="-1.8559890"/>
-            <trkpt lat="53.4047790" lon="-1.8559820"/>
-            <trkpt lat="53.4048210" lon="-1.8560420"/>
-            <trkpt lat="53.4048210" lon="-1.8560415"/>
-            <trkpt lat="53.4048210" lon="-1.8560420"/>
-            <trkpt lat="53.4047790" lon="-1.8559820"/>
-            <trkpt lat="53.4047360" lon="-1.8559890"/>
-            <trkpt lat="53.4043000" lon="-1.8565580"/>
-            <trkpt lat="53.4040260" lon="-1.8570540"/>
-            <trkpt lat="53.4037660" lon="-1.8572830"/>
-            <trkpt lat="53.4032590" lon="-1.8578850"/>
-            <trkpt lat="53.4029280" lon="-1.8584810"/>
-            <trkpt lat="53.4027870" lon="-1.8589310"/>
-            <trkpt lat="53.4026800" lon="-1.8590960"/>
-            <trkpt lat="53.4026050" lon="-1.8591640"/>
-            <trkpt lat="53.4022630" lon="-1.8592590"/>
-            <trkpt lat="53.4022190" lon="-1.8592970"/>
-            <trkpt lat="53.4021380" lon="-1.8594210"/>
-            <trkpt lat="53.4020010" lon="-1.8595170"/>
-            <trkpt lat="53.4018980" lon="-1.8596340"/>
-            <trkpt lat="53.4016430" lon="-1.8597870"/>
-            <trkpt lat="53.4012590" lon="-1.8599020"/>
-            <trkpt lat="53.4010930" lon="-1.8599640"/>
-            <trkpt lat="53.4008300" lon="-1.8601410"/>
-            <trkpt lat="53.4008190" lon="-1.8602230"/>
-            <trkpt lat="53.4008980" lon="-1.8604280"/>
-            <trkpt lat="53.4008270" lon="-1.8605610"/>
-            <trkpt lat="53.4007880" lon="-1.8605940"/>
-            <trkpt lat="53.4006810" lon="-1.8606230"/>
-            <trkpt lat="53.4006240" lon="-1.8606140"/>
-            <trkpt lat="53.4004890" lon="-1.8604500"/>
-            <trkpt lat="53.4003400" lon="-1.8603740"/>
-            <trkpt lat="53.4001870" lon="-1.8603400"/>
-            <trkpt lat="53.3998010" lon="-1.8603480"/>
-            <trkpt lat="53.3996620" lon="-1.8603790"/>
-            <trkpt lat="53.3994640" lon="-1.8604620"/>
-            <trkpt lat="53.3992890" lon="-1.8605690"/>
-            <trkpt lat="53.3990290" lon="-1.8608100"/>
-            <trkpt lat="53.3988730" lon="-1.8609810"/>
-            <trkpt lat="53.3987320" lon="-1.8611080"/>
-            <trkpt lat="53.3985840" lon="-1.8611630"/>
-            <trkpt lat="53.3985840" lon="-1.8611630"/>
-            <trkpt lat="53.3985839" lon="-1.8611629"/>
-            <trkpt lat="53.3985840" lon="-1.8611630"/>
-            <trkpt lat="53.3987320" lon="-1.8611080"/>
-            <trkpt lat="53.3988730" lon="-1.8609810"/>
-            <trkpt lat="53.3992890" lon="-1.8605690"/>
-            <trkpt lat="53.3994640" lon="-1.8604620"/>
-            <trkpt lat="53.3996620" lon="-1.8603790"/>
-            <trkpt lat="53.3998010" lon="-1.8603480"/>
-            <trkpt lat="53.4001870" lon="-1.8603400"/>
-            <trkpt lat="53.4003400" lon="-1.8603740"/>
-            <trkpt lat="53.4004890" lon="-1.8604500"/>
-            <trkpt lat="53.4006240" lon="-1.8606140"/>
-            <trkpt lat="53.4006810" lon="-1.8606230"/>
-            <trkpt lat="53.4007880" lon="-1.8605940"/>
-            <trkpt lat="53.4008270" lon="-1.8605610"/>
-            <trkpt lat="53.4008980" lon="-1.8604280"/>
-            <trkpt lat="53.4008190" lon="-1.8602230"/>
-            <trkpt lat="53.4008300" lon="-1.8601410"/>
-            <trkpt lat="53.4010930" lon="-1.8599640"/>
-            <trkpt lat="53.4012590" lon="-1.8599020"/>
-            <trkpt lat="53.4016430" lon="-1.8597870"/>
-            <trkpt lat="53.4018980" lon="-1.8596340"/>
-            <trkpt lat="53.4020010" lon="-1.8595170"/>
-            <trkpt lat="53.4021380" lon="-1.8594210"/>
-            <trkpt lat="53.4022190" lon="-1.8592970"/>
-            <trkpt lat="53.4022630" lon="-1.8592590"/>
-            <trkpt lat="53.4026050" lon="-1.8591640"/>
-            <trkpt lat="53.4026800" lon="-1.8590960"/>
-            <trkpt lat="53.4027870" lon="-1.8589310"/>
-            <trkpt lat="53.4029280" lon="-1.8584810"/>
-            <trkpt lat="53.4032590" lon="-1.8578850"/>
-            <trkpt lat="53.4037660" lon="-1.8572830"/>
-            <trkpt lat="53.4040260" lon="-1.8570540"/>
-            <trkpt lat="53.4043000" lon="-1.8565580"/>
-            <trkpt lat="53.4047360" lon="-1.8559890"/>
-            <trkpt lat="53.4047790" lon="-1.8559820"/>
-            <trkpt lat="53.4048550" lon="-1.8560900"/>
-            <trkpt lat="53.4048730" lon="-1.8561880"/>
-            <trkpt lat="53.4049100" lon="-1.8568190"/>
-            <trkpt lat="53.4049200" lon="-1.8573970"/>
+            <trkpt lat="53.4021610" lon="-1.8593590"/>
+            <trkpt lat="53.4026330" lon="-1.8592400"/>
+            <trkpt lat="53.4027340" lon="-1.8590330"/>
+            <trkpt lat="53.4027830" lon="-1.8588860"/>
+            <trkpt lat="53.4028180" lon="-1.8587020"/>
+            <trkpt lat="53.4029860" lon="-1.8583470"/>
+            <trkpt lat="53.4030530" lon="-1.8580780"/>
+            <trkpt lat="53.4031020" lon="-1.8579950"/>
+            <trkpt lat="53.4037260" lon="-1.8572730"/>
+            <trkpt lat="53.4041800" lon="-1.8568380"/>
+            <trkpt lat="53.4042210" lon="-1.8566830"/>
+            <trkpt lat="53.4043990" lon="-1.8563720"/>
+            <trkpt lat="53.4045080" lon="-1.8562760"/>
+            <trkpt lat="53.4047350" lon="-1.8559840"/>
+            <trkpt lat="53.4047800" lon="-1.8559770"/>
+            <trkpt lat="53.4048120" lon="-1.8560030"/>
+            <trkpt lat="53.4048119" lon="-1.8560033"/>
+            <trkpt lat="53.4048120" lon="-1.8560030"/>
+            <trkpt lat="53.4048560" lon="-1.8560890"/>
+            <trkpt lat="53.4048740" lon="-1.8561870"/>
+            <trkpt lat="53.4049110" lon="-1.8568180"/>
+            <trkpt lat="53.4049210" lon="-1.8573980"/>
             <trkpt lat="53.4048290" lon="-1.8584710"/>
-            <trkpt lat="53.4048420" lon="-1.8588910"/>
-            <trkpt lat="53.4048240" lon="-1.8590900"/>
-            <trkpt lat="53.4047900" lon="-1.8616690"/>
-            <trkpt lat="53.4047700" lon="-1.8618480"/>
-            <trkpt lat="53.4047990" lon="-1.8619870"/>
-            <trkpt lat="53.4048470" lon="-1.8625960"/>
-            <trkpt lat="53.4049190" lon="-1.8629840"/>
-            <trkpt lat="53.4049640" lon="-1.8630860"/>
-            <trkpt lat="53.4049990" lon="-1.8633830"/>
-            <trkpt lat="53.4049970" lon="-1.8637530"/>
-            <trkpt lat="53.4049560" lon="-1.8639330"/>
-            <trkpt lat="53.4049540" lon="-1.8641430"/>
-            <trkpt lat="53.4049280" lon="-1.8643090"/>
-            <trkpt lat="53.4047600" lon="-1.8650390"/>
-            <trkpt lat="53.4047020" lon="-1.8656110"/>
-            <trkpt lat="53.4046830" lon="-1.8664460"/>
-            <trkpt lat="53.4046570" lon="-1.8667770"/>
-            <trkpt lat="53.4045610" lon="-1.8674370"/>
+            <trkpt lat="53.4048440" lon="-1.8588630"/>
+            <trkpt lat="53.4048230" lon="-1.8590750"/>
+            <trkpt lat="53.4047900" lon="-1.8616940"/>
+            <trkpt lat="53.4047690" lon="-1.8618490"/>
+            <trkpt lat="53.4048010" lon="-1.8619860"/>
+            <trkpt lat="53.4048010" lon="-1.8621310"/>
+            <trkpt lat="53.4048350" lon="-1.8623580"/>
+            <trkpt lat="53.4048540" lon="-1.8626420"/>
+            <trkpt lat="53.4049200" lon="-1.8629990"/>
+            <trkpt lat="53.4049630" lon="-1.8630570"/>
+            <trkpt lat="53.4049740" lon="-1.8632040"/>
+            <trkpt lat="53.4049180" lon="-1.8633540"/>
+            <trkpt lat="53.4048850" lon="-1.8636850"/>
+            <trkpt lat="53.4048830" lon="-1.8638860"/>
+            <trkpt lat="53.4048390" lon="-1.8640950"/>
+            <trkpt lat="53.4048310" lon="-1.8642050"/>
+            <trkpt lat="53.4048120" lon="-1.8642870"/>
+            <trkpt lat="53.4047470" lon="-1.8644010"/>
+            <trkpt lat="53.4047310" lon="-1.8644640"/>
+            <trkpt lat="53.4047360" lon="-1.8647560"/>
+            <trkpt lat="53.4045810" lon="-1.8651790"/>
+            <trkpt lat="53.4045680" lon="-1.8652820"/>
+            <trkpt lat="53.4045800" lon="-1.8654040"/>
+            <trkpt lat="53.4046470" lon="-1.8656760"/>
+            <trkpt lat="53.4046510" lon="-1.8659810"/>
+            <trkpt lat="53.4047120" lon="-1.8663350"/>
+            <trkpt lat="53.4046910" lon="-1.8664730"/>
+            <trkpt lat="53.4046080" lon="-1.8665780"/>
+            <trkpt lat="53.4045840" lon="-1.8667380"/>
+            <trkpt lat="53.4045670" lon="-1.8669800"/>
+            <trkpt lat="53.4045800" lon="-1.8671590"/>
+            <trkpt lat="53.4046220" lon="-1.8673810"/>
+            <trkpt lat="53.4045650" lon="-1.8678270"/>
             <trkpt lat="53.4044870" lon="-1.8681110"/>
-            <trkpt lat="53.4044980" lon="-1.8686640"/>
-            <trkpt lat="53.4044840" lon="-1.8691960"/>
-            <trkpt lat="53.4044510" lon="-1.8694030"/>
-            <trkpt lat="53.4044710" lon="-1.8696280"/>
-            <trkpt lat="53.4044710" lon="-1.8696280"/>
-            <trkpt lat="53.4044706" lon="-1.8696280"/>
-            <trkpt lat="53.4044710" lon="-1.8696280"/>
-            <trkpt lat="53.4044640" lon="-1.8701620"/>
-            <trkpt lat="53.4044860" lon="-1.8708010"/>
-            <trkpt lat="53.4044330" lon="-1.8721020"/>
-            <trkpt lat="53.4044170" lon="-1.8722380"/>
-            <trkpt lat="53.4043910" lon="-1.8723150"/>
-            <trkpt lat="53.4043400" lon="-1.8723480"/>
-            <trkpt lat="53.4042680" lon="-1.8723420"/>
-            <trkpt lat="53.4038580" lon="-1.8721100"/>
-            <trkpt lat="53.4038580" lon="-1.8722150"/>
-            <trkpt lat="53.4037920" lon="-1.8726280"/>
-            <trkpt lat="53.4037940" lon="-1.8727540"/>
-            <trkpt lat="53.4037500" lon="-1.8728260"/>
-            <trkpt lat="53.4036830" lon="-1.8730470"/>
-            <trkpt lat="53.4036760" lon="-1.8732450"/>
-            <trkpt lat="53.4036150" lon="-1.8733380"/>
-            <trkpt lat="53.4035950" lon="-1.8734040"/>
-            <trkpt lat="53.4035870" lon="-1.8735700"/>
+            <trkpt lat="53.4044980" lon="-1.8686630"/>
+            <trkpt lat="53.4044820" lon="-1.8688920"/>
+            <trkpt lat="53.4044870" lon="-1.8691810"/>
+            <trkpt lat="53.4044500" lon="-1.8693810"/>
+            <trkpt lat="53.4044630" lon="-1.8695390"/>
+            <trkpt lat="53.4044740" lon="-1.8695990"/>
+            <trkpt lat="53.4044743" lon="-1.8695991"/>
+            <trkpt lat="53.4044740" lon="-1.8695990"/>
+            <trkpt lat="53.4045030" lon="-1.8697500"/>
+            <trkpt lat="53.4045130" lon="-1.8701460"/>
+            <trkpt lat="53.4045390" lon="-1.8702150"/>
+            <trkpt lat="53.4045290" lon="-1.8705210"/>
+            <trkpt lat="53.4045530" lon="-1.8707690"/>
+            <trkpt lat="53.4045510" lon="-1.8708220"/>
+            <trkpt lat="53.4044830" lon="-1.8708750"/>
+            <trkpt lat="53.4044390" lon="-1.8710030"/>
+            <trkpt lat="53.4044300" lon="-1.8710940"/>
+            <trkpt lat="53.4044670" lon="-1.8712420"/>
+            <trkpt lat="53.4044860" lon="-1.8715070"/>
+            <trkpt lat="53.4044630" lon="-1.8719270"/>
+            <trkpt lat="53.4044780" lon="-1.8720800"/>
+            <trkpt lat="53.4044610" lon="-1.8722330"/>
+            <trkpt lat="53.4044200" lon="-1.8723220"/>
+            <trkpt lat="53.4043630" lon="-1.8723720"/>
+            <trkpt lat="53.4042990" lon="-1.8723750"/>
+            <trkpt lat="53.4038540" lon="-1.8721020"/>
+            <trkpt lat="53.4038580" lon="-1.8722120"/>
+            <trkpt lat="53.4037880" lon="-1.8726460"/>
+            <trkpt lat="53.4037960" lon="-1.8727550"/>
+            <trkpt lat="53.4037470" lon="-1.8728220"/>
+            <trkpt lat="53.4036770" lon="-1.8730660"/>
+            <trkpt lat="53.4036790" lon="-1.8732490"/>
+            <trkpt lat="53.4035990" lon="-1.8733720"/>
+            <trkpt lat="53.4035940" lon="-1.8735710"/>
             <trkpt lat="53.4035875" lon="-1.8735701"/>
-            <trkpt lat="53.4035870" lon="-1.8735700"/>
-            <trkpt lat="53.4035800" lon="-1.8737420"/>
-            <trkpt lat="53.4035980" lon="-1.8738080"/>
-            <trkpt lat="53.4036010" lon="-1.8740390"/>
-            <trkpt lat="53.4037000" lon="-1.8740240"/>
-            <trkpt lat="53.4037270" lon="-1.8740470"/>
-            <trkpt lat="53.4038080" lon="-1.8743580"/>
-            <trkpt lat="53.4038480" lon="-1.8746320"/>
-            <trkpt lat="53.4038450" lon="-1.8749460"/>
-            <trkpt lat="53.4038820" lon="-1.8752390"/>
+            <trkpt lat="53.4035940" lon="-1.8735710"/>
+            <trkpt lat="53.4035770" lon="-1.8737230"/>
+            <trkpt lat="53.4036010" lon="-1.8738070"/>
+            <trkpt lat="53.4035970" lon="-1.8740310"/>
+            <trkpt lat="53.4037010" lon="-1.8740190"/>
+            <trkpt lat="53.4037280" lon="-1.8740440"/>
+            <trkpt lat="53.4038050" lon="-1.8743320"/>
+            <trkpt lat="53.4038490" lon="-1.8746320"/>
+            <trkpt lat="53.4038430" lon="-1.8749340"/>
+            <trkpt lat="53.4038790" lon="-1.8752250"/>
             <trkpt lat="53.4040060" lon="-1.8758940"/>
             <trkpt lat="53.4040380" lon="-1.8763070"/>
             <trkpt lat="53.4040710" lon="-1.8772470"/>
@@ -2858,30 +3185,38 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4043170" lon="-1.8807360"/>
             <trkpt lat="53.4042020" lon="-1.8814970"/>
             <trkpt lat="53.4041890" lon="-1.8817440"/>
+            <trkpt lat="53.4042150" lon="-1.8820170"/>
+            <trkpt lat="53.4042149" lon="-1.8820167"/>
+            <trkpt lat="53.4042150" lon="-1.8820170"/>
             <trkpt lat="53.4042410" lon="-1.8822900"/>
             <trkpt lat="53.4042580" lon="-1.8823420"/>
             <trkpt lat="53.4043310" lon="-1.8824310"/>
             <trkpt lat="53.4043530" lon="-1.8824970"/>
             <trkpt lat="53.4045700" lon="-1.8836910"/>
             <trkpt lat="53.4045560" lon="-1.8838920"/>
-            <trkpt lat="53.4044760" lon="-1.8841280"/>
+            <trkpt lat="53.4044730" lon="-1.8841270"/>
+            <trkpt lat="53.4045180" lon="-1.8847220"/>
             <trkpt lat="53.4045180" lon="-1.8848370"/>
-            <trkpt lat="53.4044780" lon="-1.8856710"/>
-            <trkpt lat="53.4044890" lon="-1.8857340"/>
-            <trkpt lat="53.4045460" lon="-1.8858370"/>
-            <trkpt lat="53.4046090" lon="-1.8860550"/>
-            <trkpt lat="53.4046200" lon="-1.8862730"/>
-            <trkpt lat="53.4046840" lon="-1.8865560"/>
-            <trkpt lat="53.4046730" lon="-1.8866720"/>
-            <trkpt lat="53.4046810" lon="-1.8867550"/>
-            <trkpt lat="53.4048030" lon="-1.8873530"/>
-            <trkpt lat="53.4048140" lon="-1.8875530"/>
-            <trkpt lat="53.4048030" lon="-1.8877060"/>
-            <trkpt lat="53.4048090" lon="-1.8880560"/>
-            <trkpt lat="53.4047930" lon="-1.8882390"/>
+            <trkpt lat="53.4044840" lon="-1.8849470"/>
+            <trkpt lat="53.4045220" lon="-1.8851390"/>
+            <trkpt lat="53.4045340" lon="-1.8853160"/>
+            <trkpt lat="53.4044890" lon="-1.8855290"/>
+            <trkpt lat="53.4044760" lon="-1.8856720"/>
+            <trkpt lat="53.4044870" lon="-1.8857360"/>
+            <trkpt lat="53.4045480" lon="-1.8858370"/>
+            <trkpt lat="53.4046100" lon="-1.8860550"/>
+            <trkpt lat="53.4046140" lon="-1.8862500"/>
+            <trkpt lat="53.4046850" lon="-1.8865400"/>
+            <trkpt lat="53.4046710" lon="-1.8866710"/>
+            <trkpt lat="53.4046780" lon="-1.8867330"/>
+            <trkpt lat="53.4047380" lon="-1.8870740"/>
+            <trkpt lat="53.4047910" lon="-1.8872720"/>
+            <trkpt lat="53.4048100" lon="-1.8874190"/>
+            <trkpt lat="53.4048000" lon="-1.8881860"/>
             <trkpt lat="53.4047490" lon="-1.8885210"/>
             <trkpt lat="53.4047110" lon="-1.8889150"/>
             <trkpt lat="53.4046160" lon="-1.8892930"/>
+            <trkpt lat="53.4046010" lon="-1.8894210"/>
             <trkpt lat="53.4046030" lon="-1.8895070"/>
             <trkpt lat="53.4046550" lon="-1.8897300"/>
             <trkpt lat="53.4046930" lon="-1.8904290"/>
@@ -2902,164 +3237,15 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4049220" lon="-1.8949400"/>
             <trkpt lat="53.4049270" lon="-1.8950760"/>
             <trkpt lat="53.4051350" lon="-1.8962400"/>
-            <trkpt lat="53.4052140" lon="-1.8970720"/>
             <trkpt lat="53.4052470" lon="-1.8973240"/>
-            <trkpt lat="53.4052720" lon="-1.8974140"/>
-            <trkpt lat="53.4054270" lon="-1.8978510"/>
             <trkpt lat="53.4056050" lon="-1.8983690"/>
             <trkpt lat="53.4058580" lon="-1.8992410"/>
-            <trkpt lat="53.4063820" lon="-1.9009260"/>
-            <trkpt lat="53.4065010" lon="-1.9010810"/>
-            <trkpt lat="53.4065290" lon="-1.9012030"/>
-            <trkpt lat="53.4065280" lon="-1.9013750"/>
-            <trkpt lat="53.4063240" lon="-1.9010830"/>
-            <trkpt lat="53.4057400" lon="-1.9006820"/>
-            <trkpt lat="53.4054390" lon="-1.9006460"/>
-            <trkpt lat="53.4051560" lon="-1.9005390"/>
-            <trkpt lat="53.4045260" lon="-1.9004420"/>
-            <trkpt lat="53.4044020" lon="-1.9003800"/>
-            <trkpt lat="53.4040390" lon="-1.8999430"/>
-            <trkpt lat="53.4038470" lon="-1.8996780"/>
-            <trkpt lat="53.4037150" lon="-1.8995670"/>
-            <trkpt lat="53.4036410" lon="-1.8994560"/>
-            <trkpt lat="53.4034680" lon="-1.8989520"/>
-            <trkpt lat="53.4033050" lon="-1.8982610"/>
-            <trkpt lat="53.4031320" lon="-1.8973220"/>
-            <trkpt lat="53.4030950" lon="-1.8972260"/>
-            <trkpt lat="53.4029220" lon="-1.8969300"/>
-            <trkpt lat="53.4023670" lon="-1.8957000"/>
-            <trkpt lat="53.4022630" lon="-1.8955280"/>
-            <trkpt lat="53.4021140" lon="-1.8954010"/>
-            <trkpt lat="53.4019940" lon="-1.8953480"/>
-            <trkpt lat="53.4013240" lon="-1.8951210"/>
-            <trkpt lat="53.4009110" lon="-1.8952650"/>
-            <trkpt lat="53.4005600" lon="-1.8952740"/>
-            <trkpt lat="53.4005020" lon="-1.8952600"/>
-            <trkpt lat="53.4005280" lon="-1.8951020"/>
-            <trkpt lat="53.4005940" lon="-1.8943580"/>
-            <trkpt lat="53.4005900" lon="-1.8939820"/>
-            <trkpt lat="53.4005530" lon="-1.8936660"/>
-            <trkpt lat="53.4004850" lon="-1.8933440"/>
-            <trkpt lat="53.4004220" lon="-1.8931710"/>
-            <trkpt lat="53.4002300" lon="-1.8928160"/>
-            <trkpt lat="53.4001360" lon="-1.8926060"/>
-            <trkpt lat="53.4000110" lon="-1.8922150"/>
-            <trkpt lat="53.3998860" lon="-1.8912320"/>
-            <trkpt lat="53.3998050" lon="-1.8908630"/>
-            <trkpt lat="53.3995040" lon="-1.8897930"/>
-            <trkpt lat="53.3995520" lon="-1.8892920"/>
-            <trkpt lat="53.3996450" lon="-1.8886000"/>
-            <trkpt lat="53.3996540" lon="-1.8882990"/>
-            <trkpt lat="53.3996400" lon="-1.8880060"/>
-            <trkpt lat="53.3995770" lon="-1.8875630"/>
-            <trkpt lat="53.3994780" lon="-1.8871180"/>
-            <trkpt lat="53.3993290" lon="-1.8865710"/>
-            <trkpt lat="53.3991900" lon="-1.8861350"/>
-            <trkpt lat="53.3988890" lon="-1.8853670"/>
-            <trkpt lat="53.3987440" lon="-1.8849030"/>
-            <trkpt lat="53.3985880" lon="-1.8845540"/>
-            <trkpt lat="53.3985360" lon="-1.8843100"/>
-            <trkpt lat="53.3984770" lon="-1.8841600"/>
-            <trkpt lat="53.3984050" lon="-1.8839060"/>
-            <trkpt lat="53.3984190" lon="-1.8837260"/>
-            <trkpt lat="53.3983760" lon="-1.8835420"/>
-            <trkpt lat="53.3983170" lon="-1.8834240"/>
-            <trkpt lat="53.3982430" lon="-1.8831860"/>
-            <trkpt lat="53.3980440" lon="-1.8827220"/>
-            <trkpt lat="53.3980270" lon="-1.8826350"/>
-            <trkpt lat="53.3978650" lon="-1.8821900"/>
-            <trkpt lat="53.3977840" lon="-1.8818820"/>
-            <trkpt lat="53.3977300" lon="-1.8816040"/>
-            <trkpt lat="53.3977130" lon="-1.8814390"/>
-            <trkpt lat="53.3977320" lon="-1.8809270"/>
-            <trkpt lat="53.3977130" lon="-1.8807410"/>
-            <trkpt lat="53.3976640" lon="-1.8806150"/>
-            <trkpt lat="53.3975010" lon="-1.8804410"/>
-            <trkpt lat="53.3973880" lon="-1.8802140"/>
-            <trkpt lat="53.3973340" lon="-1.8800030"/>
-            <trkpt lat="53.3973150" lon="-1.8798680"/>
-            <trkpt lat="53.3973070" lon="-1.8796660"/>
-            <trkpt lat="53.3973750" lon="-1.8791530"/>
-            <trkpt lat="53.3973740" lon="-1.8788610"/>
-            <trkpt lat="53.3971930" lon="-1.8778370"/>
-            <trkpt lat="53.3971880" lon="-1.8774390"/>
-            <trkpt lat="53.3972410" lon="-1.8772010"/>
-            <trkpt lat="53.3972430" lon="-1.8771780"/>
-            <trkpt lat="53.3972428" lon="-1.8771778"/>
-            <trkpt lat="53.3972430" lon="-1.8771780"/>
-            <trkpt lat="53.3971880" lon="-1.8774390"/>
-            <trkpt lat="53.3971930" lon="-1.8778370"/>
-            <trkpt lat="53.3973740" lon="-1.8788610"/>
-            <trkpt lat="53.3973750" lon="-1.8791530"/>
-            <trkpt lat="53.3973070" lon="-1.8796660"/>
-            <trkpt lat="53.3973150" lon="-1.8798680"/>
-            <trkpt lat="53.3973340" lon="-1.8800030"/>
-            <trkpt lat="53.3973880" lon="-1.8802140"/>
-            <trkpt lat="53.3974370" lon="-1.8803330"/>
-            <trkpt lat="53.3975010" lon="-1.8804410"/>
-            <trkpt lat="53.3976640" lon="-1.8806150"/>
-            <trkpt lat="53.3977130" lon="-1.8807410"/>
-            <trkpt lat="53.3977320" lon="-1.8809270"/>
-            <trkpt lat="53.3977130" lon="-1.8814390"/>
-            <trkpt lat="53.3977840" lon="-1.8818820"/>
-            <trkpt lat="53.3978650" lon="-1.8821900"/>
-            <trkpt lat="53.3980270" lon="-1.8826350"/>
-            <trkpt lat="53.3980440" lon="-1.8827220"/>
-            <trkpt lat="53.3982430" lon="-1.8831860"/>
-            <trkpt lat="53.3983170" lon="-1.8834240"/>
-            <trkpt lat="53.3983760" lon="-1.8835420"/>
-            <trkpt lat="53.3984190" lon="-1.8837260"/>
-            <trkpt lat="53.3984050" lon="-1.8839060"/>
-            <trkpt lat="53.3984770" lon="-1.8841600"/>
-            <trkpt lat="53.3985360" lon="-1.8843100"/>
-            <trkpt lat="53.3985880" lon="-1.8845540"/>
-            <trkpt lat="53.3987440" lon="-1.8849030"/>
-            <trkpt lat="53.3988890" lon="-1.8853670"/>
-            <trkpt lat="53.3991900" lon="-1.8861350"/>
-            <trkpt lat="53.3993290" lon="-1.8865710"/>
-            <trkpt lat="53.3994780" lon="-1.8871180"/>
-            <trkpt lat="53.3995770" lon="-1.8875630"/>
-            <trkpt lat="53.3996400" lon="-1.8880060"/>
-            <trkpt lat="53.3996540" lon="-1.8882990"/>
-            <trkpt lat="53.3996450" lon="-1.8886000"/>
-            <trkpt lat="53.3995520" lon="-1.8892920"/>
-            <trkpt lat="53.3995040" lon="-1.8897930"/>
-            <trkpt lat="53.3998050" lon="-1.8908630"/>
-            <trkpt lat="53.3998860" lon="-1.8912320"/>
-            <trkpt lat="53.4000110" lon="-1.8922150"/>
-            <trkpt lat="53.4001360" lon="-1.8926060"/>
-            <trkpt lat="53.4002300" lon="-1.8928160"/>
-            <trkpt lat="53.4004220" lon="-1.8931710"/>
-            <trkpt lat="53.4004850" lon="-1.8933440"/>
-            <trkpt lat="53.4005530" lon="-1.8936660"/>
-            <trkpt lat="53.4005900" lon="-1.8939820"/>
-            <trkpt lat="53.4005940" lon="-1.8943580"/>
-            <trkpt lat="53.4005280" lon="-1.8951020"/>
-            <trkpt lat="53.4005020" lon="-1.8952600"/>
-            <trkpt lat="53.4009110" lon="-1.8952650"/>
-            <trkpt lat="53.4013240" lon="-1.8951210"/>
-            <trkpt lat="53.4019940" lon="-1.8953480"/>
-            <trkpt lat="53.4021140" lon="-1.8954010"/>
-            <trkpt lat="53.4022630" lon="-1.8955280"/>
-            <trkpt lat="53.4023670" lon="-1.8957000"/>
-            <trkpt lat="53.4029220" lon="-1.8969300"/>
-            <trkpt lat="53.4030950" lon="-1.8972260"/>
-            <trkpt lat="53.4031320" lon="-1.8973220"/>
-            <trkpt lat="53.4033050" lon="-1.8982610"/>
-            <trkpt lat="53.4034680" lon="-1.8989520"/>
-            <trkpt lat="53.4036410" lon="-1.8994560"/>
-            <trkpt lat="53.4037150" lon="-1.8995670"/>
-            <trkpt lat="53.4038470" lon="-1.8996780"/>
-            <trkpt lat="53.4040390" lon="-1.8999430"/>
-            <trkpt lat="53.4044020" lon="-1.9003800"/>
-            <trkpt lat="53.4045260" lon="-1.9004420"/>
-            <trkpt lat="53.4051560" lon="-1.9005390"/>
-            <trkpt lat="53.4054390" lon="-1.9006460"/>
-            <trkpt lat="53.4057400" lon="-1.9006820"/>
-            <trkpt lat="53.4063240" lon="-1.9010830"/>
-            <trkpt lat="53.4065280" lon="-1.9013750"/>
+            <trkpt lat="53.4063760" lon="-1.9009170"/>
+            <trkpt lat="53.4064120" lon="-1.9009830"/>
+            <trkpt lat="53.4065040" lon="-1.9010800"/>
+            <trkpt lat="53.4065290" lon="-1.9011990"/>
             <trkpt lat="53.4065280" lon="-1.9013200"/>
-            <trkpt lat="53.4065279" lon="-1.9013199"/>
+            <trkpt lat="53.4065280" lon="-1.9013199"/>
             <trkpt lat="53.4065280" lon="-1.9013200"/>
             <trkpt lat="53.4065280" lon="-1.9013750"/>
             <trkpt lat="53.4063240" lon="-1.9010830"/>
@@ -3083,8 +3269,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.4019940" lon="-1.8953480"/>
             <trkpt lat="53.4013240" lon="-1.8951210"/>
             <trkpt lat="53.4009110" lon="-1.8952650"/>
-            <trkpt lat="53.4005020" lon="-1.8952600"/>
-            <trkpt lat="53.4005280" lon="-1.8951020"/>
+            <trkpt lat="53.4005040" lon="-1.8952610"/>
             <trkpt lat="53.4005940" lon="-1.8943580"/>
             <trkpt lat="53.4005900" lon="-1.8939820"/>
             <trkpt lat="53.4005530" lon="-1.8936660"/>
@@ -3107,34 +3292,42 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3994780" lon="-1.8871180"/>
             <trkpt lat="53.3993290" lon="-1.8865710"/>
             <trkpt lat="53.3991900" lon="-1.8861350"/>
-            <trkpt lat="53.3988890" lon="-1.8853670"/>
-            <trkpt lat="53.3987440" lon="-1.8849030"/>
-            <trkpt lat="53.3985880" lon="-1.8845540"/>
-            <trkpt lat="53.3985360" lon="-1.8843100"/>
+            <trkpt lat="53.3989870" lon="-1.8856050"/>
+            <trkpt lat="53.3989320" lon="-1.8855590"/>
+            <trkpt lat="53.3988880" lon="-1.8854660"/>
+            <trkpt lat="53.3988390" lon="-1.8852020"/>
+            <trkpt lat="53.3987460" lon="-1.8849020"/>
+            <trkpt lat="53.3985870" lon="-1.8845550"/>
+            <trkpt lat="53.3985390" lon="-1.8843070"/>
             <trkpt lat="53.3984770" lon="-1.8841600"/>
-            <trkpt lat="53.3984050" lon="-1.8839060"/>
-            <trkpt lat="53.3984190" lon="-1.8837260"/>
-            <trkpt lat="53.3983760" lon="-1.8835420"/>
-            <trkpt lat="53.3983170" lon="-1.8834240"/>
-            <trkpt lat="53.3982430" lon="-1.8831860"/>
-            <trkpt lat="53.3980440" lon="-1.8827220"/>
+            <trkpt lat="53.3984030" lon="-1.8839060"/>
+            <trkpt lat="53.3984210" lon="-1.8837260"/>
+            <trkpt lat="53.3983780" lon="-1.8835400"/>
+            <trkpt lat="53.3983160" lon="-1.8834260"/>
+            <trkpt lat="53.3982430" lon="-1.8831850"/>
+            <trkpt lat="53.3980420" lon="-1.8827230"/>
             <trkpt lat="53.3980270" lon="-1.8826350"/>
             <trkpt lat="53.3978650" lon="-1.8821900"/>
             <trkpt lat="53.3977840" lon="-1.8818820"/>
-            <trkpt lat="53.3977130" lon="-1.8814390"/>
-            <trkpt lat="53.3977320" lon="-1.8809270"/>
-            <trkpt lat="53.3977130" lon="-1.8807410"/>
-            <trkpt lat="53.3976640" lon="-1.8806150"/>
+            <trkpt lat="53.3977110" lon="-1.8814390"/>
+            <trkpt lat="53.3977330" lon="-1.8809270"/>
+            <trkpt lat="53.3977150" lon="-1.8807390"/>
+            <trkpt lat="53.3976660" lon="-1.8806120"/>
             <trkpt lat="53.3975010" lon="-1.8804410"/>
-            <trkpt lat="53.3974370" lon="-1.8803330"/>
-            <trkpt lat="53.3973880" lon="-1.8802140"/>
-            <trkpt lat="53.3973340" lon="-1.8800030"/>
-            <trkpt lat="53.3973070" lon="-1.8796660"/>
+            <trkpt lat="53.3974360" lon="-1.8803350"/>
+            <trkpt lat="53.3973870" lon="-1.8802140"/>
+            <trkpt lat="53.3973320" lon="-1.8800040"/>
+            <trkpt lat="53.3973050" lon="-1.8796710"/>
             <trkpt lat="53.3973750" lon="-1.8791530"/>
             <trkpt lat="53.3973740" lon="-1.8788610"/>
             <trkpt lat="53.3971930" lon="-1.8778370"/>
             <trkpt lat="53.3971880" lon="-1.8774390"/>
-            <trkpt lat="53.3972120" lon="-1.8773550"/>
+            <trkpt lat="53.3972410" lon="-1.8772010"/>
+            <trkpt lat="53.3972540" lon="-1.8770470"/>
+            <trkpt lat="53.3972720" lon="-1.8768800"/>
+            <trkpt lat="53.3972718" lon="-1.8768802"/>
+            <trkpt lat="53.3972720" lon="-1.8768800"/>
+            <trkpt lat="53.3972540" lon="-1.8770470"/>
             <trkpt lat="53.3972410" lon="-1.8772010"/>
             <trkpt lat="53.3970840" lon="-1.8771710"/>
             <trkpt lat="53.3970330" lon="-1.8771610"/>
@@ -3183,7 +3376,14 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3895900" lon="-1.8804940"/>
             <trkpt lat="53.3895150" lon="-1.8805260"/>
             <trkpt lat="53.3893270" lon="-1.8805120"/>
-            <trkpt lat="53.3887500" lon="-1.8804560"/>
+            <trkpt lat="53.3891260" lon="-1.8804830"/>
+            <trkpt lat="53.3891230" lon="-1.8806650"/>
+            <trkpt lat="53.3891710" lon="-1.8808300"/>
+            <trkpt lat="53.3891650" lon="-1.8808850"/>
+            <trkpt lat="53.3889240" lon="-1.8806360"/>
+            <trkpt lat="53.3888990" lon="-1.8806210"/>
+            <trkpt lat="53.3888994" lon="-1.8806211"/>
+            <trkpt lat="53.3888990" lon="-1.8806210"/>
             <trkpt lat="53.3886450" lon="-1.8804650"/>
             <trkpt lat="53.3885690" lon="-1.8806900"/>
             <trkpt lat="53.3885660" lon="-1.8808330"/>
@@ -3219,6 +3419,11 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3846650" lon="-1.8838730"/>
             <trkpt lat="53.3845590" lon="-1.8841200"/>
             <trkpt lat="53.3840440" lon="-1.8845630"/>
+            <trkpt lat="53.3840010" lon="-1.8845520"/>
+            <trkpt lat="53.3839890" lon="-1.8845390"/>
+            <trkpt lat="53.3839891" lon="-1.8845391"/>
+            <trkpt lat="53.3839890" lon="-1.8845390"/>
+            <trkpt lat="53.3839330" lon="-1.8844820"/>
             <trkpt lat="53.3838010" lon="-1.8844110"/>
             <trkpt lat="53.3837360" lon="-1.8843430"/>
             <trkpt lat="53.3836710" lon="-1.8842310"/>
@@ -3229,35 +3434,20 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3832510" lon="-1.8837290"/>
             <trkpt lat="53.3831360" lon="-1.8835470"/>
             <trkpt lat="53.3830690" lon="-1.8833410"/>
-            <trkpt lat="53.3830040" lon="-1.8832410"/>
-            <trkpt lat="53.3828830" lon="-1.8829600"/>
-            <trkpt lat="53.3828240" lon="-1.8828880"/>
-            <trkpt lat="53.3827360" lon="-1.8828460"/>
-            <trkpt lat="53.3826460" lon="-1.8828530"/>
-            <trkpt lat="53.3825640" lon="-1.8828080"/>
-            <trkpt lat="53.3825170" lon="-1.8828970"/>
-            <trkpt lat="53.3824440" lon="-1.8832200"/>
-            <trkpt lat="53.3823960" lon="-1.8833370"/>
-            <trkpt lat="53.3823340" lon="-1.8833540"/>
-            <trkpt lat="53.3822300" lon="-1.8833070"/>
-            <trkpt lat="53.3821100" lon="-1.8833970"/>
-            <trkpt lat="53.3820400" lon="-1.8834690"/>
-            <trkpt lat="53.3819830" lon="-1.8836590"/>
-            <trkpt lat="53.3819490" lon="-1.8837150"/>
-            <trkpt lat="53.3815240" lon="-1.8837130"/>
-            <trkpt lat="53.3813970" lon="-1.8836730"/>
-            <trkpt lat="53.3812720" lon="-1.8836870"/>
-            <trkpt lat="53.3812890" lon="-1.8836380"/>
-            <trkpt lat="53.3812750" lon="-1.8836050"/>
-            <trkpt lat="53.3812230" lon="-1.8835570"/>
-            <trkpt lat="53.3812040" lon="-1.8834940"/>
-            <trkpt lat="53.3810860" lon="-1.8833950"/>
-            <trkpt lat="53.3810200" lon="-1.8832880"/>
-            <trkpt lat="53.3807620" lon="-1.8830260"/>
-            <trkpt lat="53.3806100" lon="-1.8829470"/>
-            <trkpt lat="53.3804670" lon="-1.8828360"/>
-            <trkpt lat="53.3802850" lon="-1.8826070"/>
-            <trkpt lat="53.3802850" lon="-1.8826070"/>
+            <trkpt lat="53.3829560" lon="-1.8831470"/>
+            <trkpt lat="53.3828660" lon="-1.8829300"/>
+            <trkpt lat="53.3827610" lon="-1.8828520"/>
+            <trkpt lat="53.3826520" lon="-1.8828590"/>
+            <trkpt lat="53.3825600" lon="-1.8828000"/>
+            <trkpt lat="53.3825560" lon="-1.8828080"/>
+            <trkpt lat="53.3820760" lon="-1.8824890"/>
+            <trkpt lat="53.3815010" lon="-1.8822140"/>
+            <trkpt lat="53.3814180" lon="-1.8821460"/>
+            <trkpt lat="53.3811040" lon="-1.8821710"/>
+            <trkpt lat="53.3809990" lon="-1.8822030"/>
+            <trkpt lat="53.3803110" lon="-1.8826220"/>
+            <trkpt lat="53.3803110" lon="-1.8826230"/>
+            <trkpt lat="53.3802850" lon="-1.8826040"/>
             <trkpt lat="53.3802845" lon="-1.8826068"/>
             <trkpt lat="53.3804030" lon="-1.8827550"/>
             <trkpt lat="53.3802850" lon="-1.8826070"/>
@@ -3465,7 +3655,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3783940" lon="-1.8379630"/>
             <trkpt lat="53.3783430" lon="-1.8376510"/>
             <trkpt lat="53.3783428" lon="-1.8376514"/>
-            <trkpt lat="53.3780816" lon="-1.8362142"/>
+            <trkpt lat="53.3782503" lon="-1.8362909"/>
             <trkpt lat="53.3788865" lon="-1.8368891"/>
             <trkpt lat="53.3788840" lon="-1.8368940"/>
             <trkpt lat="53.3792500" lon="-1.8374230"/>
@@ -3619,13 +3809,19 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3830510" lon="-1.8109470"/>
             <trkpt lat="53.3830380" lon="-1.8109020"/>
             <trkpt lat="53.3830256" lon="-1.8109130"/>
-            <trkpt lat="53.3817113" lon="-1.8135985"/>
-            <trkpt lat="53.3814306" lon="-1.8136252"/>
-            <trkpt lat="53.3814310" lon="-1.8136250"/>
+            <trkpt lat="53.3826568" lon="-1.8113597"/>
+            <trkpt lat="53.3822505" lon="-1.8121429"/>
+            <trkpt lat="53.3816539" lon="-1.8134099"/>
+            <trkpt lat="53.3816540" lon="-1.8134100"/>
+            <trkpt lat="53.3815680" lon="-1.8134510"/>
+            <trkpt lat="53.3814760" lon="-1.8135990"/>
             <trkpt lat="53.3813330" lon="-1.8136820"/>
             <trkpt lat="53.3811560" lon="-1.8141530"/>
             <trkpt lat="53.3811050" lon="-1.8141960"/>
             <trkpt lat="53.3810170" lon="-1.8142270"/>
+            <trkpt lat="53.3810030" lon="-1.8142260"/>
+            <trkpt lat="53.3810033" lon="-1.8142257"/>
+            <trkpt lat="53.3810030" lon="-1.8142260"/>
             <trkpt lat="53.3809310" lon="-1.8142190"/>
             <trkpt lat="53.3807660" lon="-1.8140790"/>
             <trkpt lat="53.3806600" lon="-1.8140270"/>
@@ -3641,14 +3837,13 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3772380" lon="-1.8140700"/>
             <trkpt lat="53.3766880" lon="-1.8138960"/>
             <trkpt lat="53.3762860" lon="-1.8137280"/>
-            <trkpt lat="53.3762500" lon="-1.8136750"/>
-            <trkpt lat="53.3762496" lon="-1.8136747"/>
-            <trkpt lat="53.3762500" lon="-1.8136750"/>
             <trkpt lat="53.3762300" lon="-1.8136460"/>
             <trkpt lat="53.3761500" lon="-1.8136550"/>
             <trkpt lat="53.3761290" lon="-1.8137010"/>
+            <trkpt lat="53.3761290" lon="-1.8137110"/>
+            <trkpt lat="53.3761292" lon="-1.8137112"/>
+            <trkpt lat="53.3761290" lon="-1.8137110"/>
             <trkpt lat="53.3761280" lon="-1.8137580"/>
-            <trkpt lat="53.3763770" lon="-1.8144440"/>
             <trkpt lat="53.3764190" lon="-1.8145420"/>
             <trkpt lat="53.3768780" lon="-1.8152820"/>
             <trkpt lat="53.3771510" lon="-1.8158530"/>
@@ -3752,13 +3947,23 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3592080" lon="-1.8338720"/>
             <trkpt lat="53.3591320" lon="-1.8339150"/>
             <trkpt lat="53.3591320" lon="-1.8339152"/>
-            <trkpt lat="53.3591320" lon="-1.8339150"/>
-            <trkpt lat="53.3588750" lon="-1.8340600"/>
-            <trkpt lat="53.3587430" lon="-1.8341780"/>
-            <trkpt lat="53.3581870" lon="-1.8347940"/>
-            <trkpt lat="53.3581070" lon="-1.8349810"/>
+            <trkpt lat="53.3592120" lon="-1.8339510"/>
+            <trkpt lat="53.3592080" lon="-1.8338720"/>
+            <trkpt lat="53.3590160" lon="-1.8340120"/>
+            <trkpt lat="53.3588930" lon="-1.8340690"/>
+            <trkpt lat="53.3586520" lon="-1.8342810"/>
+            <trkpt lat="53.3585520" lon="-1.8344160"/>
+            <trkpt lat="53.3585320" lon="-1.8345090"/>
+            <trkpt lat="53.3584560" lon="-1.8345700"/>
+            <trkpt lat="53.3583630" lon="-1.8347070"/>
+            <trkpt lat="53.3581470" lon="-1.8349160"/>
+            <trkpt lat="53.3580800" lon="-1.8349460"/>
+            <trkpt lat="53.3577800" lon="-1.8352440"/>
+            <trkpt lat="53.3577280" lon="-1.8353820"/>
+            <trkpt lat="53.3575600" lon="-1.8355760"/>
+            <trkpt lat="53.3574400" lon="-1.8357580"/>
             <trkpt lat="53.3574420" lon="-1.8357800"/>
-            <trkpt lat="53.3568650" lon="-1.8365880"/>
+            <trkpt lat="53.3574030" lon="-1.8358010"/>
             <trkpt lat="53.3568300" lon="-1.8366720"/>
             <trkpt lat="53.3567800" lon="-1.8366870"/>
             <trkpt lat="53.3567450" lon="-1.8366800"/>
@@ -3928,36 +4133,74 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3453790" lon="-1.8129800"/>
             <trkpt lat="53.3452990" lon="-1.8129490"/>
             <trkpt lat="53.3452120" lon="-1.8128280"/>
+            <trkpt lat="53.3452090" lon="-1.8127840"/>
+            <trkpt lat="53.3452092" lon="-1.8127837"/>
+            <trkpt lat="53.3452090" lon="-1.8127840"/>
+            <trkpt lat="53.3452120" lon="-1.8128280"/>
             <trkpt lat="53.3451600" lon="-1.8126940"/>
-            <trkpt lat="53.3450350" lon="-1.8126200"/>
-            <trkpt lat="53.3449960" lon="-1.8125840"/>
-            <trkpt lat="53.3450080" lon="-1.8125690"/>
-            <trkpt lat="53.3449960" lon="-1.8125840"/>
             <trkpt lat="53.3445740" lon="-1.8122910"/>
             <trkpt lat="53.3444200" lon="-1.8123070"/>
             <trkpt lat="53.3441750" lon="-1.8123920"/>
+            <trkpt lat="53.3438610" lon="-1.8124620"/>
+            <trkpt lat="53.3438609" lon="-1.8124621"/>
+            <trkpt lat="53.3438610" lon="-1.8124620"/>
             <trkpt lat="53.3437500" lon="-1.8124870"/>
             <trkpt lat="53.3436100" lon="-1.8124790"/>
             <trkpt lat="53.3430460" lon="-1.8122220"/>
             <trkpt lat="53.3424870" lon="-1.8118620"/>
-            <trkpt lat="53.3422810" lon="-1.8117550"/>
+            <trkpt lat="53.3409210" lon="-1.8110960"/>
             <trkpt lat="53.3407990" lon="-1.8110370"/>
             <trkpt lat="53.3407580" lon="-1.8111000"/>
             <trkpt lat="53.3407580" lon="-1.8111000"/>
-            <trkpt lat="53.3407580" lon="-1.8111000"/>
-            <trkpt lat="53.3407851" lon="-1.8111490"/>
-            <trkpt lat="53.3407580" lon="-1.8111000"/>
             <trkpt lat="53.3407010" lon="-1.8111880"/>
-            <trkpt lat="53.3376130" lon="-1.8082880"/>
-            <trkpt lat="53.3367510" lon="-1.8073660"/>
-            <trkpt lat="53.3356520" lon="-1.8063340"/>
-            <trkpt lat="53.3348810" lon="-1.8055760"/>
-            <trkpt lat="53.3343610" lon="-1.8051460"/>
-            <trkpt lat="53.3341430" lon="-1.8049980"/>
-            <trkpt lat="53.3340890" lon="-1.8049670"/>
-            <trkpt lat="53.3340893" lon="-1.8049669"/>
-            <trkpt lat="53.3340890" lon="-1.8049670"/>
+            <trkpt lat="53.3404730" lon="-1.8110960"/>
+            <trkpt lat="53.3402930" lon="-1.8110700"/>
+            <trkpt lat="53.3396010" lon="-1.8111420"/>
+            <trkpt lat="53.3395970" lon="-1.8111420"/>
+            <trkpt lat="53.3388220" lon="-1.8109790"/>
+            <trkpt lat="53.3375640" lon="-1.8107910"/>
+            <trkpt lat="53.3369390" lon="-1.8108130"/>
+            <trkpt lat="53.3366420" lon="-1.8107820"/>
+            <trkpt lat="53.3362420" lon="-1.8109250"/>
+            <trkpt lat="53.3359180" lon="-1.8111700"/>
+            <trkpt lat="53.3355840" lon="-1.8112270"/>
+            <trkpt lat="53.3349090" lon="-1.8116240"/>
+            <trkpt lat="53.3346910" lon="-1.8117010"/>
+            <trkpt lat="53.3343530" lon="-1.8119480"/>
+            <trkpt lat="53.3340700" lon="-1.8122510"/>
+            <trkpt lat="53.3339180" lon="-1.8123580"/>
+            <trkpt lat="53.3338010" lon="-1.8125030"/>
+            <trkpt lat="53.3336060" lon="-1.8126690"/>
+            <trkpt lat="53.3332690" lon="-1.8130410"/>
+            <trkpt lat="53.3330690" lon="-1.8132140"/>
+            <trkpt lat="53.3328340" lon="-1.8133080"/>
+            <trkpt lat="53.3327070" lon="-1.8133920"/>
+            <trkpt lat="53.3323140" lon="-1.8134540"/>
+            <trkpt lat="53.3321880" lon="-1.8134970"/>
+            <trkpt lat="53.3320750" lon="-1.8134880"/>
+            <trkpt lat="53.3318000" lon="-1.8135450"/>
+            <trkpt lat="53.3312450" lon="-1.8133290"/>
+            <trkpt lat="53.3307190" lon="-1.8130770"/>
+            <trkpt lat="53.3303070" lon="-1.8129680"/>
+            <trkpt lat="53.3299410" lon="-1.8127870"/>
+            <trkpt lat="53.3295430" lon="-1.8124940"/>
+            <trkpt lat="53.3295429" lon="-1.8124940"/>
+            <trkpt lat="53.3295430" lon="-1.8124940"/>
+            <trkpt lat="53.3295190" lon="-1.8124760"/>
+            <trkpt lat="53.3295570" lon="-1.8122820"/>
+            <trkpt lat="53.3295790" lon="-1.8118880"/>
+            <trkpt lat="53.3301180" lon="-1.8104600"/>
+            <trkpt lat="53.3317610" lon="-1.8073580"/>
+            <trkpt lat="53.3318680" lon="-1.8071930"/>
+            <trkpt lat="53.3328010" lon="-1.8060130"/>
+            <trkpt lat="53.3336360" lon="-1.8051370"/>
+            <trkpt lat="53.3337600" lon="-1.8049640"/>
+            <trkpt lat="53.3338840" lon="-1.8048710"/>
+            <trkpt lat="53.3339940" lon="-1.8049110"/>
             <trkpt lat="53.3340510" lon="-1.8049440"/>
+            <trkpt lat="53.3340530" lon="-1.8048900"/>
+            <trkpt lat="53.3340526" lon="-1.8048898"/>
+            <trkpt lat="53.3340530" lon="-1.8048900"/>
             <trkpt lat="53.3341470" lon="-1.8023790"/>
             <trkpt lat="53.3341240" lon="-1.8021930"/>
             <trkpt lat="53.3340790" lon="-1.8020430"/>
@@ -3978,23 +4221,79 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3354660" lon="-1.7894630"/>
             <trkpt lat="53.3355810" lon="-1.7890590"/>
             <trkpt lat="53.3357510" lon="-1.7874380"/>
-            <trkpt lat="53.3358330" lon="-1.7873320"/>
+            <trkpt lat="53.3358310" lon="-1.7873290"/>
             <trkpt lat="53.3358326" lon="-1.7873322"/>
-            <trkpt lat="53.3397526" lon="-1.7782060"/>
-            <trkpt lat="53.3405550" lon="-1.7807175"/>
-            <trkpt lat="53.3409944" lon="-1.7799996"/>
-            <trkpt lat="53.3419573" lon="-1.7795463"/>
-            <trkpt lat="53.3417073" lon="-1.7756160"/>
-            <trkpt lat="53.3422868" lon="-1.7754706"/>
-            <trkpt lat="53.3432527" lon="-1.7752778"/>
-            <trkpt lat="53.3431597" lon="-1.7796340"/>
-            <trkpt lat="53.3449326" lon="-1.7838887"/>
-            <trkpt lat="53.3449330" lon="-1.7838890"/>
-            <trkpt lat="53.3451580" lon="-1.7843160"/>
-            <trkpt lat="53.3452500" lon="-1.7846830"/>
-            <trkpt lat="53.3454160" lon="-1.7851520"/>
+            <trkpt lat="53.3366339" lon="-1.7841867"/>
+            <trkpt lat="53.3372459" lon="-1.7823728"/>
+            <trkpt lat="53.3373890" lon="-1.7803142"/>
+            <trkpt lat="53.3371519" lon="-1.7791769"/>
+            <trkpt lat="53.3382698" lon="-1.7792091"/>
+            <trkpt lat="53.3394421" lon="-1.7786351"/>
+            <trkpt lat="53.3396576" lon="-1.7780137"/>
+            <trkpt lat="53.3399490" lon="-1.7788559"/>
+            <trkpt lat="53.3399956" lon="-1.7798290"/>
+            <trkpt lat="53.3406024" lon="-1.7808729"/>
+            <trkpt lat="53.3411550" lon="-1.7799685"/>
+            <trkpt lat="53.3411570" lon="-1.7799850"/>
+            <trkpt lat="53.3414740" lon="-1.7798550"/>
+            <trkpt lat="53.3416010" lon="-1.7797430"/>
+            <trkpt lat="53.3418310" lon="-1.7794530"/>
+            <trkpt lat="53.3418306" lon="-1.7794534"/>
+            <trkpt lat="53.3418310" lon="-1.7794530"/>
+            <trkpt lat="53.3418590" lon="-1.7794170"/>
+            <trkpt lat="53.3419580" lon="-1.7790440"/>
+            <trkpt lat="53.3419540" lon="-1.7788160"/>
+            <trkpt lat="53.3419430" lon="-1.7787860"/>
+            <trkpt lat="53.3419429" lon="-1.7787859"/>
+            <trkpt lat="53.3419430" lon="-1.7787860"/>
+            <trkpt lat="53.3419270" lon="-1.7787400"/>
+            <trkpt lat="53.3419120" lon="-1.7786470"/>
+            <trkpt lat="53.3419550" lon="-1.7783420"/>
+            <trkpt lat="53.3420090" lon="-1.7782060"/>
+            <trkpt lat="53.3420760" lon="-1.7779440"/>
+            <trkpt lat="53.3420810" lon="-1.7778000"/>
+            <trkpt lat="53.3420811" lon="-1.7777997"/>
+            <trkpt lat="53.3419413" lon="-1.7762717"/>
+            <trkpt lat="53.3423512" lon="-1.7762906"/>
+            <trkpt lat="53.3427003" lon="-1.7762960"/>
+            <trkpt lat="53.3429083" lon="-1.7762839"/>
+            <trkpt lat="53.3431583" lon="-1.7762877"/>
+            <trkpt lat="53.3431511" lon="-1.7778703"/>
+            <trkpt lat="53.3431510" lon="-1.7778700"/>
+            <trkpt lat="53.3431520" lon="-1.7781040"/>
+            <trkpt lat="53.3431150" lon="-1.7785120"/>
+            <trkpt lat="53.3429910" lon="-1.7792850"/>
+            <trkpt lat="53.3429110" lon="-1.7797870"/>
+            <trkpt lat="53.3428910" lon="-1.7799210"/>
+            <trkpt lat="53.3429040" lon="-1.7799270"/>
+            <trkpt lat="53.3429043" lon="-1.7799273"/>
+            <trkpt lat="53.3429040" lon="-1.7799270"/>
+            <trkpt lat="53.3432400" lon="-1.7800510"/>
+            <trkpt lat="53.3434200" lon="-1.7802610"/>
+            <trkpt lat="53.3436400" lon="-1.7806120"/>
+            <trkpt lat="53.3438740" lon="-1.7811170"/>
+            <trkpt lat="53.3440700" lon="-1.7816480"/>
+            <trkpt lat="53.3441210" lon="-1.7818090"/>
+            <trkpt lat="53.3441280" lon="-1.7819260"/>
+            <trkpt lat="53.3442410" lon="-1.7824560"/>
+            <trkpt lat="53.3443330" lon="-1.7827710"/>
+            <trkpt lat="53.3443980" lon="-1.7828430"/>
+            <trkpt lat="53.3445350" lon="-1.7830770"/>
+            <trkpt lat="53.3447220" lon="-1.7834900"/>
+            <trkpt lat="53.3449500" lon="-1.7839130"/>
+            <trkpt lat="53.3449501" lon="-1.7839132"/>
+            <trkpt lat="53.3449500" lon="-1.7839130"/>
+            <trkpt lat="53.3452610" lon="-1.7845200"/>
+            <trkpt lat="53.3455260" lon="-1.7855820"/>
             <trkpt lat="53.3458070" lon="-1.7867970"/>
             <trkpt lat="53.3459540" lon="-1.7872570"/>
+            <trkpt lat="53.3461440" lon="-1.7877290"/>
+            <trkpt lat="53.3461530" lon="-1.7877950"/>
+            <trkpt lat="53.3461630" lon="-1.7877920"/>
+            <trkpt lat="53.3461940" lon="-1.7877760"/>
+            <trkpt lat="53.3461962" lon="-1.7877896"/>
+            <trkpt lat="53.3461940" lon="-1.7877760"/>
+            <trkpt lat="53.3461630" lon="-1.7877920"/>
             <trkpt lat="53.3461530" lon="-1.7877950"/>
             <trkpt lat="53.3462160" lon="-1.7879110"/>
             <trkpt lat="53.3462520" lon="-1.7881470"/>
@@ -4002,10 +4301,9 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3462600" lon="-1.7900100"/>
             <trkpt lat="53.3462750" lon="-1.7905820"/>
             <trkpt lat="53.3462880" lon="-1.7906430"/>
-            <trkpt lat="53.3463080" lon="-1.7906670"/>
-            <trkpt lat="53.3463084" lon="-1.7906669"/>
-            <trkpt lat="53.3463080" lon="-1.7906670"/>
-            <trkpt lat="53.3463630" lon="-1.7907320"/>
+            <trkpt lat="53.3463510" lon="-1.7907180"/>
+            <trkpt lat="53.3463511" lon="-1.7907183"/>
+            <trkpt lat="53.3463510" lon="-1.7907180"/>
             <trkpt lat="53.3464660" lon="-1.7911510"/>
             <trkpt lat="53.3470690" lon="-1.7940010"/>
             <trkpt lat="53.3470840" lon="-1.7942130"/>
@@ -4053,21 +4351,23 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3502970" lon="-1.7998750"/>
             <trkpt lat="53.3502972" lon="-1.7998745"/>
             <trkpt lat="53.3502970" lon="-1.7998750"/>
-            <trkpt lat="53.3503250" lon="-1.7998930"/>
-            <trkpt lat="53.3502300" lon="-1.8000310"/>
-            <trkpt lat="53.3502090" lon="-1.8003870"/>
-            <trkpt lat="53.3502650" lon="-1.8006270"/>
-            <trkpt lat="53.3502530" lon="-1.8007740"/>
-            <trkpt lat="53.3502590" lon="-1.8010420"/>
-            <trkpt lat="53.3501890" lon="-1.8013500"/>
-            <trkpt lat="53.3502060" lon="-1.8014570"/>
-            <trkpt lat="53.3502030" lon="-1.8016650"/>
-            <trkpt lat="53.3502550" lon="-1.8018080"/>
-            <trkpt lat="53.3502460" lon="-1.8019840"/>
-            <trkpt lat="53.3502810" lon="-1.8021120"/>
-            <trkpt lat="53.3502250" lon="-1.8022460"/>
-            <trkpt lat="53.3502330" lon="-1.8023980"/>
-            <trkpt lat="53.3502100" lon="-1.8027100"/>
+            <trkpt lat="53.3504860" lon="-1.8000390"/>
+            <trkpt lat="53.3507500" lon="-1.8005400"/>
+            <trkpt lat="53.3509240" lon="-1.8011000"/>
+            <trkpt lat="53.3510290" lon="-1.8018930"/>
+            <trkpt lat="53.3511560" lon="-1.8020170"/>
+            <trkpt lat="53.3517050" lon="-1.8023900"/>
+            <trkpt lat="53.3517590" lon="-1.8024520"/>
+            <trkpt lat="53.3518140" lon="-1.8026090"/>
+            <trkpt lat="53.3518130" lon="-1.8026310"/>
+            <trkpt lat="53.3518134" lon="-1.8026314"/>
+            <trkpt lat="53.3518130" lon="-1.8026310"/>
+            <trkpt lat="53.3518110" lon="-1.8027330"/>
+            <trkpt lat="53.3517730" lon="-1.8028300"/>
+            <trkpt lat="53.3513350" lon="-1.8032410"/>
+            <trkpt lat="53.3510440" lon="-1.8033950"/>
+            <trkpt lat="53.3507980" lon="-1.8033360"/>
+            <trkpt lat="53.3504510" lon="-1.8028770"/>
             <trkpt lat="53.3502510" lon="-1.8027390"/>
             <trkpt lat="53.3502507" lon="-1.8027385"/>
             <trkpt lat="53.3502510" lon="-1.8027390"/>
@@ -4164,30 +4464,14 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3601440" lon="-1.7866280"/>
             <trkpt lat="53.3601740" lon="-1.7864290"/>
             <trkpt lat="53.3601741" lon="-1.7864288"/>
-            <trkpt lat="53.3601740" lon="-1.7864290"/>
-            <trkpt lat="53.3602170" lon="-1.7858200"/>
-            <trkpt lat="53.3602710" lon="-1.7853760"/>
-            <trkpt lat="53.3602940" lon="-1.7853270"/>
-            <trkpt lat="53.3602680" lon="-1.7851250"/>
-            <trkpt lat="53.3602700" lon="-1.7850410"/>
-            <trkpt lat="53.3605170" lon="-1.7840300"/>
-            <trkpt lat="53.3613000" lon="-1.7827760"/>
-            <trkpt lat="53.3615250" lon="-1.7821830"/>
-            <trkpt lat="53.3616450" lon="-1.7814760"/>
-            <trkpt lat="53.3619000" lon="-1.7803190"/>
-            <trkpt lat="53.3622000" lon="-1.7793590"/>
-            <trkpt lat="53.3625800" lon="-1.7779860"/>
-            <trkpt lat="53.3629760" lon="-1.7764700"/>
-            <trkpt lat="53.3633620" lon="-1.7754460"/>
-            <trkpt lat="53.3643710" lon="-1.7730630"/>
-            <trkpt lat="53.3645360" lon="-1.7724720"/>
-            <trkpt lat="53.3646680" lon="-1.7718620"/>
-            <trkpt lat="53.3647110" lon="-1.7717350"/>
-            <trkpt lat="53.3648380" lon="-1.7713570"/>
-            <trkpt lat="53.3648180" lon="-1.7715630"/>
-            <trkpt lat="53.3648200" lon="-1.7716090"/>
-            <trkpt lat="53.3648203" lon="-1.7716086"/>
-            <trkpt lat="53.3648200" lon="-1.7716090"/>
+            <trkpt lat="53.3603130" lon="-1.7853178"/>
+            <trkpt lat="53.3606556" lon="-1.7840410"/>
+            <trkpt lat="53.3613754" lon="-1.7830515"/>
+            <trkpt lat="53.3616571" lon="-1.7831105"/>
+            <trkpt lat="53.3624835" lon="-1.7789556"/>
+            <trkpt lat="53.3647401" lon="-1.7724526"/>
+            <trkpt lat="53.3648208" lon="-1.7716183"/>
+            <trkpt lat="53.3648210" lon="-1.7716180"/>
             <trkpt lat="53.3648380" lon="-1.7713570"/>
             <trkpt lat="53.3647890" lon="-1.7712670"/>
             <trkpt lat="53.3646410" lon="-1.7708570"/>
@@ -4200,31 +4484,37 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3636160" lon="-1.7691960"/>
             <trkpt lat="53.3634740" lon="-1.7691490"/>
             <trkpt lat="53.3630980" lon="-1.7691140"/>
-            <trkpt lat="53.3626650" lon="-1.7689200"/>
-            <trkpt lat="53.3623650" lon="-1.7686580"/>
+            <trkpt lat="53.3626500" lon="-1.7689160"/>
+            <trkpt lat="53.3625280" lon="-1.7687620"/>
+            <trkpt lat="53.3624400" lon="-1.7686850"/>
+            <trkpt lat="53.3623440" lon="-1.7686500"/>
             <trkpt lat="53.3623380" lon="-1.7686520"/>
             <trkpt lat="53.3619370" lon="-1.7683330"/>
-            <trkpt lat="53.3608640" lon="-1.7652760"/>
-            <trkpt lat="53.3606640" lon="-1.7647580"/>
-            <trkpt lat="53.3603350" lon="-1.7632920"/>
-            <trkpt lat="53.3601710" lon="-1.7621840"/>
-            <trkpt lat="53.3601290" lon="-1.7618140"/>
-            <trkpt lat="53.3600580" lon="-1.7614700"/>
-            <trkpt lat="53.3600140" lon="-1.7610700"/>
-            <trkpt lat="53.3600130" lon="-1.7604220"/>
-            <trkpt lat="53.3600300" lon="-1.7603040"/>
+            <trkpt lat="53.3617370" lon="-1.7677730"/>
+            <trkpt lat="53.3615410" lon="-1.7670580"/>
+            <trkpt lat="53.3608690" lon="-1.7654510"/>
+            <trkpt lat="53.3605680" lon="-1.7646050"/>
+            <trkpt lat="53.3602940" lon="-1.7635330"/>
+            <trkpt lat="53.3601890" lon="-1.7628770"/>
+            <trkpt lat="53.3600120" lon="-1.7614150"/>
+            <trkpt lat="53.3599760" lon="-1.7609840"/>
+            <trkpt lat="53.3599730" lon="-1.7605730"/>
+            <trkpt lat="53.3599770" lon="-1.7605010"/>
+            <trkpt lat="53.3600100" lon="-1.7603840"/>
             <trkpt lat="53.3600350" lon="-1.7602820"/>
-            <trkpt lat="53.3599760" lon="-1.7592080"/>
-            <trkpt lat="53.3599860" lon="-1.7590670"/>
-            <trkpt lat="53.3599140" lon="-1.7578570"/>
-            <trkpt lat="53.3598450" lon="-1.7571400"/>
-            <trkpt lat="53.3598080" lon="-1.7569190"/>
-            <trkpt lat="53.3597750" lon="-1.7568430"/>
+            <trkpt lat="53.3600220" lon="-1.7591470"/>
+            <trkpt lat="53.3600040" lon="-1.7591300"/>
+            <trkpt lat="53.3600120" lon="-1.7589330"/>
+            <trkpt lat="53.3599750" lon="-1.7587700"/>
+            <trkpt lat="53.3599630" lon="-1.7582490"/>
+            <trkpt lat="53.3599020" lon="-1.7576980"/>
+            <trkpt lat="53.3598800" lon="-1.7573470"/>
+            <trkpt lat="53.3598130" lon="-1.7568910"/>
+            <trkpt lat="53.3597630" lon="-1.7568010"/>
             <trkpt lat="53.3597270" lon="-1.7568080"/>
             <trkpt lat="53.3595480" lon="-1.7559650"/>
             <trkpt lat="53.3594750" lon="-1.7556880"/>
             <trkpt lat="53.3594370" lon="-1.7555980"/>
-            <trkpt lat="53.3593890" lon="-1.7555430"/>
             <trkpt lat="53.3592070" lon="-1.7553990"/>
             <trkpt lat="53.3590160" lon="-1.7553350"/>
             <trkpt lat="53.3589180" lon="-1.7552770"/>
@@ -4423,9 +4713,147 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3660949" lon="-1.7041190"/>
             <trkpt lat="53.3655505" lon="-1.6985006"/>
             <trkpt lat="53.3653184" lon="-1.6962757"/>
-            <trkpt lat="53.3636154" lon="-1.6961040"/>
-            <trkpt lat="53.3645980" lon="-1.6939030"/>
-            <trkpt lat="53.3690287" lon="-1.6911700"/>
+            <trkpt lat="53.3646345" lon="-1.6965026"/>
+            <trkpt lat="53.3636806" lon="-1.6959715"/>
+            <trkpt lat="53.3617553" lon="-1.6954674"/>
+            <trkpt lat="53.3595816" lon="-1.6933378"/>
+            <trkpt lat="53.3577094" lon="-1.6911696"/>
+            <trkpt lat="53.3561982" lon="-1.6879403"/>
+            <trkpt lat="53.3553240" lon="-1.6869124"/>
+            <trkpt lat="53.3544925" lon="-1.6853254"/>
+            <trkpt lat="53.3537656" lon="-1.6834586"/>
+            <trkpt lat="53.3529588" lon="-1.6811465"/>
+            <trkpt lat="53.3524817" lon="-1.6805779"/>
+            <trkpt lat="53.3521935" lon="-1.6797035"/>
+            <trkpt lat="53.3524881" lon="-1.6790008"/>
+            <trkpt lat="53.3530004" lon="-1.6796552"/>
+            <trkpt lat="53.3538438" lon="-1.6806646"/>
+            <trkpt lat="53.3548811" lon="-1.6814318"/>
+            <trkpt lat="53.3562989" lon="-1.6818813"/>
+            <trkpt lat="53.3562990" lon="-1.6818810"/>
+            <trkpt lat="53.3563760" lon="-1.6819550"/>
+            <trkpt lat="53.3565000" lon="-1.6822670"/>
+            <trkpt lat="53.3565560" lon="-1.6824870"/>
+            <trkpt lat="53.3566170" lon="-1.6826540"/>
+            <trkpt lat="53.3566890" lon="-1.6826360"/>
+            <trkpt lat="53.3568450" lon="-1.6828500"/>
+            <trkpt lat="53.3568950" lon="-1.6829840"/>
+            <trkpt lat="53.3570670" lon="-1.6831980"/>
+            <trkpt lat="53.3571560" lon="-1.6834000"/>
+            <trkpt lat="53.3572750" lon="-1.6834940"/>
+            <trkpt lat="53.3574010" lon="-1.6837440"/>
+            <trkpt lat="53.3575420" lon="-1.6839660"/>
+            <trkpt lat="53.3575540" lon="-1.6841080"/>
+            <trkpt lat="53.3575740" lon="-1.6841320"/>
+            <trkpt lat="53.3575840" lon="-1.6843710"/>
+            <trkpt lat="53.3576550" lon="-1.6844820"/>
+            <trkpt lat="53.3577770" lon="-1.6847500"/>
+            <trkpt lat="53.3578420" lon="-1.6849100"/>
+            <trkpt lat="53.3578520" lon="-1.6849960"/>
+            <trkpt lat="53.3580640" lon="-1.6853300"/>
+            <trkpt lat="53.3581270" lon="-1.6854210"/>
+            <trkpt lat="53.3581480" lon="-1.6854510"/>
+            <trkpt lat="53.3581840" lon="-1.6854940"/>
+            <trkpt lat="53.3582670" lon="-1.6855940"/>
+            <trkpt lat="53.3583070" lon="-1.6856620"/>
+            <trkpt lat="53.3583420" lon="-1.6857770"/>
+            <trkpt lat="53.3584060" lon="-1.6858740"/>
+            <trkpt lat="53.3585520" lon="-1.6860110"/>
+            <trkpt lat="53.3586390" lon="-1.6862780"/>
+            <trkpt lat="53.3587200" lon="-1.6863230"/>
+            <trkpt lat="53.3587770" lon="-1.6863770"/>
+            <trkpt lat="53.3588180" lon="-1.6864170"/>
+            <trkpt lat="53.3589300" lon="-1.6865240"/>
+            <trkpt lat="53.3589780" lon="-1.6866190"/>
+            <trkpt lat="53.3589950" lon="-1.6867190"/>
+            <trkpt lat="53.3591080" lon="-1.6869450"/>
+            <trkpt lat="53.3591230" lon="-1.6869840"/>
+            <trkpt lat="53.3592380" lon="-1.6872970"/>
+            <trkpt lat="53.3593140" lon="-1.6873700"/>
+            <trkpt lat="53.3593740" lon="-1.6874410"/>
+            <trkpt lat="53.3593750" lon="-1.6874450"/>
+            <trkpt lat="53.3594040" lon="-1.6875200"/>
+            <trkpt lat="53.3594230" lon="-1.6875580"/>
+            <trkpt lat="53.3595030" lon="-1.6877170"/>
+            <trkpt lat="53.3596220" lon="-1.6878970"/>
+            <trkpt lat="53.3596530" lon="-1.6879500"/>
+            <trkpt lat="53.3597360" lon="-1.6880900"/>
+            <trkpt lat="53.3597530" lon="-1.6881100"/>
+            <trkpt lat="53.3598240" lon="-1.6881920"/>
+            <trkpt lat="53.3599650" lon="-1.6884290"/>
+            <trkpt lat="53.3601480" lon="-1.6887930"/>
+            <trkpt lat="53.3602930" lon="-1.6891660"/>
+            <trkpt lat="53.3604350" lon="-1.6893270"/>
+            <trkpt lat="53.3604490" lon="-1.6893820"/>
+            <trkpt lat="53.3604980" lon="-1.6895510"/>
+            <trkpt lat="53.3605280" lon="-1.6895920"/>
+            <trkpt lat="53.3606520" lon="-1.6897580"/>
+            <trkpt lat="53.3607820" lon="-1.6897910"/>
+            <trkpt lat="53.3608180" lon="-1.6897870"/>
+            <trkpt lat="53.3608183" lon="-1.6897873"/>
+            <trkpt lat="53.3608180" lon="-1.6897870"/>
+            <trkpt lat="53.3609610" lon="-1.6897740"/>
+            <trkpt lat="53.3610520" lon="-1.6898290"/>
+            <trkpt lat="53.3611330" lon="-1.6897780"/>
+            <trkpt lat="53.3612240" lon="-1.6898270"/>
+            <trkpt lat="53.3613080" lon="-1.6898220"/>
+            <trkpt lat="53.3614550" lon="-1.6898710"/>
+            <trkpt lat="53.3616670" lon="-1.6898550"/>
+            <trkpt lat="53.3617430" lon="-1.6898760"/>
+            <trkpt lat="53.3618480" lon="-1.6898320"/>
+            <trkpt lat="53.3620710" lon="-1.6898100"/>
+            <trkpt lat="53.3623970" lon="-1.6899570"/>
+            <trkpt lat="53.3625260" lon="-1.6899180"/>
+            <trkpt lat="53.3625810" lon="-1.6898720"/>
+            <trkpt lat="53.3629320" lon="-1.6898020"/>
+            <trkpt lat="53.3632320" lon="-1.6901500"/>
+            <trkpt lat="53.3635250" lon="-1.6902910"/>
+            <trkpt lat="53.3635790" lon="-1.6903510"/>
+            <trkpt lat="53.3638610" lon="-1.6904400"/>
+            <trkpt lat="53.3639010" lon="-1.6904800"/>
+            <trkpt lat="53.3639950" lon="-1.6904930"/>
+            <trkpt lat="53.3641500" lon="-1.6905750"/>
+            <trkpt lat="53.3643070" lon="-1.6906870"/>
+            <trkpt lat="53.3643730" lon="-1.6907110"/>
+            <trkpt lat="53.3645710" lon="-1.6908780"/>
+            <trkpt lat="53.3646670" lon="-1.6909110"/>
+            <trkpt lat="53.3647700" lon="-1.6909070"/>
+            <trkpt lat="53.3650100" lon="-1.6909510"/>
+            <trkpt lat="53.3651630" lon="-1.6910370"/>
+            <trkpt lat="53.3653970" lon="-1.6910430"/>
+            <trkpt lat="53.3655850" lon="-1.6910300"/>
+            <trkpt lat="53.3656890" lon="-1.6909740"/>
+            <trkpt lat="53.3657710" lon="-1.6909690"/>
+            <trkpt lat="53.3658480" lon="-1.6909940"/>
+            <trkpt lat="53.3662610" lon="-1.6910250"/>
+            <trkpt lat="53.3665500" lon="-1.6909590"/>
+            <trkpt lat="53.3667570" lon="-1.6908610"/>
+            <trkpt lat="53.3668730" lon="-1.6908580"/>
+            <trkpt lat="53.3669510" lon="-1.6908830"/>
+            <trkpt lat="53.3670960" lon="-1.6908580"/>
+            <trkpt lat="53.3673880" lon="-1.6906830"/>
+            <trkpt lat="53.3675240" lon="-1.6906340"/>
+            <trkpt lat="53.3681990" lon="-1.6905500"/>
+            <trkpt lat="53.3682620" lon="-1.6905200"/>
+            <trkpt lat="53.3683360" lon="-1.6904220"/>
+            <trkpt lat="53.3684950" lon="-1.6902990"/>
+            <trkpt lat="53.3687610" lon="-1.6901870"/>
+            <trkpt lat="53.3690290" lon="-1.6900030"/>
+            <trkpt lat="53.3690920" lon="-1.6899790"/>
+            <trkpt lat="53.3691330" lon="-1.6899060"/>
+            <trkpt lat="53.3692250" lon="-1.6898380"/>
+            <trkpt lat="53.3692480" lon="-1.6897810"/>
+            <trkpt lat="53.3693710" lon="-1.6896320"/>
+            <trkpt lat="53.3693580" lon="-1.6896770"/>
+            <trkpt lat="53.3693580" lon="-1.6896768"/>
+            <trkpt lat="53.3693580" lon="-1.6896770"/>
+            <trkpt lat="53.3694440" lon="-1.6893480"/>
+            <trkpt lat="53.3695420" lon="-1.6890630"/>
+            <trkpt lat="53.3696660" lon="-1.6883070"/>
+            <trkpt lat="53.3697110" lon="-1.6878670"/>
+            <trkpt lat="53.3697120" lon="-1.6876280"/>
+            <trkpt lat="53.3697270" lon="-1.6875810"/>
+            <trkpt lat="53.3697850" lon="-1.6875320"/>
             <trkpt lat="53.3698440" lon="-1.6875070"/>
             <trkpt lat="53.3698440" lon="-1.6875070"/>
             <trkpt lat="53.3698680" lon="-1.6874960"/>
@@ -4436,35 +4864,88 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3707000" lon="-1.6880190"/>
             <trkpt lat="53.3708150" lon="-1.6880340"/>
             <trkpt lat="53.3710220" lon="-1.6882240"/>
-            <trkpt lat="53.3722688" lon="-1.6887779"/>
-            <trkpt lat="53.3735810" lon="-1.6882629"/>
-            <trkpt lat="53.3743363" lon="-1.6868037"/>
-            <trkpt lat="53.3741187" lon="-1.6849262"/>
-            <trkpt lat="53.3748420" lon="-1.6827161"/>
-            <trkpt lat="53.3747423" lon="-1.6803852"/>
-            <trkpt lat="53.3748519" lon="-1.6793698"/>
-            <trkpt lat="53.3761797" lon="-1.6806561"/>
-            <trkpt lat="53.3776058" lon="-1.6808334"/>
-            <trkpt lat="53.3776060" lon="-1.6808330"/>
-            <trkpt lat="53.3778780" lon="-1.6808660"/>
-            <trkpt lat="53.3781940" lon="-1.6810210"/>
-            <trkpt lat="53.3785850" lon="-1.6809790"/>
-            <trkpt lat="53.3788030" lon="-1.6810040"/>
-            <trkpt lat="53.3791380" lon="-1.6808840"/>
-            <trkpt lat="53.3793800" lon="-1.6808270"/>
-            <trkpt lat="53.3796470" lon="-1.6807170"/>
-            <trkpt lat="53.3808800" lon="-1.6800960"/>
-            <trkpt lat="53.3810360" lon="-1.6800390"/>
-            <trkpt lat="53.3813940" lon="-1.6800550"/>
-            <trkpt lat="53.3817040" lon="-1.6802240"/>
-            <trkpt lat="53.3817400" lon="-1.6802360"/>
-            <trkpt lat="53.3817396" lon="-1.6802362"/>
-            <trkpt lat="53.3827428" lon="-1.6803372"/>
-            <trkpt lat="53.3828772" lon="-1.6807395"/>
-            <trkpt lat="53.3834307" lon="-1.6803157"/>
-            <trkpt lat="53.3834230" lon="-1.6803660"/>
+            <trkpt lat="53.3710220" lon="-1.6882240"/>
+            <trkpt lat="53.3711580" lon="-1.6883490"/>
+            <trkpt lat="53.3713840" lon="-1.6886280"/>
+            <trkpt lat="53.3714920" lon="-1.6887240"/>
+            <trkpt lat="53.3716280" lon="-1.6888050"/>
+            <trkpt lat="53.3718980" lon="-1.6887120"/>
+            <trkpt lat="53.3723270" lon="-1.6887150"/>
+            <trkpt lat="53.3725030" lon="-1.6887490"/>
+            <trkpt lat="53.3728890" lon="-1.6886490"/>
+            <trkpt lat="53.3731750" lon="-1.6884990"/>
+            <trkpt lat="53.3735420" lon="-1.6881990"/>
+            <trkpt lat="53.3737930" lon="-1.6879090"/>
+            <trkpt lat="53.3739370" lon="-1.6876870"/>
+            <trkpt lat="53.3741930" lon="-1.6873500"/>
+            <trkpt lat="53.3743180" lon="-1.6870670"/>
+            <trkpt lat="53.3744180" lon="-1.6866940"/>
+            <trkpt lat="53.3744350" lon="-1.6864840"/>
+            <trkpt lat="53.3744354" lon="-1.6864835"/>
+            <trkpt lat="53.3741708" lon="-1.6848983"/>
+            <trkpt lat="53.3747980" lon="-1.6835143"/>
+            <trkpt lat="53.3749421" lon="-1.6819318"/>
+            <trkpt lat="53.3745836" lon="-1.6801937"/>
+            <trkpt lat="53.3747153" lon="-1.6794035"/>
+            <trkpt lat="53.3747150" lon="-1.6794040"/>
+            <trkpt lat="53.3746310" lon="-1.6793620"/>
+            <trkpt lat="53.3743490" lon="-1.6790680"/>
+            <trkpt lat="53.3742860" lon="-1.6789560"/>
+            <trkpt lat="53.3742490" lon="-1.6788510"/>
+            <trkpt lat="53.3742160" lon="-1.6786570"/>
+            <trkpt lat="53.3742130" lon="-1.6778780"/>
+            <trkpt lat="53.3742310" lon="-1.6778780"/>
+            <trkpt lat="53.3742312" lon="-1.6778782"/>
+            <trkpt lat="53.3742310" lon="-1.6778780"/>
+            <trkpt lat="53.3744490" lon="-1.6778860"/>
+            <trkpt lat="53.3746550" lon="-1.6779780"/>
+            <trkpt lat="53.3748440" lon="-1.6780320"/>
+            <trkpt lat="53.3751980" lon="-1.6782440"/>
+            <trkpt lat="53.3753740" lon="-1.6782950"/>
+            <trkpt lat="53.3758730" lon="-1.6783450"/>
+            <trkpt lat="53.3760170" lon="-1.6783330"/>
+            <trkpt lat="53.3762560" lon="-1.6784380"/>
+            <trkpt lat="53.3764710" lon="-1.6784370"/>
+            <trkpt lat="53.3766380" lon="-1.6784680"/>
+            <trkpt lat="53.3769310" lon="-1.6783860"/>
+            <trkpt lat="53.3773600" lon="-1.6783740"/>
+            <trkpt lat="53.3776790" lon="-1.6784740"/>
+            <trkpt lat="53.3779180" lon="-1.6783940"/>
+            <trkpt lat="53.3780650" lon="-1.6783930"/>
+            <trkpt lat="53.3780870" lon="-1.6783980"/>
+            <trkpt lat="53.3780869" lon="-1.6783981"/>
+            <trkpt lat="53.3780870" lon="-1.6783980"/>
+            <trkpt lat="53.3783910" lon="-1.6784700"/>
+            <trkpt lat="53.3790440" lon="-1.6784440"/>
+            <trkpt lat="53.3799300" lon="-1.6782670"/>
+            <trkpt lat="53.3802960" lon="-1.6781240"/>
+            <trkpt lat="53.3805560" lon="-1.6779740"/>
+            <trkpt lat="53.3809300" lon="-1.6778740"/>
+            <trkpt lat="53.3809870" lon="-1.6778230"/>
+            <trkpt lat="53.3810000" lon="-1.6778000"/>
+            <trkpt lat="53.3810000" lon="-1.6777998"/>
+            <trkpt lat="53.3821990" lon="-1.6753523"/>
+            <trkpt lat="53.3823464" lon="-1.6803713"/>
+            <trkpt lat="53.3826660" lon="-1.6802930"/>
+            <trkpt lat="53.3826661" lon="-1.6802926"/>
+            <trkpt lat="53.3827423" lon="-1.6805495"/>
+            <trkpt lat="53.3827523" lon="-1.6808021"/>
+            <trkpt lat="53.3827520" lon="-1.6808020"/>
+            <trkpt lat="53.3827970" lon="-1.6807860"/>
+            <trkpt lat="53.3829380" lon="-1.6806560"/>
+            <trkpt lat="53.3830080" lon="-1.6805570"/>
+            <trkpt lat="53.3832300" lon="-1.6803610"/>
+            <trkpt lat="53.3833250" lon="-1.6803230"/>
             <trkpt lat="53.3837970" lon="-1.6805190"/>
-            <trkpt lat="53.3839130" lon="-1.6806020"/>
+            <trkpt lat="53.3839440" lon="-1.6806380"/>
+            <trkpt lat="53.3841710" lon="-1.6807070"/>
+            <trkpt lat="53.3842180" lon="-1.6806950"/>
+            <trkpt lat="53.3842380" lon="-1.6806570"/>
+            <trkpt lat="53.3842320" lon="-1.6806420"/>
+            <trkpt lat="53.3842322" lon="-1.6806419"/>
+            <trkpt lat="53.3842320" lon="-1.6806420"/>
+            <trkpt lat="53.3842380" lon="-1.6806570"/>
+            <trkpt lat="53.3842930" lon="-1.6810210"/>
             <trkpt lat="53.3843160" lon="-1.6810300"/>
             <trkpt lat="53.3843450" lon="-1.6811850"/>
             <trkpt lat="53.3843250" lon="-1.6813190"/>
@@ -4494,17 +4975,22 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3835720" lon="-1.6894710"/>
             <trkpt lat="53.3835370" lon="-1.6896860"/>
             <trkpt lat="53.3835440" lon="-1.6898620"/>
-            <trkpt lat="53.3835040" lon="-1.6905270"/>
-            <trkpt lat="53.3833150" lon="-1.6914960"/>
-            <trkpt lat="53.3833020" lon="-1.6916460"/>
-            <trkpt lat="53.3832940" lon="-1.6922470"/>
-            <trkpt lat="53.3833470" lon="-1.6928780"/>
-            <trkpt lat="53.3833280" lon="-1.6935400"/>
-            <trkpt lat="53.3832870" lon="-1.6939070"/>
-            <trkpt lat="53.3831080" lon="-1.6947070"/>
-            <trkpt lat="53.3830630" lon="-1.6950000"/>
-            <trkpt lat="53.3827900" lon="-1.6971220"/>
-            <trkpt lat="53.3827870" lon="-1.6979560"/>
+            <trkpt lat="53.3835280" lon="-1.6902000"/>
+            <trkpt lat="53.3834780" lon="-1.6905530"/>
+            <trkpt lat="53.3834450" lon="-1.6907330"/>
+            <trkpt lat="53.3832940" lon="-1.6911540"/>
+            <trkpt lat="53.3832840" lon="-1.6912320"/>
+            <trkpt lat="53.3832830" lon="-1.6913750"/>
+            <trkpt lat="53.3832400" lon="-1.6917150"/>
+            <trkpt lat="53.3832180" lon="-1.6920810"/>
+            <trkpt lat="53.3833170" lon="-1.6926530"/>
+            <trkpt lat="53.3832900" lon="-1.6938820"/>
+            <trkpt lat="53.3831060" lon="-1.6947060"/>
+            <trkpt lat="53.3829880" lon="-1.6956170"/>
+            <trkpt lat="53.3828160" lon="-1.6963050"/>
+            <trkpt lat="53.3827950" lon="-1.6964480"/>
+            <trkpt lat="53.3827980" lon="-1.6970240"/>
+            <trkpt lat="53.3827820" lon="-1.6976250"/>
             <trkpt lat="53.3828150" lon="-1.6985720"/>
             <trkpt lat="53.3828530" lon="-1.6989780"/>
             <trkpt lat="53.3828890" lon="-1.6991730"/>
@@ -4520,11 +5006,10 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3830970" lon="-1.7027770"/>
             <trkpt lat="53.3830900" lon="-1.7029790"/>
             <trkpt lat="53.3829930" lon="-1.7037200"/>
+            <trkpt lat="53.3829930" lon="-1.7038570"/>
+            <trkpt lat="53.3829928" lon="-1.7038569"/>
+            <trkpt lat="53.3829930" lon="-1.7038570"/>
             <trkpt lat="53.3829930" lon="-1.7038780"/>
-            <trkpt lat="53.3829800" lon="-1.7039420"/>
-            <trkpt lat="53.3829797" lon="-1.7039417"/>
-            <trkpt lat="53.3829800" lon="-1.7039420"/>
-            <trkpt lat="53.3829970" lon="-1.7038630"/>
             <trkpt lat="53.3831400" lon="-1.7036800"/>
             <trkpt lat="53.3832280" lon="-1.7036360"/>
             <trkpt lat="53.3834150" lon="-1.7036050"/>
@@ -5197,10 +5682,12 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3395420" lon="-1.6016340"/>
             <trkpt lat="53.3391230" lon="-1.6012090"/>
             <trkpt lat="53.3386150" lon="-1.6007910"/>
-            <trkpt lat="53.3384250" lon="-1.6005900"/>
+            <trkpt lat="53.3384740" lon="-1.6006420"/>
             <trkpt lat="53.3379780" lon="-1.6000410"/>
             <trkpt lat="53.3376630" lon="-1.5997630"/>
-            <trkpt lat="53.3372880" lon="-1.5992360"/>
+            <trkpt lat="53.3374690" lon="-1.5994900"/>
+            <trkpt lat="53.3374689" lon="-1.5994900"/>
+            <trkpt lat="53.3374690" lon="-1.5994900"/>
             <trkpt lat="53.3369530" lon="-1.5988110"/>
             <trkpt lat="53.3364160" lon="-1.5981630"/>
             <trkpt lat="53.3359420" lon="-1.5976510"/>
@@ -5219,21 +5706,25 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3322260" lon="-1.5974950"/>
             <trkpt lat="53.3319500" lon="-1.5975860"/>
             <trkpt lat="53.3316480" lon="-1.5977230"/>
+            <trkpt lat="53.3315920" lon="-1.5977310"/>
+            <trkpt lat="53.3315918" lon="-1.5977311"/>
+            <trkpt lat="53.3315920" lon="-1.5977310"/>
             <trkpt lat="53.3314890" lon="-1.5977460"/>
             <trkpt lat="53.3313570" lon="-1.5977120"/>
-            <trkpt lat="53.3312080" lon="-1.5976260"/>
             <trkpt lat="53.3310640" lon="-1.5975680"/>
             <trkpt lat="53.3308780" lon="-1.5974020"/>
             <trkpt lat="53.3307470" lon="-1.5971630"/>
             <trkpt lat="53.3306570" lon="-1.5968730"/>
             <trkpt lat="53.3301150" lon="-1.5955430"/>
             <trkpt lat="53.3298080" lon="-1.5950340"/>
-            <trkpt lat="53.3297420" lon="-1.5950320"/>
-            <trkpt lat="53.3296900" lon="-1.5949620"/>
-            <trkpt lat="53.3294460" lon="-1.5944620"/>
+            <trkpt lat="53.3297940" lon="-1.5950720"/>
+            <trkpt lat="53.3297160" lon="-1.5950040"/>
+            <trkpt lat="53.3295510" lon="-1.5947090"/>
+            <trkpt lat="53.3295300" lon="-1.5945740"/>
+            <trkpt lat="53.3294660" lon="-1.5944680"/>
             <trkpt lat="53.3293810" lon="-1.5944320"/>
             <trkpt lat="53.3292780" lon="-1.5944840"/>
-            <trkpt lat="53.3292830" lon="-1.5943500"/>
+            <trkpt lat="53.3292830" lon="-1.5943490"/>
             <trkpt lat="53.3292829" lon="-1.5943495"/>
             <trkpt lat="53.3292830" lon="-1.5943500"/>
             <trkpt lat="53.3292780" lon="-1.5944840"/>
@@ -5416,6 +5907,7 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3175800" lon="-1.6214400"/>
             <trkpt lat="53.3175423" lon="-1.6213940"/>
             <trkpt lat="53.3175166" lon="-1.6210024"/>
+            <trkpt lat="53.3175166" lon="-1.6210024"/>
             <trkpt lat="53.3168116" lon="-1.6203104"/>
             <trkpt lat="53.3165225" lon="-1.6166469"/>
             <trkpt lat="53.3165220" lon="-1.6166470"/>
@@ -5531,12 +6023,6 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3103400" lon="-1.6143760"/>
             <trkpt lat="53.3103400" lon="-1.6143760"/>
             <trkpt lat="53.3103400" lon="-1.6143760"/>
-            <trkpt lat="53.3104250" lon="-1.6143410"/>
-            <trkpt lat="53.3108990" lon="-1.6133620"/>
-            <trkpt lat="53.3120570" lon="-1.6124000"/>
-            <trkpt lat="53.3122390" lon="-1.6122130"/>
-            <trkpt lat="53.3127050" lon="-1.6115000"/>
-            <trkpt lat="53.3126900" lon="-1.6111560"/>
             <trkpt lat="53.3126540" lon="-1.6109210"/>
             <trkpt lat="53.3126537" lon="-1.6109208"/>
             <trkpt lat="53.3126540" lon="-1.6109210"/>
@@ -5561,7 +6047,6 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3153410" lon="-1.6056170"/>
             <trkpt lat="53.3154980" lon="-1.6054770"/>
             <trkpt lat="53.3157480" lon="-1.6051450"/>
-            <trkpt lat="53.3157910" lon="-1.6050990"/>
             <trkpt lat="53.3157912" lon="-1.6050993"/>
             <trkpt lat="53.3157910" lon="-1.6050990"/>
             <trkpt lat="53.3159310" lon="-1.6049390"/>
@@ -5594,21 +6079,8 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.3157890" lon="-1.6006670"/>
             <trkpt lat="53.3157885" lon="-1.6006671"/>
             <trkpt lat="53.3135582" lon="-1.6019065"/>
-            <trkpt lat="53.3112052" lon="-1.6013842"/>
-            <trkpt lat="53.3112050" lon="-1.6013840"/>
-            <trkpt lat="53.3111360" lon="-1.6015290"/>
-            <trkpt lat="53.3109590" lon="-1.6017470"/>
-            <trkpt lat="53.3108650" lon="-1.6019510"/>
-            <trkpt lat="53.3108620" lon="-1.6019670"/>
-            <trkpt lat="53.3105240" lon="-1.6018550"/>
-            <trkpt lat="53.3097010" lon="-1.6013780"/>
-            <trkpt lat="53.3093450" lon="-1.6011260"/>
-            <trkpt lat="53.3090830" lon="-1.6008820"/>
-            <trkpt lat="53.3082660" lon="-1.6002570"/>
-            <trkpt lat="53.3080360" lon="-1.6000310"/>
-            <trkpt lat="53.3077530" lon="-1.5996910"/>
-            <trkpt lat="53.3074910" lon="-1.5992440"/>
-            <trkpt lat="53.3073980" lon="-1.5990580"/>
+            <trkpt lat="53.3113406" lon="-1.6013582"/>
+            <trkpt lat="53.3094240" lon="-1.6004194"/>
             <trkpt lat="53.3073885" lon="-1.5990711"/>
             <trkpt lat="53.3073980" lon="-1.5990580"/>
             <trkpt lat="53.3072320" lon="-1.5987880"/>
@@ -5805,78 +6277,21 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.2775230" lon="-1.6200700"/>
             <trkpt lat="53.2774660" lon="-1.6200530"/>
             <trkpt lat="53.2773890" lon="-1.6200070"/>
-            <trkpt lat="53.2773890" lon="-1.6200070"/>
-            <trkpt lat="53.2773890" lon="-1.6200070"/>
-            <trkpt lat="53.2772420" lon="-1.6198660"/>
-            <trkpt lat="53.2771390" lon="-1.6196930"/>
-            <trkpt lat="53.2769570" lon="-1.6192570"/>
-            <trkpt lat="53.2768680" lon="-1.6190940"/>
-            <trkpt lat="53.2755260" lon="-1.6173220"/>
-            <trkpt lat="53.2752240" lon="-1.6169950"/>
-            <trkpt lat="53.2740350" lon="-1.6159020"/>
-            <trkpt lat="53.2735230" lon="-1.6151220"/>
-            <trkpt lat="53.2733010" lon="-1.6148350"/>
-            <trkpt lat="53.2730900" lon="-1.6147060"/>
-            <trkpt lat="53.2727880" lon="-1.6145950"/>
-            <trkpt lat="53.2726270" lon="-1.6144690"/>
-            <trkpt lat="53.2724980" lon="-1.6142490"/>
-            <trkpt lat="53.2723470" lon="-1.6138770"/>
-            <trkpt lat="53.2722770" lon="-1.6137480"/>
-            <trkpt lat="53.2721220" lon="-1.6136050"/>
-            <trkpt lat="53.2718450" lon="-1.6134590"/>
-            <trkpt lat="53.2717950" lon="-1.6134110"/>
-            <trkpt lat="53.2716980" lon="-1.6132490"/>
-            <trkpt lat="53.2714650" lon="-1.6127570"/>
-            <trkpt lat="53.2713730" lon="-1.6125990"/>
-            <trkpt lat="53.2709760" lon="-1.6120640"/>
-            <trkpt lat="53.2707000" lon="-1.6115730"/>
-            <trkpt lat="53.2696500" lon="-1.6104150"/>
-            <trkpt lat="53.2691830" lon="-1.6097880"/>
-            <trkpt lat="53.2690680" lon="-1.6097710"/>
-            <trkpt lat="53.2690170" lon="-1.6097910"/>
-            <trkpt lat="53.2687900" lon="-1.6101430"/>
-            <trkpt lat="53.2687450" lon="-1.6101860"/>
-            <trkpt lat="53.2686670" lon="-1.6101950"/>
-            <trkpt lat="53.2686290" lon="-1.6101570"/>
-            <trkpt lat="53.2684900" lon="-1.6098630"/>
-            <trkpt lat="53.2684540" lon="-1.6099560"/>
-            <trkpt lat="53.2684410" lon="-1.6100060"/>
-            <trkpt lat="53.2684410" lon="-1.6100060"/>
-            <trkpt lat="53.2684410" lon="-1.6100060"/>
-            <trkpt lat="53.2684250" lon="-1.6100700"/>
-            <trkpt lat="53.2683640" lon="-1.6101450"/>
-            <trkpt lat="53.2678800" lon="-1.6105700"/>
-            <trkpt lat="53.2678670" lon="-1.6105730"/>
-            <trkpt lat="53.2677740" lon="-1.6109890"/>
-            <trkpt lat="53.2676380" lon="-1.6112890"/>
-            <trkpt lat="53.2675300" lon="-1.6114790"/>
-            <trkpt lat="53.2674670" lon="-1.6116710"/>
-            <trkpt lat="53.2674430" lon="-1.6116990"/>
-            <trkpt lat="53.2673820" lon="-1.6116070"/>
-            <trkpt lat="53.2673350" lon="-1.6115790"/>
-            <trkpt lat="53.2669240" lon="-1.6115410"/>
-            <trkpt lat="53.2668650" lon="-1.6115730"/>
-            <trkpt lat="53.2667940" lon="-1.6115660"/>
-            <trkpt lat="53.2665420" lon="-1.6114900"/>
-            <trkpt lat="53.2663350" lon="-1.6113700"/>
-            <trkpt lat="53.2661300" lon="-1.6112870"/>
-            <trkpt lat="53.2660220" lon="-1.6112590"/>
-            <trkpt lat="53.2658810" lon="-1.6112910"/>
-            <trkpt lat="53.2657670" lon="-1.6112880"/>
-            <trkpt lat="53.2655440" lon="-1.6111870"/>
-            <trkpt lat="53.2650070" lon="-1.6113610"/>
-            <trkpt lat="53.2647070" lon="-1.6113710"/>
-            <trkpt lat="53.2646060" lon="-1.6114100"/>
-            <trkpt lat="53.2644440" lon="-1.6115660"/>
-            <trkpt lat="53.2643720" lon="-1.6115950"/>
-            <trkpt lat="53.2641350" lon="-1.6115670"/>
-            <trkpt lat="53.2640610" lon="-1.6116030"/>
-            <trkpt lat="53.2639870" lon="-1.6115770"/>
-            <trkpt lat="53.2639360" lon="-1.6115330"/>
-            <trkpt lat="53.2637700" lon="-1.6115790"/>
-            <trkpt lat="53.2637060" lon="-1.6116350"/>
-            <trkpt lat="53.2635360" lon="-1.6115840"/>
-            <trkpt lat="53.2634390" lon="-1.6115730"/>
+            <trkpt lat="53.2763734" lon="-1.6186174"/>
+            <trkpt lat="53.2735584" lon="-1.6154706"/>
+            <trkpt lat="53.2725704" lon="-1.6147142"/>
+            <trkpt lat="53.2712358" lon="-1.6128742"/>
+            <trkpt lat="53.2707771" lon="-1.6117799"/>
+            <trkpt lat="53.2700809" lon="-1.6114097"/>
+            <trkpt lat="53.2693559" lon="-1.6110771"/>
+            <trkpt lat="53.2692179" lon="-1.6097468"/>
+            <trkpt lat="53.2687335" lon="-1.6101866"/>
+            <trkpt lat="53.2684832" lon="-1.6100096"/>
+            <trkpt lat="53.2679006" lon="-1.6106274"/>
+            <trkpt lat="53.2674739" lon="-1.6116359"/>
+            <trkpt lat="53.2664664" lon="-1.6117432"/>
+            <trkpt lat="53.2657171" lon="-1.6111777"/>
+            <trkpt lat="53.2644804" lon="-1.6115716"/>
             <trkpt lat="53.2634394" lon="-1.6115726"/>
             <trkpt lat="53.2634390" lon="-1.6115730"/>
             <trkpt lat="53.2632510" lon="-1.6115510"/>
@@ -6010,41 +6425,71 @@ Cross when you see the path down on the opposite side. NB: this is a very busy r
             <trkpt lat="53.2481000" lon="-1.5813110"/>
             <trkpt lat="53.2475590" lon="-1.5807480"/>
             <trkpt lat="53.2471730" lon="-1.5805890"/>
-            <trkpt lat="53.2467690" lon="-1.5803830"/>
+            <trkpt lat="53.2465530" lon="-1.5802560"/>
             <trkpt lat="53.2464000" lon="-1.5801510"/>
             <trkpt lat="53.2461900" lon="-1.5800980"/>
             <trkpt lat="53.2455380" lon="-1.5800370"/>
             <trkpt lat="53.2453210" lon="-1.5800800"/>
             <trkpt lat="53.2448800" lon="-1.5802490"/>
-            <trkpt lat="53.2447790" lon="-1.5803690"/>
-            <trkpt lat="53.2447791" lon="-1.5803692"/>
+            <trkpt lat="53.2448210" lon="-1.5803190"/>
+            <trkpt lat="53.2448209" lon="-1.5803194"/>
+            <trkpt lat="53.2448210" lon="-1.5803190"/>
+            <trkpt lat="53.2447660" lon="-1.5803840"/>
+            <trkpt lat="53.2447510" lon="-1.5804450"/>
+            <trkpt lat="53.2448620" lon="-1.5806970"/>
+            <trkpt lat="53.2448620" lon="-1.5807370"/>
+            <trkpt lat="53.2448340" lon="-1.5808050"/>
+            <trkpt lat="53.2449370" lon="-1.5809590"/>
+            <trkpt lat="53.2451620" lon="-1.5813920"/>
+            <trkpt lat="53.2453000" lon="-1.5818840"/>
+            <trkpt lat="53.2453170" lon="-1.5820100"/>
+            <trkpt lat="53.2453150" lon="-1.5822990"/>
+            <trkpt lat="53.2452730" lon="-1.5823970"/>
+            <trkpt lat="53.2452130" lon="-1.5824410"/>
+            <trkpt lat="53.2451410" lon="-1.5824900"/>
+            <trkpt lat="53.2451630" lon="-1.5825850"/>
+            <trkpt lat="53.2452140" lon="-1.5828370"/>
             <trkpt lat="53.2453245" lon="-1.5827741"/>
             <trkpt lat="53.2454884" lon="-1.5846645"/>
             <trkpt lat="53.2451345" lon="-1.5862976"/>
-            <trkpt lat="53.2451822" lon="-1.5870838"/>
-            <trkpt lat="53.2446553" lon="-1.5896522"/>
-            <trkpt lat="53.2436103" lon="-1.5929027"/>
-            <trkpt lat="53.2419200" lon="-1.5969836"/>
-            <trkpt lat="53.2405411" lon="-1.6001083"/>
-            <trkpt lat="53.2386466" lon="-1.6007976"/>
-            <trkpt lat="53.2357303" lon="-1.6029623"/>
-            <trkpt lat="53.2324310" lon="-1.6036319"/>
-            <trkpt lat="53.2318016" lon="-1.6048979"/>
-            <trkpt lat="53.2310222" lon="-1.6044013"/>
-            <trkpt lat="53.2308616" lon="-1.6050129"/>
-            <trkpt lat="53.2302804" lon="-1.6053186"/>
-            <trkpt lat="53.2309202" lon="-1.6056264"/>
-            <trkpt lat="53.2318936" lon="-1.6070415"/>
-            <trkpt lat="53.2318647" lon="-1.6100348"/>
-            <trkpt lat="53.2294404" lon="-1.6121517"/>
-            <trkpt lat="53.2280335" lon="-1.6161832"/>
-            <extensions>
-                <gs:line>
-                    <gs:color>D40058</gs:color>
-                    <gs:opacity>1.0</gs:opacity>
-                    <gs:width>8.0</gs:width>
-                </gs:line>
-            </extensions>
+            <trkpt lat="53.2450639" lon="-1.5868923"/>
+            <trkpt lat="53.2451666" lon="-1.5876540"/>
+            <trkpt lat="53.2450061" lon="-1.5885338"/>
+            <trkpt lat="53.2446174" lon="-1.5898485"/>
+            <trkpt lat="53.2435156" lon="-1.5930028"/>
+            <trkpt lat="53.2432010" lon="-1.5940971"/>
+            <trkpt lat="53.2424398" lon="-1.5960366"/>
+            <trkpt lat="53.2419230" lon="-1.5969452"/>
+            <trkpt lat="53.2413420" lon="-1.5973475"/>
+            <trkpt lat="53.2414368" lon="-1.5989172"/>
+            <trkpt lat="53.2404382" lon="-1.6002464"/>
+            <trkpt lat="53.2393530" lon="-1.6010296"/>
+            <trkpt lat="53.2377285" lon="-1.6012174"/>
+            <trkpt lat="53.2354258" lon="-1.6032636"/>
+            <trkpt lat="53.2335840" lon="-1.6032139"/>
+            <trkpt lat="53.2324955" lon="-1.6035894"/>
+            <trkpt lat="53.2321198" lon="-1.6030047"/>
+            <trkpt lat="53.2320286" lon="-1.6043410"/>
+            <trkpt lat="53.2317859" lon="-1.6048930"/>
+            <trkpt lat="53.2310377" lon="-1.6043780"/>
+            <trkpt lat="53.2308900" lon="-1.6050271"/>
+            <trkpt lat="53.2307937" lon="-1.6049466"/>
+            <trkpt lat="53.2307166" lon="-1.6051505"/>
+            <trkpt lat="53.2303987" lon="-1.6051987"/>
+            <trkpt lat="53.2300808" lon="-1.6053972"/>
+            <trkpt lat="53.2307680" lon="-1.6054991"/>
+            <trkpt lat="53.2318405" lon="-1.6069422"/>
+            <trkpt lat="53.2319980" lon="-1.6078606"/>
+            <trkpt lat="53.2327655" lon="-1.6081932"/>
+            <trkpt lat="53.2331187" lon="-1.6097328"/>
+            <trkpt lat="53.2322934" lon="-1.6102638"/>
+            <trkpt lat="53.2313430" lon="-1.6098025"/>
+            <trkpt lat="53.2298740" lon="-1.6102843"/>
+            <trkpt lat="53.2287243" lon="-1.6120116"/>
+            <trkpt lat="53.2292895" lon="-1.6121511"/>
+            <trkpt lat="53.2293473" lon="-1.6137282"/>
+            <trkpt lat="53.2288528" lon="-1.6149513"/>
+            <trkpt lat="53.2279793" lon="-1.6162388"/>
         </trkseg>
     </trk>
 </gpx>
