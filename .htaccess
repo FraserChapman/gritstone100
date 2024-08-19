@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^(app|dict|ns|tmp)\/|\.ini|\.tpl|composer\.json$ - [R=404]
+
+RewriteRule ^vendor/?$ - [F,L]
+
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L,QSA]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+php_value date.timezone Europe/London
+php_value display_errors Off

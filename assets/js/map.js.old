@@ -1,0 +1,245 @@
+const apiKey = 'u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc',
+    sourceId = 'gs100',
+    mapboxOptions = {
+        container: 'map',
+        minZoom: 9,
+        maxZoom: 15,
+        style: 'assets/geojson/style.json',
+        maxBounds: [
+            [-2.5257547363267463, 53.14456901764376],
+            [-0.8860452636708658, 53.55444575581981]
+        ],
+        center: [-1.7059, 53.35],
+        zoom: 9,
+        transformRequest: url =>
+            url.includes("?key=") ?
+                { url: url + "&srs=3857" } :
+                { url: url + "?key=" + apiKey + "&srs=3857" }
+    },
+    colors = {
+        offWhite: '#efefef',
+        darkGrey: '#3a3a3c',
+        darkRed: '#bd0000'
+    },
+    routeLayer = {
+        id: 'route',
+        type: 'line',
+        source: sourceId,
+        filter: ['==', ['id'], 0],
+        layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        paint: {
+            'line-color': colors.darkRed,
+            'line-width': 3
+        }
+    },
+    pointsLayer = {
+        id: 'points',
+        type: 'circle',
+        source: sourceId,
+        filter: ['==', ['geometry-type'], 'Point'],
+        paint: {
+            'circle-radius': activeState(12, 0),
+            'circle-color': colors.darkGrey,
+            'circle-stroke-width': activeState(3, 0),
+            'circle-stroke-color': colors.offWhite
+        }
+    },
+    labelLayer = {
+        id: 'labels',
+        type: 'symbol',
+        source: sourceId,
+        filter: ['==', ['geometry-type'], 'Point'],
+        paint: {
+            'text-color': activeState(colors.offWhite, colors.darkGrey),
+            'text-halo-color': colors.offWhite,
+            'text-halo-width': activeState(0, 3)
+        },
+        layout: {
+            'text-font': ['Source Sans Pro Regular'],
+            'text-field': ['id'], //"{name}""
+            'text-size': 12,
+            'text-anchor': 'center'
+        },
+    },
+    map = new mapboxgl.Map(mapboxOptions),
+    popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false }),
+
+    convert = {
+        metresToFeet: n => n * 3.28084,
+        feetToMetres: n => n / 3.28084,
+        milesToKilometres: n => n * 1.609,
+        KilometresToMiles: n => n / 3.28084,
+        coordinateToOsgb: c => (new GT_WGS84()).setDegrees(c[1], c[0]).getOSGB().getGridRef(8),
+        ddToDMS: d => {
+            const absolute = Math.abs(d);
+            const degrees = Math.floor(absolute);
+            const minutesNotTruncated = (absolute - degrees) * 60;
+            const minutes = Math.floor(minutesNotTruncated);
+            const seconds = Math.floor((minutesNotTruncated - minutes) * 60);
+
+            return `${degrees}\u00B0 ${minutes}\u2032 ${seconds}\u2033`;
+        },
+        coordinateToDMS: c => ({
+            lat: convert.ddToDMS(c[1]) + (c[1] >= 0 ? ' N' : ' S'),
+            lng: convert.ddToDMS(c[0]) + (c[0] >= 0 ? ' E' : ' W')
+        })
+    };
+// elevationChart = new ElevationChart(pointData.features, {
+//     // TODO : dynamic width?
+//     // document.querySelector('#content section').clientWidth
+//     width: 300,
+//     height: 120,
+//     x: d => d.properties.distance, // distance in mi
+//     y: d => d.geometry.coordinates[2] // elevation in m
+// });
+
+/**
+ * Returns a case expression based on the "active" feature-state
+ * @param {*} active value on active=true
+ * @param {*} inactive value on active=false
+ * @returns 
+ */
+function activeState(active, inactive) {
+    return ['case', ['boolean', ['feature-state', 'active'], false], active, inactive]
+}
+
+
+// let rawJson = null;
+
+// fetch('/assets/geojson/gs100.geojson')
+//     .then(r => r.json())
+//     .then(json => {
+//         rawJson = json;
+//     })
+//     .catch(console.error.bind(console));
+
+/**
+ * Shows a popup on at the given coordirnates
+ * with the given title and description
+ * @param {array} coordinates 
+ * @param {string} title 
+ * @param {string} desc (optional, default "")
+ */
+function showPopup(coordinates, title, desc = '') {
+    popup.setLngLat(coordinates)
+        .setHTML((desc ?
+            `<h1>${title}</h1><p>${desc}</p>` :
+            title))
+        .addTo(map);
+}
+
+/**
+ * Returns route distance between start and given point in units
+ * @param {object} point GeoJSON
+ * @param {string} units (optional, defualt 'miles')
+ * @returns {number} distance from start in units
+ */
+// function distanceFromStart(point, units) {
+//     units = units || 'miles';
+//     const d = turf.length(
+//         turf.lineSlice(
+//             rawJson.features[1].geometry.coordinates, // from
+//             point.geometry.coordinates, // to
+//             rawJson.features[0] // on
+//         ),
+//         { units: units } // in
+//     );
+
+//     return Math.round((d + Number.EPSILON) * 100) / 100;
+// }
+
+
+map.dragRotate.disable();
+map.touchZoomRotate.disableRotation();
+map.addControl(new mapboxgl.FullscreenControl());
+map.addControl(new mapboxgl.NavigationControl({ showCompass: false }));
+map.on('load', () => {
+    // map.addSource(sourceId, {
+    //     type: 'geojson',
+    //     data: 'assets/geojson/gs100.geojson',
+    //     tolerance: 3,
+    //     buffer: 0
+    // });
+    // map.addLayer(routeLayer);
+    // map.addLayer(pointsLayer);
+    // map.addLayer(labelLayer);
+    map.on('mouseenter', 'points', (e) => {
+        const point = e.features[0],
+            coordinates = point.geometry.coordinates.slice();
+        map.getCanvas().style.cursor = 'pointer';
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360; // NB: zoom fix
+        }
+
+        popup.setLngLat(coordinates)
+            .setHTML(`<h1>${point.properties.name}</h1><p>${point.properties.desc}</p>`)
+            .addTo(map);
+    });
+    map.on('mouseleave', 'points', () => {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+    });
+    // elevationChart.addEventListener('out', popup.remove);
+    // elevationChart.addEventListener('move', e => popup
+    //     .setLngLat(e.detail.geometry.coordinates)
+    //     .setHTML(e.detail.geometry.coordinates[2])
+    //     .addTo(map));
+});
+
+// elevation chart 
+//document.getElementById('elevation').appendChild(elevationChart);
+
+// sidebar POI clicks
+document.querySelectorAll('.sidebar li').forEach(a =>
+    a.addEventListener('click', ev => {
+        // TODO: precompute data...
+        // const distance = distanceFromStart(point);
+        // console.log({
+        //     osgb: convert.coordinateToOsgb(point.geometry.coordinates),
+        //     dist: distance,
+        //     prev: id > 0 ? distance - pointData.features[id - 1].properties.distance: 0
+        // });
+
+        //const point = pointData.features[ev.currentTarget.dataset.id];
+        //const point = map.querySourceFeatures(sourceId, { filter: ['==', ['id'], +ev.currentTarget.dataset.id] })[0],
+        const id = +ev.currentTarget.dataset.id,
+            active = !!map.getFeatureState({ source: sourceId, id: id }).active;
+        map.setFeatureState({ source: sourceId, id: id }, { active: !active });
+        ev.currentTarget.querySelector('div.desc').style.display = active ? 'none' : 'block';
+        !active && map.flyTo({ center: [+ev.currentTarget.dataset.lng, +ev.currentTarget.dataset.lat], zoom: 15 });
+    })
+);
+
+// sidebar filter
+document.getElementById('search').addEventListener(
+    'keyup',
+    ev => document
+        .querySelectorAll('.sidebar ul li')
+        .forEach(
+            x => x.style.display =
+                x.textContent.toUpperCase().indexOf(ev.currentTarget.value.toUpperCase()) > -1 ?
+                    '' :
+                    'none'
+        )
+);
+
+// sidebar toggle
+document.getElementById('toggle').addEventListener(
+    'click',
+    ev => {
+        document.querySelector('.sidebar').classList.toggle('closed');
+        map.resize();
+    }
+);
+
+
+// data.features.map((x, i, a) => {
+//     if (i > 1) {
+//         x.properties.osgb = convert.coordinateToOsgb(x.geometry.coordinates);
+//         x.properties.prev = Math.round((x.properties.distance - a[i - 1].properties.distance + Number.EPSILON) * 100) / 100;
+//     }
+//     return x;
+// })

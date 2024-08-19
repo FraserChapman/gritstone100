@@ -1,0 +1,17 @@
+{
+    "require": {
+        "bcosca/fatfree-core": "^3.7"
+    }
+    ,
+    "autoload": {
+        "files": ["helpers.php"],
+        "classmap": [
+            "./controllers"
+        ]
+    },
+    "scripts": {
+        "build": "php minify.php",
+        "xc": "rm -rf tmp/*",
+        "lint": "php -l controllers"
+    }
+}

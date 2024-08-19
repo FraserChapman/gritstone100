@@ -1,0 +1,7 @@
+<span id="settings" class="material-icons">tune</span>
+<div id="options">
+    <input type="radio" id="units-metric" name="units" value="metric">
+    <label for="units-metric">Metric</label>
+    <input type="radio" id="units-imperial" name="units" value="imperial" checked>
+    <label for="units-imperial">Imperial</label>
+</div>
