@@ -62,7 +62,7 @@ class Helpers
      */
     public static function milesToKilometres($miles, $round = 2): int|float
     {
-        return round($mi * 1.609, $round);
+        return round($miles * 1.609, $round);
     }
 
     /**
