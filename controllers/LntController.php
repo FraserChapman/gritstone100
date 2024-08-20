@@ -21,6 +21,6 @@ class LntController  extends AbstractController
         $f3->caption = "LEAVE NO TRACE";
         $f3->content = "/content/lnt.tpl";
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 }

@@ -19,6 +19,6 @@ class HomeController extends AbstractController
     {
         $f3->id = self::PAGE;
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 }

@@ -19,7 +19,7 @@ class PageController extends AbstractController
         $f3->caption = "KINDER SCOUT";
         $f3->content = '/content/kinder-scout.tpl';
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
         
     /**
@@ -35,7 +35,7 @@ class PageController extends AbstractController
         $f3->caption = "DAMBUSTERS";
         $f3->content = '/content/dambusters.tpl';
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 
     /**
@@ -51,7 +51,7 @@ class PageController extends AbstractController
         $f3->caption = "EDALE";
         $f3->content = '/content/edale.tpl';
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
     
     /**
@@ -67,7 +67,7 @@ class PageController extends AbstractController
         $f3->caption = "CASTLETON";
         $f3->content = '/content/castleton.tpl';
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
     
     /**
@@ -83,6 +83,6 @@ class PageController extends AbstractController
         $f3->caption = "WILDLIFE";
         $f3->content = '/content/wildlife.tpl';
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 }

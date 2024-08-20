@@ -39,6 +39,6 @@ class ErrorController extends AbstractController
             ob_end_clean();
         }
 
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 }

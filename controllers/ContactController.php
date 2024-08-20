@@ -21,6 +21,6 @@ class ContactController extends AbstractController
         $f3->caption = strtoupper(self::PAGE);
         $f3->byline = \Template::instance()->render("/partial/contact.tpl");
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 }

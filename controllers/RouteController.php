@@ -21,6 +21,6 @@ class RouteController extends AbstractController
         $f3->caption = strtoupper(self::PAGE);
         $f3->content = "content/route.tpl";
         
-        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
+        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
     }
 }
