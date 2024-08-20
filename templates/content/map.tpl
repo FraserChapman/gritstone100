@@ -80,7 +80,7 @@
             The local knowledge really brings a light to the Dark Peak!
         </p>
         <p>
-            <a href="https://christophergoddard.net/product/south-yorkshire-moors/">
+            <a href="https://christophergoddard.net/product/the-south-yorkshire-moors/">
                 The South Yorkshire Moors by Christopher Goddard
             </a>
         </p>
