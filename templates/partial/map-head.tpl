@@ -6,4 +6,3 @@
     data-suffix="Map data &copy; {{ @APP_NAME }} {{ date('Y') }}"></script>
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
