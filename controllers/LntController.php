@@ -7,7 +7,7 @@ namespace App\Controllers;
  */
 class LntController  extends AbstractController
 {
-    private const PAGE = 'lnt';
+    private const PAGE = "lnt";
 
     /**
      * HTTP GET /lnt
@@ -18,9 +18,9 @@ class LntController  extends AbstractController
     public function get($f3)
     {
         $f3->id = self::PAGE;
-        $f3->caption = 'LEAVE NO TRACE';
-        $f3->content = '/content/lnt.tpl';
+        $f3->caption = "LEAVE NO TRACE";
+        $f3->content = "/content/lnt.tpl";
         
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }

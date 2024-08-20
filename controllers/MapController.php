@@ -9,7 +9,7 @@ use App\Helpers;
  */
 class MapController extends AbstractController
 {
-    private const PAGE = 'map';
+    private const PAGE = "map";
 
     /**
      * HTTP GET /map
@@ -21,10 +21,10 @@ class MapController extends AbstractController
     {
         $f3->id = self::PAGE;
         $f3->caption = strtoupper(self::PAGE);
-        $f3->head = '/partial/map-head.tpl';
-        $f3->content = '/content/map.tpl';
-        $f3->geojson = Helpers::getJson('assets/geojson/gs100.min.geojson');
+        $f3->head = "/partial/map-head.tpl";
+        $f3->content = "/content/map.tpl";
+        $f3->geojson = Helpers::getJson("assets/geojson/gs100.min.geojson");
 
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }

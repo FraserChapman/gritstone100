@@ -7,7 +7,7 @@ namespace App\Controllers;
  */
 class RouteController extends AbstractController
 {
-    private const PAGE = 'route';
+    private const PAGE = "route";
 
     /**
      * HTTP GET /route
@@ -19,8 +19,8 @@ class RouteController extends AbstractController
     {
         $f3->id = self::PAGE;
         $f3->caption = strtoupper(self::PAGE);
-        $f3->content = 'content/route.tpl';
+        $f3->content = "content/route.tpl";
         
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }

@@ -7,7 +7,7 @@ namespace App\Controllers;
  */
 class HomeController extends AbstractController
 {
-    private const PAGE = 'home';
+    private const PAGE = "home";
         
     /**
      * HTTP GET /
@@ -19,6 +19,6 @@ class HomeController extends AbstractController
     {
         $f3->id = self::PAGE;
         
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }

@@ -7,8 +7,8 @@ namespace App\Controllers;
  */
 abstract class AbstractController
 {
-    protected const TEMPLATE = 'page.tpl';
-    protected const MIME = 'text/html';
+    protected const TEMPLATE = "page.tpl";
+    protected const MIME = "text/html";
     
     function __construct()
     {

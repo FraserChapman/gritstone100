@@ -32,9 +32,11 @@
   line-height: 16px;
   background: rgba(255, 255, 255, 0.7);
 }
+
 .os-api-branding.copyright span {
   margin: 0 4px;
 }
+
 .os-api-branding.copyright a:link,
 .os-api-branding.copyright a:visited,
 .os-api-branding.copyright a:hover,
@@ -44,6 +46,7 @@
   pointer-events: all;
   cursor: pointer;
 }
+
 .os-api-branding.copyright a:hover {
   text-decoration: underline;
 }

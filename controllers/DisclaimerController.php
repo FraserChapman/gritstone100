@@ -7,7 +7,7 @@ namespace App\Controllers;
  */
 class DisclaimerController  extends AbstractController
 {
-    private const PAGE = 'disclaimer';
+    private const PAGE = "disclaimer";
 
     /**
      * HTTP GET /disclaimer
@@ -19,8 +19,8 @@ class DisclaimerController  extends AbstractController
     {
         $f3->id = self::PAGE;
         $f3->caption = strtoupper(self::PAGE);
-        $f3->content = 'content/disclaimer.tpl';
+        $f3->content = "content/disclaimer.tpl";
         
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }

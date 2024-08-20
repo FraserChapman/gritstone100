@@ -7,7 +7,7 @@ namespace App\Controllers;
  */
 class ContactController extends AbstractController
 {
-    private const PAGE = 'contact';
+    private const PAGE = "contact";
     
     /**
      * HTTP GET /contact
@@ -19,8 +19,8 @@ class ContactController extends AbstractController
     {
         $f3->id = self::PAGE;
         $f3->caption = strtoupper(self::PAGE);
-        $f3->byline = \Template::instance()->render('/partial/contact.tpl');
+        $f3->byline = \Template::instance()->render("/partial/contact.tpl");
         
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }

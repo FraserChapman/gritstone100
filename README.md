@@ -6,4 +6,4 @@ Starting in the idyllic village of Low Bradfield and ending at the majestic Chat
 
 The trail leads you out across remote and unforgiving Bleaklow, around iconic Kinder Scout, and down the Eastern gritstone edges and tors that the Peak District is famous for.
 
-www.gritstone100.co.uk
+<www.gritstone100.co.uk>

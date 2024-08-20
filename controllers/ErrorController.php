@@ -9,7 +9,7 @@ namespace App\Controllers;
  */
 class ErrorController extends AbstractController
 {
-    private const PAGE = 'error';
+    private const PAGE = "error";
 
     /**
      * HTTP GET {ERROR}
@@ -20,18 +20,18 @@ class ErrorController extends AbstractController
     public function get($f3)
     {
         $f3->id = self::PAGE;
-        $f3->caption = $f3->ERROR['code'];
-        $f3->content = 'partial/pre.tpl';
+        $f3->caption = $f3->ERROR["code"];
+        $f3->content = "partial/pre.tpl";
         $f3->data =  ($f3->DEBUG > 0) ?
-            $f3->data = $f3->ERROR['text'] . '<br>' . $f3->ERROR['trace'] :
-            $f3->data = $f3->ERROR['text'];
+            $f3->data = $f3->ERROR["text"] . "<br>" . $f3->ERROR["trace"] :
+            $f3->data = $f3->ERROR["text"];
             
-        switch ($f3->ERROR['code']) {
+        switch ($f3->ERROR["code"]) {
             case 404:
-                $f3->byline = 'It looks like one of us is lost...';
+                $f3->byline = "It looks like one of us is lost...";
                 break;
             default:
-                $f3->byline = $f3->ERROR['status'];
+                $f3->byline = $f3->ERROR["status"];
         }
 
         // NB: recursively clear existing output buffers:
@@ -39,6 +39,6 @@ class ErrorController extends AbstractController
             ob_end_clean();
         }
 
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }
 }
