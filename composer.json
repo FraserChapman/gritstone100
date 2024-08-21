@@ -1,10 +1,15 @@
 {
+    "name": "fraser/gritstone100",
+    "description": "Web site for the gritstone 100 trail in the Peak District",
+    "type": "project",
+    "license": "proprietary",
     "require": {
         "bcosca/fatfree-core": "^3.7"
-    }
-    ,
+    },
     "autoload": {
-        "files": ["helpers.php"],
+        "files": [
+            "helpers.php"
+        ],
         "classmap": [
             "./controllers"
         ]
@@ -13,5 +18,17 @@
         "build": "php minify.php",
         "xc": "rm -rf tmp/*",
         "lint": "php -l controllers"
-    }
+    },
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your-email@example.com"
+        }
+    ],
+    "homepage": "http://example.com",
+    "keywords": [
+        "fatfree",
+        "framework",
+        "your-package"
+    ]
 }
