@@ -1,5 +1,5 @@
 <section class="card">
-    <img src="/assets/img/content-lnt.jpg">
+    <img src="{{ @IMG . 'content-lnt.jpg'}}">
     <div>
         <h3>Leave No Trace</h3>
 

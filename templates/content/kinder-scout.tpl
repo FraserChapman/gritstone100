@@ -1,5 +1,5 @@
 <section class="card">
-    <img src="/assets/img/content-mass-trespass.jpg">
+    <img src="{{ @IMG . 'content-mass-trespass.jpg' }}">
     <div>
         <h3>Kinder mass trespass</h3>
         <p>

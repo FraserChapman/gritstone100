@@ -16,25 +16,25 @@
     <div id="elevation"></div>
     <div id="links">
         <div>
-            <img src="/assets/img/gpx-logo.png">
+            <img src="{{ @IMG . 'gpx-logo.png' }}">
             <a href="/assets/gpx/gritstone100-trkpt.gpx" download>GPX track</a>
             <a href="/assets/gpx/gritstone100-rtept.gpx" download>GPX route</a>
         </div>
         <div>
-            <img src="/assets/img/hiiker-logo.png">
+            <img src="{{ @IMG . 'hiiker-logo.png' }}">
             <a
                 href="https://www.google.com/url?q=https%3A%2F%2Fhiiker.app%2Ftrails%2Fengland%2Fsheffield%2Fgritstone-100&sa=D">Route
                 on HiiKER</a>
         </div>
         <div>
-            <img src="/assets/img/osmap-logo.png">
+            <img src="{{ @IMG . 'osmap-logo.png' }}">
             <a href="https://explore.osmaps.com/route/9147343/gritstone100">Route on OS Maps</a>
         </div>
     </div>
 </section>
 
 <section class="card">
-    <img src="/assets/img/map-ol1.jpg">
+    <img src="{{ @IMG . 'map-ol1.jpg' }}">
     <div>
         <h3>OS Explorer OL1</h3>
         <p>
@@ -47,7 +47,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/map-harvey.jpg">
+    <img src="{{ @IMG . 'map-harvey.jpg' }}">
     <div>
         <h3>Harvey Superwalker XT25 | BMC Dark Peak</h3>
         <p>
@@ -70,7 +70,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/book-sym.jpg">
+    <img src="{{ @IMG . 'book-sym.jpg' }}">
     <div>
         <h3>The South Yorkshire Moors</h3>
         <p>
@@ -87,5 +87,5 @@
     </div>
 </section>
 
-<script src="/assets/js/elevation-chart.min.js"></script>
-<script src="/assets/js/map.min.js"></script>
+<script src="{{ @JS . 'elevation-chart.min.js' }}"></script>
+<script src="{{ @JS . 'map.min.js' }}"></script>

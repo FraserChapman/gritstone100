@@ -2,7 +2,7 @@
 <footer>
     © GRITSTONE100 2021-{{ date('Y') }} | <a data-active="{{ @id === 'disclaimer' }}" href="/disclaimer">DISCLAIMER</a>
 </footer>
-<script src="/assets/js/scripts.js"></script>
+<script src="{{ @JS . 'scripts.js' }}"></script>
 </body>
 
 </html>

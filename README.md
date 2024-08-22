@@ -6,6 +6,6 @@ An unofficial 100 mile trail across some of the best hills, moors, tors, outcrop
 
 Starting in the idyllic village of Low Bradfield and ending at the majestic Chatsworth House.
 
-The trail leads you out across remote and unforgiving Bleaklow, around iconic Kinder Scout, and down the Eastern gritstone edges and tors that the Peak District is famous for.
+The trail leads you out across remote and unforgiving Bleaklow, around iconic Kinder Scout, and down the Eastern gritstone edges that the Peak District is famous for.
 
-[gritstone100.co.uk](https://www.gritstone100.co.uk)
+[gritstone100@gmail.co.uk](mailto:gritstone100@gmail.co.uk) | [gritstone100.co.uk](https://www.gritstone100.co.uk) | [@gritstone100](https://www.instagram.com/gritstone100/)

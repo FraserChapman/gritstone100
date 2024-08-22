@@ -4,7 +4,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "bcosca/fatfree-core": "^3.7"
+        "bcosca/fatfree-core": "^3.8"
     },
     "autoload": {
         "files": [
@@ -17,7 +17,7 @@
     "scripts": {
         "clean": "rm -rf tmp/*",
         "lint": "php -l controllers",
-        "serve": "php -S localhost:8080"
+        "serve": "killall -9 php || php -S gritstone100.test:8080"
     },
     "authors": [
         {

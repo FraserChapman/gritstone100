@@ -1,5 +1,5 @@
 <section class="card">
-    <img src="/assets/img/content-low-bradfield.jpg">
+    <img src="{{ @IMG . 'content-low-bradfield.jpg' }}">
     <div>
         <h3>Low Bradfield</h3>
         <p>
@@ -16,7 +16,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-bleaklow.jpg">
+    <img src="{{ @IMG . 'content-bleaklow.jpg' }}">
     <div>
         <h3>Bleaklow</h3>
         <p>
@@ -34,7 +34,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-derwent.jpg">
+    <img src="{{ @IMG . 'content-derwent.jpg' }}">
     <div>
         <h3>Upper Derwent Valley</h3>
         <p>
@@ -54,7 +54,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-kinder-scout.jpg">
+    <img src="{{ @IMG . 'content-kinder-scout.jpg' }}">
     <div>
         <h3>Kinder Scout</h3>
         <p>
@@ -71,7 +71,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-edale.jpg">
+    <img src="{{ @IMG . 'content-edale.jpg' }}">
     <div>
         <h3>Edale</h3>
         <p>
@@ -88,7 +88,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-great-ridge.jpg">
+    <img src="{{ @IMG . 'content-great-ridge.jpg' }}">
     <div>
         <h3>The Great Ridge</h3>
         <p>
@@ -109,7 +109,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-gods-own-rock.jpg">
+    <img src="{{ @IMG . 'content-gods-own-rock.jpg' }}">
     <div>
         <h3>God's own rock</h3>
         <p>
@@ -126,7 +126,7 @@
 </section>
 
 <section class="card">
-    <img src="/assets/img/content-chouse.jpg">
+    <img src="{{ @IMG . 'content-chouse.jpg' }}">
     <div>
         <h3>Chatsworth House</h3>
         <p>

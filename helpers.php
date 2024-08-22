@@ -3,6 +3,9 @@
 namespace App;
 
 use InvalidArgumentException;
+use RuntimeException;
+use JsonException;
+use SplFileObject;
 
 class Helpers
 {
@@ -18,14 +21,14 @@ class Helpers
         int $flags = JSON_THROW_ON_ERROR
     ): mixed {
         try {
-            $fileObject = new \SplFileObject($file);
+            $fileObject = new SplFileObject($file);
             $contents = $fileObject->fread($fileObject->getSize());
     
             return json_decode($contents, true, 512, $flags);
-        } catch (\RuntimeException $e) {
-            throw new \RuntimeException("Failed to read file: " . $e->getMessage(), 0, $e);
-        } catch (\JsonException $e) {
-            throw new \JsonException("Failed to decode JSON: " . $e->getMessage(), 0, $e);
+        } catch (RuntimeException $e) {
+            throw new RuntimeException("Failed to read file: " . $e->getMessage(), 0, $e);
+        } catch (JsonException $e) {
+            throw new JsonException("Failed to decode JSON: " . $e->getMessage(), 0, $e);
         }
     }
 
@@ -113,7 +116,7 @@ class Helpers
     public static function coordinateToDMS($coordinate): array
     {
         if (count($coordinate) < 2) {
-            throw new InvalidArgumentException("$coordinate should have at least 2 elements");
+            throw new InvalidArgumentException("Coordinate should have at least 2 elements");
         }
 
         return [

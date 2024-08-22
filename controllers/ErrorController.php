@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Base;
+
 /**
  * ErrorController
  * 
@@ -9,36 +11,28 @@ namespace App\Controllers;
  */
 class ErrorController extends AbstractController
 {
-    private const PAGE = "error";
-
     /**
      * HTTP GET {ERROR}
      *
-     * @param \Base $f3
+     * @param Base $f3
      * @return void
      */
-    public function get($f3)
+    public function get(Base $f3)
     {
-        $f3->id = self::PAGE;
-        $f3->caption = $f3->ERROR["code"];
-        $f3->content = "partial/pre.tpl";
-        $f3->data =  ($f3->DEBUG > 0) ?
-            $f3->data = $f3->ERROR["text"] . "<br>" . $f3->ERROR["trace"] :
-            $f3->data = $f3->ERROR["text"];
-            
-        switch ($f3->ERROR["code"]) {
-            case 404:
-                $f3->byline = "It looks like one of us is lost...";
-                break;
-            default:
-                $f3->byline = $f3->ERROR["status"];
-        }
-
-        // NB: recursively clear existing output buffers:
         while (ob_get_level()) {
             ob_end_clean();
         }
 
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        $this->render($f3, [
+            "id" => "error",
+            "caption" => $f3->ERROR["code"],
+            "content" => "partial/pre.tpl",
+            "data" => ($f3->DEBUG > 0) ?
+                $f3->ERROR["text"] . "<br>" . $f3->ERROR["trace"] :
+                $f3->ERROR["text"],
+            "byline" => ($f3->ERROR["code"] === 404) ?
+                "It looks like one of us is lost..." :
+                $f3->ERROR["status"]
+        ]);
     }
 }

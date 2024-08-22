@@ -2,87 +2,175 @@
 
 namespace App\Controllers;
 
+use Base;
+use App\Helpers;
+
 /**
  * PageController
  */
 class PageController extends AbstractController
 {
+
     /**
-     * kinderScout
-     * GET /kinder-scout
-     * @param  mixed $f3
+     * HTTP GET /
+     * 
+     * @param Base $f3
      * @return void
      */
-    public function kinderScout($f3)
+    public function home(Base $f3)
     {
-        $f3->id = "kinder-scout";
-        $f3->caption = "KINDER SCOUT";
-        $f3->content = '/content/kinder-scout.tpl';
-        
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
-    }
-        
-    /**
-     * dambusters
-     * HTTP GET /dambusters
-     *
-     * @param  mixed $f3
-     * @return void
-     */
-    public function dambusters($f3)
-    {
-        $f3->id = "dambusters";
-        $f3->caption = "DAMBUSTERS";
-        $f3->content = '/content/dambusters.tpl';
-        
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        $this->render($f3, ["id" => "home"]);
     }
 
     /**
-     * edale
+     * HTTP GET /route
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function route(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "route",
+            "caption" => "ROUTE",
+            "content" => "/content/route.tpl",
+        ]);
+    }
+
+    /**
+     * HTTP GET /map
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function map(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "map",
+            "caption" => "MAP",
+            "head" => "/partial/map-head.tpl",
+            "content" => "/content/map.tpl",
+            "geojson" => Helpers::getJson("assets/geojson/gs100.min.geojson")
+        ]);
+    }
+
+    /**
+     * HTTP GET /contact
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function contact(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "contact",
+            "caption" => "CONTACT",
+            "byline" => \Template::instance()->render("/partial/contact.tpl")
+        ]);
+    }
+
+    /**
+     * HTTP GET /lnt
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function lnt(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "lnt",
+            "caption" => "LEAVE NO TRACE",
+            "content" => "/content/lnt.tpl",
+        ]);
+    }
+
+    /**
+     * HTTP GET /disclaimer
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function disclaimer(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "disclaimer",
+            "caption" => "DISCLAIMER",
+            "content" => "/content/disclaimer.tpl",
+        ]);
+    }
+
+    /**
+     * GET /kinder-scout
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function kinderScout(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "kinder-scout",
+            "caption" => "KINDER SCOUT",
+            "content" => "/content/kinder-scout.tpl",
+        ]);
+    }
+
+    /**
+     * HTTP GET /dambusters
+     * 
+     * @param Base $f3
+     * @return void
+     */
+    public function dambusters(Base $f3)
+    {
+        $this->render($f3, [
+            "id" => "dambusters",
+            "caption" => "DAMBUSTERS",
+            "content" => "/content/dambusters.tpl",
+        ]);
+    }
+
+    /**
      * HTTP GET /edale
      * 
-     * @param  mixed $f3
+     * @param Base $f3
      * @return void
      */
-    public function edale($f3)
+    public function edale(Base $f3)
     {
-        $f3->id = "edale";
-        $f3->caption = "EDALE";
-        $f3->content = '/content/edale.tpl';
-        
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        $this->render($f3, [
+            "id" => "edale",
+            "caption" => "EDALE",
+            "content" => "/content/edale.tpl",
+        ]);
     }
-    
+
     /**
-     * castleton
      * HTTP GET /castleton
-     *
-     * @param  mixed $f3
+     * 
+     * @param Base $f3
      * @return void
      */
-    public function castleton($f3)
+    public function castleton(Base $f3)
     {
-        $f3->id = "castleton";
-        $f3->caption = "CASTLETON";
-        $f3->content = '/content/castleton.tpl';
-        
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        $this->render($f3, [
+            "id" => "castleton",
+            "caption" => "CASTLETON",
+            "content" => "/content/castleton.tpl",
+        ]);
     }
-    
+
     /**
-     * wildlife
      * HTTP GET /wildlife
-     *
-     * @param  mixed $f3
+     * 
+     * @param Base $f3
      * @return void
      */
-    public function wildlife($f3)
+    public function wildlife(Base $f3)
     {
-        $f3->id = "wildlife";
-        $f3->caption = "WILDLIFE";
-        $f3->content = '/content/wildlife.tpl';
-        
-        echo \Template::instance()->render(parent::TEMPLATE, parent::MIME);
+        $this->render($f3, [
+            "id" => "wildlife",
+            "caption" => "WILDLIFE",
+            "content" => "/content/wildlife.tpl",
+        ]);
     }
 }

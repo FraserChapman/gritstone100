@@ -1,6 +1,6 @@
 <div id="dim"></div>
 <section class="card">
-    <img src="/assets/img/content-bleaklow.jpg">
+    <img src="{{ @IMG . 'content-bleaklow.jpg' }}">
     <div>
         <h3>Wildlife</h3>
         <p>
