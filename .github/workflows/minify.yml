@@ -36,10 +36,10 @@ jobs:
           find assets -type f -name "*.json" -not -name "*.min.json" -exec sh -c 'jq -c . "$0" > "${0%.json}.min.json"' {} \;
 
       # Minify GEOJSON files
-      - name: Minify JSON Files
+      - name: Minify GEOJSON Files
         run: |
-          find assets -type f -name "*.geojson" -not -name "*.min.geojson" -exec sh -c 'jq -c . "$0" > "${0%.json}.min.geojson"' {} \;
-          
+          find assets -type f -name "*.geojson" -not -name "*.min.geojson" -exec sh -c 'jq -c . "$0" > "${0%.geojson}.min.geojson"' {} \;
+
       # Commit and push the minified files
       - name: Commit Minified Files
         run: |
@@ -48,3 +48,4 @@ jobs:
           git add assets/**/*.min.*
           git commit -m "Minified JS, CSS, and JSON files"
           git push
+        continue-on-error: true  # Prevents failure if there are no files to commit
