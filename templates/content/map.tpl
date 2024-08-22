@@ -87,5 +87,5 @@
     </div>
 </section>
 
-<script src="/assets/js/elevation-chart.js"></script>
-<script src="/assets/js/map.js"></script>
+<script src="/assets/js/elevation-chart.min.js"></script>
+<script src="/assets/js/map.min.js"></script>

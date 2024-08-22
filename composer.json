@@ -15,20 +15,20 @@
         ]
     },
     "scripts": {
-        "build": "php minify.php",
-        "xc": "rm -rf tmp/*",
-        "lint": "php -l controllers"
+        "clean": "rm -rf tmp/*",
+        "lint": "php -l controllers",
+        "serve": "php -S localhost:8080"
     },
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your-email@example.com"
+            "name": "Fraser Chapman",
+            "email": "gritstone100@gmail.co.uk"
         }
     ],
-    "homepage": "http://example.com",
+    "homepage": "https://gritstone100.co.uk/",
     "keywords": [
         "fatfree",
         "framework",
-        "your-package"
+        "gritstone100"
     ]
 }

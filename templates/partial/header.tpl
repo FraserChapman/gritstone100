@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
     <include if="{{ @@head }}" href="{{ @head }}" />
 </head>
 

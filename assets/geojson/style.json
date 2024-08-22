@@ -9,7 +9,7 @@
     },
     "gs100": {
       "type": "geojson",
-      "data": "assets/geojson/gs100.geojson",
+      "data": "assets/geojson/gs100.min.geojson",
       "tolerance": 3,
       "buffer": 0
     }
