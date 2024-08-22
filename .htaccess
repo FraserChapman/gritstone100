@@ -9,5 +9,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L,QSA]
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+
 php_value date.timezone Europe/London
 php_value display_errors Off
+php_value mbstring.http_input none
+php_value mbstring.http_output none
