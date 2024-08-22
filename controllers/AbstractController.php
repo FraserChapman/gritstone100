@@ -15,7 +15,7 @@ abstract class AbstractController
     
     /**
      * @param Base $f3
-     * @param array $f3
+     * @param array $data
      * @return void
      */
     function render(Base $f3, array $data)
