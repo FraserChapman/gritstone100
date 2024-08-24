@@ -1,8 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^(app|dict|ns|tmp)\/|\.ini|\.tpl|composer\.json$ - [R=404]
-
-RewriteRule ^vendor/?$ - [F,L]
+RewriteRule ^(controllers|templates|vendor|tmp)\/|\.ini|\.tpl|composer\.json$ index.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteCond %{REQUEST_FILENAME} !-f
