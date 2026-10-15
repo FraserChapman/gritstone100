@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +10,9 @@
         href="https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ @CSS . 'styles.min.css' }}">
+    <include href="partial/analytics.tpl" />
     <include if="{{ @@head }}" href="{{ @head }}" />
 </head>
-
 <body id='{{ @id }}-page'>
     <header>
         <a href="/">

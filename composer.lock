@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3230dd31441f645a1151c284d5ac561",
+    "content-hash": "09801a54bd95fa137321c9efbc4394d2",
     "packages": [
         {
             "name": "bcosca/fatfree-core",
-            "version": "3.8.2",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/f3-factory/fatfree-core.git",
-                "reference": "774692ce7698904d3cb35bbd4f79376bb17eeddc"
+                "reference": "fc299466eaa064cce0ec9ceca23a8c8c7b774888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/f3-factory/fatfree-core/zipball/774692ce7698904d3cb35bbd4f79376bb17eeddc",
-                "reference": "774692ce7698904d3cb35bbd4f79376bb17eeddc",
+                "url": "https://api.github.com/repos/f3-factory/fatfree-core/zipball/fc299466eaa064cce0ec9ceca23a8c8c7b774888",
+                "reference": "fc299466eaa064cce0ec9ceca23a8c8c7b774888",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4"
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -37,9 +37,19 @@
             "homepage": "http://fatfreeframework.com/",
             "support": {
                 "issues": "https://github.com/f3-factory/fatfree-core/issues",
-                "source": "https://github.com/f3-factory/fatfree-core/tree/3.8.2"
+                "source": "https://github.com/f3-factory/fatfree-core/tree/3.9.3"
             },
-            "time": "2023-07-23T22:11:30+00:00"
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/ikkez",
+                    "type": "buy_me_a_coffee"
+                },
+                {
+                    "url": "https://github.com/ikkez",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-07-21T23:24:48+00:00"
         }
     ],
     "packages-dev": [],

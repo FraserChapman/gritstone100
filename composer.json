@@ -4,7 +4,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "bcosca/fatfree-core": "^3.8"
+        "bcosca/fatfree-core": "^3.9"
     },
     "autoload": {
         "files": [
