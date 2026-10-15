@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Helpers;
-
 /**
  * MapController
  */
@@ -23,7 +21,7 @@ class MapController extends AbstractController
         $f3->caption = strtoupper(self::PAGE);
         $f3->head = "/partial/map-head.tpl";
         $f3->content = "/content/map.tpl";
-        $f3->geojson = Helpers::getJson("assets/geojson/gs100.min.geojson");
+        $f3->geojson = \App\Helpers::getJson("assets/geojson/gs100.min.geojson");
 
         print_r(\Template::instance()->render(parent::TEMPLATE, parent::MIME));
     }

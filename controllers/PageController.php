@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use Base;
-use App\Helpers;
 
 /**
  * PageController
@@ -50,7 +49,7 @@ class PageController extends AbstractController
             "caption" => "MAP",
             "head" => "/partial/map-head.tpl",
             "content" => "/content/map.tpl",
-            "geojson" => Helpers::getJson("assets/geojson/gs100.min.geojson")
+            "geojson" => \App\Helpers::getJson("assets/geojson/gs100.min.geojson")
         ]);
     }
 
