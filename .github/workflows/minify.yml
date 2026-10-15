@@ -7,40 +7,37 @@ on:
 
 jobs:
   minify:
+  
+    permissions:
+      contents: write
+
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      # Install minification tools
       - name: Install Minification Tools
         run: |
           npm install -g uglify-js uglifycss
           sudo apt-get update
           sudo apt-get install -y jq
 
-      # Minify JS files
       - name: Minify JS Files
         run: |
           find assets -type f -name "*.js" -not -name "*.min.js" -exec sh -c 'uglifyjs "$0" -o "${0%.js}.min.js"' {} \;
 
-      # Minify CSS files
       - name: Minify CSS Files
         run: |
           find assets -type f -name "*.css" -not -name "*.min.css" -exec sh -c 'uglifycss "$0" > "${0%.css}.min.css"' {} \;
 
-      # Minify JSON files
       - name: Minify JSON Files
         run: |
           find assets -type f -name "*.json" -not -name "*.min.json" -exec sh -c 'jq -c . "$0" > "${0%.json}.min.json"' {} \;
 
-      # Minify GEOJSON files
       - name: Minify GEOJSON Files
         run: |
           find assets -type f -name "*.geojson" -not -name "*.min.geojson" -exec sh -c 'jq -c . "$0" > "${0%.geojson}.min.geojson"' {} \;
 
-      # Commit and push the minified files
       - name: Commit Minified Files
         run: |
           git config --global user.name "GitHub Action"
@@ -48,4 +45,4 @@ jobs:
           git add assets/**/*.min.*
           git commit -m "Minified JS, CSS, and JSON files"
           git push
-        continue-on-error: true  # Prevents failure if there are no files to commit
+        continue-on-error: true
