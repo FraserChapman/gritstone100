@@ -1,9 +1,8 @@
 var header = document.querySelector('header');
-var footer = document.querySelector('footer');
 var showmore = document.querySelector('.showmore');
 var content = document.getElementById('content');
 
-document.querySelector('nav').addEventListener('click', function (ev) {
+document.querySelector('nav').addEventListener('click', function () {
     var menu = document.querySelector('.slide-menu');
     if (menu) {
         menu.parentNode.removeChild(menu);
@@ -15,7 +14,7 @@ document.querySelector('nav').addEventListener('click', function (ev) {
     }
 });
 
-document.addEventListener('scroll', function (ev) {
+document.addEventListener('scroll', function () {
     if (window.pageYOffset) {
         header.classList.add('dark');
         showmore && showmore.classList.add('hide');
@@ -25,6 +24,6 @@ document.addEventListener('scroll', function (ev) {
     }
 });
 
-showmore && showmore.addEventListener('click', function (ev) {
+showmore && showmore.addEventListener('click', function () {
     content && content.scrollIntoView({ behavior: 'smooth' });
 });
