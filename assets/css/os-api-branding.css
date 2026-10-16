@@ -1,6 +1,6 @@
 /* os-api-branding.css v0.3.0 */
 
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 .os-api-branding {
   position: absolute;
@@ -16,14 +16,14 @@
   padding: 8px;
   width: 90px;
   height: 24px;
-  background-image: url(../img/os-logo-maps.svg);
+  background-image: url("../img/os-logo-maps.svg");
   background-size: 90px 24px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .os-api-branding.logo.white {
-  background-image: url(../img/os-logo-maps-white.svg);
+  background-image: url("../img/os-logo-maps-white.svg");
 }
 
 .os-api-branding.copyright {
@@ -31,7 +31,7 @@
   padding: 0 4px;
   font: 10px 'Source Sans Pro', Arial, sans-serif;
   line-height: 16px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 70%);
 }
 
 .os-api-branding.copyright span {
@@ -52,9 +52,8 @@
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 420px) {
-
-  /* max-width 420px, mobile-only styles */
+@media only screen and (width <=420px) {
+  /* mobile-only styles */
   .os-api-branding.copyright {
     display: none;
   }
