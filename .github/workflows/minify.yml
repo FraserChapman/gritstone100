@@ -1,13 +1,13 @@
+---
 name: Minify Files
 
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   minify:
-  
     permissions:
       contents: write
 
@@ -24,25 +24,29 @@ jobs:
 
       - name: Minify JS Files
         run: |
-          find assets -type f -name "*.js" -not -name "*.min.js" -exec sh -c 'uglifyjs "$0" -o "${0%.js}.min.js"' {} \;
+          find assets -type f -name "*.js" -not -name "*.min.js" \
+            -exec sh -c 'uglifyjs "$0" -o "${0%.js}.min.js"' {} \;
 
       - name: Minify CSS Files
         run: |
-          find assets -type f -name "*.css" -not -name "*.min.css" -exec sh -c 'uglifycss "$0" > "${0%.css}.min.css"' {} \;
+          find assets -type f -name "*.css" -not -name "*.min.css" \
+            -exec sh -c 'uglifycss "$0" > "${0%.css}.min.css"' {} \;
 
       - name: Minify JSON Files
         run: |
-          find assets -type f -name "*.json" -not -name "*.min.json" -exec sh -c 'jq -c . "$0" > "${0%.json}.min.json"' {} \;
+          find assets -type f -name "*.json" -not -name "*.min.json" \
+            -exec sh -c 'jq -c . "$0" > "${0%.json}.min.json"' {} \;
 
       - name: Minify GEOJSON Files
         run: |
-          find assets -type f -name "*.geojson" -not -name "*.min.geojson" -exec sh -c 'jq -c . "$0" > "${0%.geojson}.min.geojson"' {} \;
+          find assets -type f -name "*.geojson" -not -name "*.min.geojson" \
+            -exec sh -c 'jq -c . "$0" > "${0%.geojson}.min.geojson"' {} \;
 
       - name: Commit Minified Files
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add assets/**/*.min.*
-          git commit -m "Minified JS, CSS, and JSON files"
+          git commit -m "Minified JS, CSS, and JSON files [skip ci]"
           git push
         continue-on-error: true

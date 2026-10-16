@@ -1,11 +1,16 @@
+---
 name: Lint Code Base
 
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
+
+permissions:
+  contents: read
+  statuses: write
 
 jobs:
   run-lint:
@@ -22,3 +27,14 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Exclude minified files
+          FILTER_REGEX_EXCLUDE: '.*\.min\..*'
+          IGNORE_GITIGNORED_FILES: true
+          # Opt-in to specific linters
+          # (setting any to true disables all unmentioned linters)
+          VALIDATE_PHP_BUILTIN: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_CSS: true
+          VALIDATE_JSON: true
+          VALIDATE_YAML: true
+          VALIDATE_GITHUB_ACTIONS: true
