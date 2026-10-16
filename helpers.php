@@ -23,7 +23,7 @@ class Helpers
         try {
             $fileObject = new SplFileObject($file);
             $contents = $fileObject->fread($fileObject->getSize());
-    
+
             return json_decode($contents, true, 512, $flags);
         } catch (RuntimeException $e) {
             throw new RuntimeException("Failed to read file: " . $e->getMessage(), 0, $e);
@@ -35,11 +35,11 @@ class Helpers
     /**
      * metresToFeet
      *
-     * @param int|float $mmetres
+     * @param int|float $metres
      * @param int $round defualt 2
      * @return int|float feet
      */
-    public static function metresToFeet($metres, $round = 2): int|float
+    public static function metresToFeet(float|int $metres, int $round = 2): int|float
     {
         return round($metres * 3.28084, $round);
     }
@@ -51,7 +51,7 @@ class Helpers
      * @param int $round defualt 2
      * @return int|float metres
      */
-    public static function feetToMetres($feet, $round = 2): int|float
+    public static function feetToMetres(float|int $feet, int $round = 2): int|float
     {
         return round($feet / 3.28084, $round);
     }
@@ -63,7 +63,7 @@ class Helpers
      * @param int $round defualt 2
      * @return int|float
      */
-    public static function milesToKilometres($miles, $round = 2): int|float
+    public static function milesToKilometres(float|int $miles, int $round = 2): int|float
     {
         return round($miles * 1.609, $round);
     }
@@ -74,8 +74,8 @@ class Helpers
      * @param int|float $kilometres
      * @param int $round defualt 2
      * @return int|float
-     */    
-    public static function kilometresToMiles($kilometres, $round = 2): int|float
+     */
+    public static function kilometresToMiles(float|int $kilometres, int $round = 2): int|float
     {
         return round($kilometres / 1.609, $round);
     }
@@ -113,7 +113,7 @@ class Helpers
      * @return array{"lat": string, "lng": string}
      * @throws InvalidArgumentException
      */
-    public static function coordinateToDMS($coordinate): array
+    public static function coordinateToDMS(array $coordinate): array
     {
         if (count($coordinate) < 2) {
             throw new InvalidArgumentException("Coordinate should have at least 2 elements");
