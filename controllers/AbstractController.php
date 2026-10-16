@@ -10,15 +10,15 @@ use Template;
  */
 abstract class AbstractController
 {
-    protected const TEMPLATE = "page.tpl";
-    protected const MIME = "text/html";
-    
+    protected const string TEMPLATE = "page.tpl";
+    protected const string MIME = "text/html";
+
     /**
-     * @param Base $f3
+     * @param Base $f3 
      * @param array $data
      * @return void
      */
-    function render(Base $f3, array $data)
+    public function render(Base $f3, array $data)
     {
         foreach ($data as $key => $value) {
             $f3->$key = $value;
