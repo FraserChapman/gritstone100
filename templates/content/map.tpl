@@ -89,3 +89,5 @@
 
 <script src="{{ @JS . 'elevation-chart.min.js' }}"></script>
 <script src="{{ @JS . 'map.min.js' }}"></script>
+<script src="{{ @JS . 'os-api-branding.min.js' }}"
+    data-suffix="Map data &copy; {{ @APP_NAME }} {{ date('Y') }}"></script>

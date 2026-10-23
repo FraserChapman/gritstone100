@@ -57,7 +57,7 @@ os.Branding = {
         // Append the copyright statement.
         var div2 = document.createElement("div");
         div2.className = "os-api-branding copyright";
-        div2.innerHTML.appendChild(document.createTextNode(copyrightStatement));
+        div2.innerHTML = copyrightStatement;
         elem.appendChild(div2);
     }
 };
