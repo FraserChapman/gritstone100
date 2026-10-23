@@ -9,7 +9,10 @@
     },
     "gs100": {
       "type": "geojson",
-      "data": "assets/geojson/gs100.min.geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      },
       "tolerance": 3,
       "buffer": 0
     }

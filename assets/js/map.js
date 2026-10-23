@@ -82,9 +82,12 @@ function drawElevationChart(data) {
 
     return elevationChart;
 }
+// Route data, fetched once and shared by the map source and elevation chart
+const routeData = fetch("/assets/geojson/gs100.min.geojson")
+    .then((r) => r.json());
+
 // Elevation chart
-fetch("/assets/geojson/gs100.min.geojson")
-    .then((r) => r.json())
+routeData
     .then((json) => {
         const elevationDiv = document.getElementById("elevation");
         elevationDiv.appendChild(drawElevationChart(json));
@@ -102,6 +105,10 @@ map.touchZoomRotate.disableRotation();
 map.addControl(new mapboxgl.FullscreenControl());
 map.addControl(new mapboxgl.NavigationControl({ showCompass: false }));
 map.on("load", () => {
+    routeData
+        .then((json) => map.getSource(sourceId).setData(json))
+        .catch(console.error.bind(console));
+
     map.on("mouseenter", "points", (ev) => {
         const point = ev.features[0];
         while (Math.abs(ev.lngLat.lng - point.geometry.coordinates[0]) > 180) {
