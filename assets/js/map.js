@@ -97,29 +97,29 @@ function addRouteLayers(style) {
 }
 
 const map = new maplibregl.Map({
-        container: "map",
-        minZoom: 9,
-        maxZoom: 15,
-        style: `${osTilesUrl}/collections/${osCollectionId}/styles/${osStyleId}`,
-        transformStyle: (previous, next) => addRouteLayers(next),
-        maxBounds: [
-            [-10.76418, 49.528423],
-            [1.9134116, 61.331151]
-        ],
+    container: "map",
+    minZoom: 9,
+    maxZoom: 15,
+    style: `${osTilesUrl}/collections/${osCollectionId}/styles/${osStyleId}`,
+    transformStyle: (previous, next) => addRouteLayers(next),
+    maxBounds: [
+        [-10.76418, 49.528423],
+        [1.9134116, 61.331151]
+    ],
 
-        center: [-1.69, 53.35],
-        zoom: 9.5,
-        // attribution is shown by os-api-branding
-        attributionControl: false,
-        transformRequest: (url) => {
-            if (!url.startsWith("https://api.os.uk/") || url.includes("key=")) {
-                return { url };
-            }
-            const u = new URL(url);
-            u.searchParams.set("key", osApiKey);
-            return { url: u.toString() };
+    center: [-1.69, 53.35],
+    zoom: 9.5,
+    // attribution is shown by os-api-branding
+    attributionControl: false,
+    transformRequest: (url) => {
+        if (!url.startsWith("https://api.os.uk/") || url.includes("key=")) {
+            return { url };
         }
-    }),
+        const u = new URL(url);
+        u.searchParams.set("key", osApiKey);
+        return { url: u.toString() };
+    }
+}),
     infoPopup = new maplibregl.Popup({
         className: "info-popup",
         closeButton: false,
@@ -205,7 +205,7 @@ map.on("load", () => {
             .setHTML(`<h1>${point.properties.name}</h1><p>${point.properties.desc ?? ""}</p>`)
             .addTo(map);
     });
-    map.on("mouseleave", "points", (ev) => {
+    map.on("mouseleave", "points", () => {
         map.getCanvas().style.cursor = "";
         infoPopup.remove();
     });
@@ -248,7 +248,7 @@ document.getElementById("search").addEventListener(
 const toggle = document.getElementById("toggle");
 toggle.addEventListener(
     "click",
-    (ev) => {
+    () => {
         document.querySelector(".sidebar").classList.toggle("closed");
         toggle.classList.toggle("closed");
         map.resize();
