@@ -23,41 +23,7 @@ const osApiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
             lat: convert.ddToDMS(c[1]) + (c[1] >= 0 ? " N" : " S"),
             lng: convert.ddToDMS(c[0]) + (c[0] >= 0 ? " E" : " W")
         })
-    },
-    map = new maplibregl.Map({
-        container: "map",
-        minZoom: 9,
-        maxZoom: 15,
-        style: `${osTilesUrl}/collections/${osCollectionId}/styles/${osStyleId}`,
-        transformStyle: (previous, next) => addRouteLayers(next),
-        maxBounds: [
-            [-10.76418, 49.528423],
-            [1.9134116, 61.331151]
-        ],
-
-        center: [-1.69, 53.35],
-        zoom: 9.5,
-        // attribution is shown by os-api-branding
-        attributionControl: false,
-        transformRequest: (url) => {
-            if (!url.startsWith("https://api.os.uk/") || url.includes("key=")) {
-                return { url };
-            }
-            const u = new URL(url);
-            u.searchParams.set("key", osApiKey);
-            return { url: u.toString() };
-        }
-    }),
-    infoPopup = new maplibregl.Popup({
-        className: "info-popup",
-        closeButton: false,
-        closeOnClick: false
-    }),
-    elevationPopup = new maplibregl.Popup({
-        className: "elevation-popup",
-        closeButton: false,
-        closeOnClick: false
-    });
+    };
 
 /**
  * Adapts the OS NGD API – Tiles style for MapLibre and adds the route source and layers
@@ -129,6 +95,41 @@ function addRouteLayers(style) {
 
     return style;
 }
+
+const map = new maplibregl.Map({
+        container: "map",
+        minZoom: 9,
+        maxZoom: 15,
+        style: `${osTilesUrl}/collections/${osCollectionId}/styles/${osStyleId}`,
+        transformStyle: (previous, next) => addRouteLayers(next),
+        maxBounds: [
+            [-10.76418, 49.528423],
+            [1.9134116, 61.331151]
+        ],
+
+        center: [-1.69, 53.35],
+        zoom: 9.5,
+        // attribution is shown by os-api-branding
+        attributionControl: false,
+        transformRequest: (url) => {
+            if (!url.startsWith("https://api.os.uk/") || url.includes("key=")) {
+                return { url };
+            }
+            const u = new URL(url);
+            u.searchParams.set("key", osApiKey);
+            return { url: u.toString() };
+        }
+    }),
+    infoPopup = new maplibregl.Popup({
+        className: "info-popup",
+        closeButton: false,
+        closeOnClick: false
+    }),
+    elevationPopup = new maplibregl.Popup({
+        className: "elevation-popup",
+        closeButton: false,
+        closeOnClick: false
+    });
 
 /**
  * Draws the elevation chart with the given data
