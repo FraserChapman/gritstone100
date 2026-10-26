@@ -37,6 +37,8 @@ const osApiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
 
         center: [-1.69, 53.35],
         zoom: 9.5,
+        // attribution is shown by os-api-branding
+        attributionControl: false,
         transformRequest: (url) => {
             if (!url.startsWith("https://api.os.uk/") || url.includes("key=")) {
                 return { url };
