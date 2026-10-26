@@ -1,4 +1,9 @@
-const apiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
+import * as maplibregl from "https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs";
+
+const osApiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
+    osTilesUrl = "https://api.os.uk/maps/vector/ngd/ota/v1",
+    osCollectionId = "ngd-base",
+    osStyleId = "3857",
     sourceId = "gs100",
     round = (n) => Math.round((n + Number.EPSILON) * 100) / 100,
     convert = {
@@ -19,11 +24,12 @@ const apiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
             lng: convert.ddToDMS(c[0]) + (c[0] >= 0 ? " E" : " W")
         })
     },
-    map = new mapboxgl.Map({
+    map = new maplibregl.Map({
         container: "map",
         minZoom: 9,
         maxZoom: 15,
-        style: "assets/geojson/style.min.json",
+        style: `${osTilesUrl}/collections/${osCollectionId}/styles/${osStyleId}`,
+        transformStyle: (previous, next) => addRouteLayers(next),
         maxBounds: [
             [-10.76418, 49.528423],
             [1.9134116, 61.331151]
@@ -31,22 +37,98 @@ const apiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
 
         center: [-1.69, 53.35],
         zoom: 9.5,
-        transformRequest: (url) =>
-            url.includes("?key=") ?
-                { url: url + "&srs=3857" } :
-                { url: url + "?key=" + apiKey + "&srs=3857" }
+        // attribution is shown by os-api-branding
+        attributionControl: false,
+        transformRequest: (url) => {
+            if (!url.startsWith("https://api.os.uk/") || url.includes("key=")) {
+                return { url };
+            }
+            const u = new URL(url);
+            u.searchParams.set("key", osApiKey);
+            return { url: u.toString() };
+        }
     }),
-    infoPopup = new mapboxgl.Popup({
+    infoPopup = new maplibregl.Popup({
         className: "info-popup",
         closeButton: false,
         closeOnClick: false
     }),
-    elevationPopup = new mapboxgl.Popup({
+    elevationPopup = new maplibregl.Popup({
         className: "elevation-popup",
         closeButton: false,
         closeOnClick: false
     });
 
+/**
+ * Adapts the OS NGD API – Tiles style for MapLibre and adds the route source and layers
+ * @param {*} style the style fetched from the OS NGD API – Tiles
+ * @returns the style to apply to the map
+ */
+function addRouteLayers(style) {
+    // NGD sources point at an OGC tileset rather than TileJSON, so give MapLibre the tile template
+    Object.values(style.sources)
+        .filter((s) => s.type === "vector" && s.url?.startsWith(osTilesUrl))
+        .forEach((s) => {
+            const [path, query] = s.url.split("?");
+            s.tiles = [`${path}/{z}/{y}/{x}${query ? "?" + query : ""}`];
+            delete s.url;
+        });
+
+    // label the route points with a font the NGD glyphs endpoint serves
+    const textFont = style.layers.find((l) => Array.isArray(l.layout?.["text-font"]))
+        ?.layout["text-font"];
+
+    style.sources[sourceId] = {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: [] },
+        tolerance: 3,
+        buffer: 0
+    };
+
+    const active = (whenActive, otherwise) =>
+        ["case", ["boolean", ["feature-state", "active"], false], whenActive, otherwise];
+    style.layers.push(
+        {
+            id: "route",
+            type: "line",
+            source: sourceId,
+            filter: ["==", ["id"], 0],
+            layout: { "line-join": "round", "line-cap": "round" },
+            paint: { "line-color": "#bd0000", "line-width": 3 }
+        },
+        {
+            id: "points",
+            type: "circle",
+            source: sourceId,
+            filter: ["==", ["geometry-type"], "Point"],
+            paint: {
+                "circle-radius": active(12, 0),
+                "circle-color": "#3a3a3c",
+                "circle-stroke-width": active(3, 0),
+                "circle-stroke-color": "#efefef"
+            }
+        },
+        {
+            id: "labels",
+            type: "symbol",
+            source: sourceId,
+            filter: ["==", ["geometry-type"], "Point"],
+            paint: {
+                "text-color": active("#efefef", "#3a3a3c"),
+                "text-halo-color": "#efefef",
+                "text-halo-width": active(0, 3)
+            },
+            layout: {
+                ...(textFont && { "text-font": textFont }),
+                "text-field": ["id"],
+                "text-size": 12,
+                "text-anchor": "center"
+            }
+        }
+    );
+
+    return style;
+}
 
 /**
  * Draws the elevation chart with the given data
@@ -67,7 +149,7 @@ function drawElevationChart(data) {
     });
 
     elevationChart.addEventListener("brush", (e) => {
-        const bounds = new mapboxgl.LngLatBounds();
+        const bounds = new maplibregl.LngLatBounds();
         e.detail.forEach((f) => bounds.extend(f.geometry.coordinates));
         map.fitBounds(bounds, { padding: 8 });
     });
@@ -102,8 +184,8 @@ routeData
 
 map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
-map.addControl(new mapboxgl.FullscreenControl());
-map.addControl(new mapboxgl.NavigationControl({ showCompass: false }));
+map.addControl(new maplibregl.FullscreenControl());
+map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
 map.on("load", () => {
     routeData
         .then((json) => map.getSource(sourceId).setData(json))
