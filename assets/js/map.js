@@ -1,3 +1,5 @@
+import * as maplibregl from "https://cdn.jsdelivr.net/npm/maplibre-gl@6.16.0/dist/maplibre-gl.mjs";
+
 const apiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
     sourceId = "gs100",
     round = (n) => Math.round((n + Number.EPSILON) * 100) / 100,
@@ -19,7 +21,7 @@ const apiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
             lng: convert.ddToDMS(c[0]) + (c[0] >= 0 ? " E" : " W")
         })
     },
-    map = new mapboxgl.Map({
+    map = new maplibregl.Map({
         container: "map",
         minZoom: 9,
         maxZoom: 15,
@@ -36,12 +38,12 @@ const apiKey = "u2gXrMQDPW5Zpr0pzCZppgxxbl48kkXc",
                 { url: url + "&srs=3857" } :
                 { url: url + "?key=" + apiKey + "&srs=3857" }
     }),
-    infoPopup = new mapboxgl.Popup({
+    infoPopup = new maplibregl.Popup({
         className: "info-popup",
         closeButton: false,
         closeOnClick: false
     }),
-    elevationPopup = new mapboxgl.Popup({
+    elevationPopup = new maplibregl.Popup({
         className: "elevation-popup",
         closeButton: false,
         closeOnClick: false
@@ -67,7 +69,7 @@ function drawElevationChart(data) {
     });
 
     elevationChart.addEventListener("brush", (e) => {
-        const bounds = new mapboxgl.LngLatBounds();
+        const bounds = new maplibregl.LngLatBounds();
         e.detail.forEach((f) => bounds.extend(f.geometry.coordinates));
         map.fitBounds(bounds, { padding: 8 });
     });
@@ -102,8 +104,8 @@ routeData
 
 map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
-map.addControl(new mapboxgl.FullscreenControl());
-map.addControl(new mapboxgl.NavigationControl({ showCompass: false }));
+map.addControl(new maplibregl.FullscreenControl());
+map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
 map.on("load", () => {
     routeData
         .then((json) => map.getSource(sourceId).setData(json))
