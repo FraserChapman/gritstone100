@@ -235,44 +235,47 @@ document.querySelectorAll(".sidebar li").forEach((a) =>
 const items = document.querySelectorAll(".sidebar ul li");
 items.forEach(x => x.dataset.originalHtml = x.innerHTML);
 
-document.getElementById("search").addEventListener("keyup", (ev) => {
-    const query = ev.currentTarget.value.trim();
 
-    items.forEach((x) => {
-        // Reset to original HTML on every keypress
-        x.innerHTML = x.dataset.originalHtml;
 
-        if (query === "") {
-            x.style.display = "";
-            return;
-        }
+['input', 'search'].forEach(eventType => {
+    document.getElementById("search").addEventListener(eventType, (ev) => {
+        const query = ev.currentTarget.value.trim();
 
-        if (x.textContent.toLowerCase().includes(query.toLowerCase())) {
-            x.style.display = "";
+        items.forEach((x) => {
+            x.innerHTML = x.dataset.originalHtml;
 
-            const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(`(${escaped})`, "gi");
-            // Walk through text nodes only, leaving HTML tags safe
-            const walker = document.createTreeWalker(x, NodeFilter.SHOW_TEXT, null, false);
-            let node;
-            const textNodes = [];
-            while (node = walker.nextNode()) {
-                textNodes.push(node);
+            if (query === "") {
+                x.style.display = "";
+                return;
             }
 
-            textNodes.forEach(textNode => {
-                const val = textNode.nodeValue;
-                if (val.toLowerCase().includes(query.toLowerCase())) {
-                    const newHtml = val.replace(regex, '<mark>$1</mark>');
-                    const range = document.createRange();
-                    range.selectNode(textNode);
-                    const fragment = range.createContextualFragment(newHtml);
-                    textNode.parentNode.replaceChild(fragment, textNode);
+            if (x.textContent.toLowerCase().includes(query.toLowerCase())) {
+                x.style.display = "";
+
+                const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(`(${escaped})`, "gi");
+
+                const walker = document.createTreeWalker(x, NodeFilter.SHOW_TEXT, null, false);
+                let node;
+                const textNodes = [];
+                while (node = walker.nextNode()) {
+                    textNodes.push(node);
                 }
-            });
-        } else {
-            x.style.display = "none";
-        }
+
+                textNodes.forEach(textNode => {
+                    const val = textNode.nodeValue;
+                    if (val.toLowerCase().includes(query.toLowerCase())) {
+                        const newHtml = val.replace(regex, '<mark>$1</mark>');
+                        const range = document.createRange();
+                        range.selectNode(textNode);
+                        const fragment = range.createContextualFragment(newHtml);
+                        textNode.parentNode.replaceChild(fragment, textNode);
+                    }
+                });
+            } else {
+                x.style.display = "none";
+            }
+        });
     });
 });
 

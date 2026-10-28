@@ -2,7 +2,7 @@
     <div class="sidebar">
         <div class="controls">
             <span id="toggle" title="Toggle menu" class="material-icons">menu_open</span>
-            <input type="text" id="search" placeholder="Search markers...">
+            <input type="search" id="search" placeholder="Search markers...">
         </div>
         <ul>
             <repeat group="{{ @geojson.features }}" value="{{ @feature }}">
