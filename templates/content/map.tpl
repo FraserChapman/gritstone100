@@ -1,6 +1,6 @@
 <section>
     <div class="sidebar">
-        <div>
+        <div class="controls">
             <span id="toggle" title="Toggle menu" class="material-icons">menu_open</span>
             <input type="text" id="search" placeholder="Search markers...">
         </div>

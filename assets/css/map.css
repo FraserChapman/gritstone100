@@ -11,14 +11,19 @@
     background: white;
     width: 300px;
     height: 500px;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 460px;
+}
+
+.sidebar .controls {
+    margin-bottom: 10px;
 }
 
 .sidebar.closed {
@@ -112,15 +117,18 @@
 #search {
     border: 1px solid #efefef;
     border-radius: 0;
-    height: 40px;
-    outline: none;
-    width: 285px;
+    height: 26px;
+    outline: 0;
+    width: 260px;
 }
 
 #toggle {
     user-select: none;
     cursor: pointer;
-    margin-right: 7px;
+    margin-right: 5px;
+    margin-top: 4px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #3a3a3a;
 }
 
 #toggle:hover {
@@ -135,6 +143,7 @@
     box-shadow: 0 0 3px #3a3a3a;
     color: #333;
     border-radius: 5px;
+    rotate: 180deg;
 }
 
 #toggle.closed:hover {
@@ -190,6 +199,12 @@
 
 #links div a:hover {
     color: #6eb6b1;
+}
+
+mark {
+    background-color: #ffeb3b;
+    color: #000;
+    padding: 0;
 }
 
 /* media */
