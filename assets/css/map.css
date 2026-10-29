@@ -19,6 +19,8 @@
     padding: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    scrollbar-color: #939393 #ffffff;
+    scrollbar-width: thin;
     height: 460px;
 }
 
@@ -40,6 +42,7 @@
     border-bottom: 1px solid #eee;
     padding: 10px;
     cursor: pointer;
+    user-select: none;
 }
 
 .sidebar ul li div.name {
@@ -49,20 +52,20 @@
     white-space: nowrap;
     max-width: 155px;
     overflow: hidden;
-    user-select: none;
 }
 
 .sidebar ul li::before {
     content: attr(data-id);
-    border-radius: 30px;
-    width: 30px;
-    height: 30px;
+    border-radius: 20px;
+    width: 32px;
+    height: 32px;
     background-color: #323232;
     color: #efefef;
     display: inline-block;
     text-align: center;
-    line-height: 30px;
+    line-height: 32px;
     vertical-align: text-bottom;
+    font-size: 12px;
 }
 
 
@@ -87,11 +90,6 @@
 .sidebar ul li div.desc .extra .label {
     font-weight: 300;
     color: #939393;
-}
-
-.sidebar {
-    scrollbar-color: #939393 #efefef;
-    scrollbar-width: thin;
 }
 
 .sidebar::-webkit-scrollbar {
